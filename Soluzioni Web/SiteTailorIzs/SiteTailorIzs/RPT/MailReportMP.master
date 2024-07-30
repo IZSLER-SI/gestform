@@ -1,0 +1,108 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/SiteTailorMP.Master" AutoEventWireup="false" CodeBehind="MailReportMP.master.vb" Inherits="Softailor.SiteTailorIzs.MailReportMP" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="phdHeadContent" runat="server">
+    <link href="MailReportMP.css" rel="stylesheet" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="phdContent" runat="server">
+    <script>
+        function IniziaSpedizione() {
+            stl_sel_display_wh('SpedizioneMailProxy.aspx', 1100, 750, null);
+        }
+    </script>
+    <script src="MailReportMP.js"></script>
+    <stl:StlUpdatePanel ID="updMAILREPORTS_g" runat="server" Width="500px" Height="550px" Top="0px" Left="0px">
+        <ContentTemplate>
+            <stl:StlGridView ID="grdMAILREPORTS" runat="server" AddCommandText=""
+                AutoGenerateColumns="False" DataKeyNames="id_MAILREPORT" DataSourceID="sdsMAILREPORTS_g"
+                EnableViewState="False" ItemDescriptionPlural="modelli" ItemDescriptionSingular="modello"
+                Title="Modello da utilizzare" AllowReselectSelectedRow="true"
+                DeleteConfirmationQuestion="" AllowDelete="false">
+                <Columns>
+                    <asp:BoundField DataField="tx_REPORT" HeaderText="Modello" ItemStyle-Font-Bold="true" />
+                </Columns>
+            </stl:StlGridView>
+            <stl:StlSqlDataSource ID="sdsMAILREPORTS_g" runat="server"
+                ConnectionString="<%$ ConnectionStrings:SiteTailorDbConnectionString %>"
+                SelectCommand="
+                    SELECT 
+                        RPT.id_MAILREPORT,
+                        RPT.ac_FONTE,
+                        RPT.tx_REPORT
+                    FROM
+                        rpt_MAILREPORTS RPT
+                        INNER JOIN rpt_FONTI FNT ON RPT.ac_FONTE=FNT.ac_FONTE
+                    WHERE
+                        RPT.ac_FONTE = @ac_FONTE
+                    ORDER BY
+                        RPT.tx_REPORT"
+                >
+                 <SelectParameters>
+                    <asp:Parameter Name="ac_FONTE" Type="String" />
+                </SelectParameters>
+            </stl:StlSqlDataSource>
+        </ContentTemplate>
+    </stl:StlUpdatePanel>
+    <asp:UpdatePanel ID="updGenerazione" runat="server" EnableViewState="true" UpdateMode="Conditional">
+        <ContentTemplate>
+            <asp:HiddenField ID="hidid_MAILREPORT" runat="server" />
+            <asp:Panel ID="pnlGenerazione" runat="server" Visible="false" ClientIDMode="Static">
+                <div class="stl_gen_box" style="position: absolute; top: 0px; left: 520px; width: 710px;">
+                    <div class="title">
+                        Opzioni Generazione
+                    </div>
+                    <div class="content padtop" style="height: 650px;">
+                        <asp:Panel ID="pnlFiltri" runat="server" EnableViewState="false">
+                            <table class="datatable">
+                                <tr>
+                                    <td class="lbl" style="width:80px;padding-top:4px;">
+                                        <b>Filtro</b>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <asp:RadioButton ID="rblFiltroNone" runat="server" GroupName="filtri" Text="Nessuno" />
+                                        </div>
+                                        <asp:PlaceHolder ID="phdControlliFiltri" runat="server" EnableViewState="false" />
+                                        <div>
+                                            <asp:RadioButton ID="rbFiltroPers" ClientIDMode="Static" runat="server" GroupName="filtri" Text="Filtro Personalizzato" />
+                                            &nbsp;
+                                            <span class="classicA" runat="server" id="spanEditFiltro">Visualizza/Modifica</span>
+                                        </div>
+                                        <div style="display:none;">
+                                            <asp:TextBox ID="xmlFiltroPers" runat="server" EnableViewState="false" TextMode="MultiLine" Width="400px" Height="200px" ClientIDMode="Static" />
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </asp:Panel>
+                        <asp:PlaceHolder ID="phdControlliFonte" runat="server" EnableViewState="false" />
+                    </div>
+                    <div class="content padall">
+                        <asp:LinkButton ID="lnkIniziaSpedizione" runat="server" CssClass="btnlink" Font-Bold="true">Inizia Spedizione</asp:LinkButton>
+                        <!-- campi per passaggio dati al popup -->
+                        <div style="display:none;">
+                            <asp:TextBox runat="server" EnableViewState="false" ID="sd_ac_FONTE" ClientIDMode="Static" />
+                            <asp:TextBox runat="server" EnableViewState="false" ID="sd_id_MAILREPORT" ClientIDMode="Static" />
+                            <asp:TextBox runat="server" EnableViewState="false" ID="sd_tx_VALOREFILTROBASE" ClientIDMode="Static" />
+                            <asp:TextBox runat="server" EnableViewState="false" ID="sd_xm_FILTRO" TextMode="MultiLine" ClientIDMode="Static" />
+                            <asp:TextBox runat="server" EnableViewState="false" ID="sd_ac_ORDINAMENTO" ClientIDMode="Static" />
+                            <asp:TextBox runat="server" EnableViewState="false" ID="sd_tx_ORDINAMENTO1" ClientIDMode="Static" />
+                            <asp:TextBox runat="server" EnableViewState="false" ID="sd_tx_ORDINAMENTO2" ClientIDMode="Static" />
+                            <asp:TextBox runat="server" EnableViewState="false" ID="sd_tx_ORDINAMENTO3" ClientIDMode="Static" />
+                            <asp:TextBox runat="server" EnableViewState="false" ID="sd_tx_ORDINAMENTO4" ClientIDMode="Static" />
+                            <asp:TextBox runat="server" EnableViewState="false" ID="sd_tx_ORDINAMENTO5" ClientIDMode="Static" />
+
+                            <asp:TextBox runat="server" EnableViewState="false" ID="sd_ragionesociale" ClientIDMode="Static" />
+                            <asp:TextBox runat="server" EnableViewState="false" ID="sd_indirizzocompleto" ClientIDMode="Static" />
+                            <asp:TextBox runat="server" EnableViewState="false" ID="sd_tel" ClientIDMode="Static" />
+                            <asp:TextBox runat="server" EnableViewState="false" ID="sd_fax" ClientIDMode="Static" />
+                            <asp:TextBox runat="server" EnableViewState="false" ID="sd_email" ClientIDMode="Static" />
+
+                        </div>
+                    </div>
+                </div>
+            </asp:Panel>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="phdAuxilary" runat="server">
+</asp:Content>

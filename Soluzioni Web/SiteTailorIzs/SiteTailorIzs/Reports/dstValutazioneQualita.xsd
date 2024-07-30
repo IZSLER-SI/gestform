@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dstValutazioneQualita" targetNamespace="http://tempuri.org/dstValutazioneQualita.xsd" xmlns:mstns="http://tempuri.org/dstValutazioneQualita.xsd" xmlns="http://tempuri.org/dstValutazioneQualita.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="SiteTailorConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="SiteTailorConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.SiteTailorConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dstValutazioneQualita" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:EnforceConstraints="False" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dstValutazioneQualita" msprop:Generator_UserDSName="dstValutazioneQualita">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="evento" msprop:Generator_TableClassName="eventoDataTable" msprop:Generator_TableVarName="tableevento" msprop:Generator_TablePropName="evento" msprop:Generator_RowDeletingName="eventoRowDeleting" msprop:Generator_RowChangingName="eventoRowChanging" msprop:Generator_RowEvHandlerName="eventoRowChangeEventHandler" msprop:Generator_RowDeletedName="eventoRowDeleted" msprop:Generator_UserTableName="evento" msprop:Generator_RowChangedName="eventoRowChanged" msprop:Generator_RowEvArgName="eventoRowChangeEvent" msprop:Generator_RowClassName="eventoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_EVENTO" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnid_EVENTO" msprop:Generator_ColumnPropNameInRow="id_EVENTO" msprop:Generator_ColumnPropNameInTable="id_EVENTOColumn" msprop:Generator_UserColumnName="id_EVENTO" type="xs:int" />
+              <xs:element name="tx_TITOLO" msprop:Generator_ColumnVarNameInTable="columntx_TITOLO" msprop:Generator_ColumnPropNameInRow="tx_TITOLO" msprop:Generator_ColumnPropNameInTable="tx_TITOLOColumn" msprop:Generator_UserColumnName="tx_TITOLO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tx_SEDE" msprop:Generator_ColumnVarNameInTable="columntx_SEDE" msprop:Generator_ColumnPropNameInRow="tx_SEDE" msprop:Generator_ColumnPropNameInTable="tx_SEDEColumn" msprop:Generator_UserColumnName="tx_SEDE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dt_INIZIO" msprop:Generator_ColumnVarNameInTable="columndt_INIZIO" msprop:Generator_ColumnPropNameInRow="dt_INIZIO" msprop:Generator_ColumnPropNameInTable="dt_INIZIOColumn" msprop:Generator_UserColumnName="dt_INIZIO" type="xs:dateTime" />
+              <xs:element name="dt_FINE" msprop:Generator_ColumnVarNameInTable="columndt_FINE" msprop:Generator_ColumnPropNameInRow="dt_FINE" msprop:Generator_ColumnPropNameInTable="dt_FINEColumn" msprop:Generator_UserColumnName="dt_FINE" type="xs:dateTime" />
+              <xs:element name="tx_INIZIOFINE" msprop:Generator_ColumnVarNameInTable="columntx_INIZIOFINE" msprop:Generator_ColumnPropNameInRow="tx_INIZIOFINE" msprop:Generator_ColumnPropNameInTable="tx_INIZIOFINEColumn" msprop:Generator_UserColumnName="tx_INIZIOFINE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ecm2_TIPO_FORM" msprop:Generator_ColumnVarNameInTable="columnecm2_TIPO_FORM" msprop:Generator_ColumnPropNameInRow="ecm2_TIPO_FORM" msprop:Generator_ColumnPropNameInTable="ecm2_TIPO_FORMColumn" msprop:Generator_UserColumnName="ecm2_TIPO_FORM">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tx_SPONSOR" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columntx_SPONSOR" msprop:Generator_ColumnPropNameInRow="tx_SPONSOR" msprop:Generator_ColumnPropNameInTable="tx_SPONSORColumn" msprop:Generator_UserColumnName="tx_SPONSOR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tx_ORGANIZZATORE" msprop:Generator_ColumnVarNameInTable="columntx_ORGANIZZATORE" msprop:Generator_ColumnPropNameInRow="tx_ORGANIZZATORE" msprop:Generator_ColumnPropNameInTable="tx_ORGANIZZATOREColumn" msprop:Generator_UserColumnName="tx_ORGANIZZATORE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tx_NOMEFILELOGOORG" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columntx_NOMEFILELOGOORG" msprop:Generator_ColumnPropNameInRow="tx_NOMEFILELOGOORG" msprop:Generator_ColumnPropNameInTable="tx_NOMEFILELOGOORGColumn" msprop:Generator_UserColumnName="tx_NOMEFILELOGOORG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="251" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="logoOrganizzatore" msprop:Generator_ColumnVarNameInTable="columnlogoOrganizzatore" msprop:Generator_ColumnPropNameInRow="logoOrganizzatore" msprop:Generator_ColumnPropNameInTable="logoOrganizzatoreColumn" msprop:Generator_UserColumnName="logoOrganizzatore" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="relatori" msprop:Generator_TableClassName="relatoriDataTable" msprop:Generator_TableVarName="tablerelatori" msprop:Generator_TablePropName="relatori" msprop:Generator_RowDeletingName="relatoriRowDeleting" msprop:Generator_RowChangingName="relatoriRowChanging" msprop:Generator_RowEvHandlerName="relatoriRowChangeEventHandler" msprop:Generator_RowDeletedName="relatoriRowDeleted" msprop:Generator_UserTableName="relatori" msprop:Generator_RowChangedName="relatoriRowChanged" msprop:Generator_RowEvArgName="relatoriRowChangeEvent" msprop:Generator_RowClassName="relatoriRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_EVENTO" msprop:Generator_ColumnVarNameInTable="columnid_EVENTO" msprop:Generator_ColumnPropNameInRow="id_EVENTO" msprop:Generator_ColumnPropNameInTable="id_EVENTOColumn" msprop:Generator_UserColumnName="id_EVENTO" type="xs:int" />
+              <xs:element name="id_PERSONA" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnid_PERSONA" msprop:Generator_ColumnPropNameInRow="id_PERSONA" msprop:Generator_ColumnPropNameInTable="id_PERSONAColumn" msprop:Generator_UserColumnName="id_PERSONA" type="xs:int" />
+              <xs:element name="tx_COGNOMENOME" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columntx_COGNOMENOME" msprop:Generator_ColumnPropNameInRow="tx_COGNOMENOME" msprop:Generator_ColumnPropNameInTable="tx_COGNOMENOMEColumn" msprop:Generator_UserColumnName="tx_COGNOMENOME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="201" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tx_COGNOMENOMESOSTITUTO" msprop:Generator_ColumnVarNameInTable="columntx_COGNOMENOMESOSTITUTO" msprop:Generator_ColumnPropNameInRow="tx_COGNOMENOMESOSTITUTO" msprop:Generator_ColumnPropNameInTable="tx_COGNOMENOMESOSTITUTOColumn" msprop:Generator_UserColumnName="tx_COGNOMENOMESOSTITUTO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:evento" />
+      <xs:field xpath="mstns:id_EVENTO" />
+    </xs:unique>
+    <xs:unique name="relatori_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:relatori" />
+      <xs:field xpath="mstns:id_PERSONA" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

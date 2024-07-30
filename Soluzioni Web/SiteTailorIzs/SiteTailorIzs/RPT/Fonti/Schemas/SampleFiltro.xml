@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Filtro xmlns="http://schemas.softailor.com/ReportEngine/Filtro">
+  <Condizioni>
+    <Condizione NomeCampoDb="campo1" Comparazione="Vuoto" />
+    <Condizione NomeCampoDb="campo2" Comparazione="NonVuoto" />
+    <Condizione NomeCampoDb="campo3" Comparazione="Uguale">
+      <Valori>
+        <Valore v1="12"/>
+        <Valore v1="13"/>
+        <Valore v1="14"/>
+        <Valore v1="15"/>
+      </Valori>
+    </Condizione>
+    <Condizione NomeCampoDb="campo4" Comparazione="Uguale">
+      <Valori>
+        <Valore v1="20140102132243"/>
+      </Valori>
+    </Condizione>
+    <Condizione NomeCampoDb="campo5" Comparazione="Diverso">
+      <Valori>
+        <Valore v1="12"/>
+      </Valori>
+    </Condizione>
+    <Condizione NomeCampoDb="campo6" Comparazione="Diverso">
+      <Valori>
+        <Valore v1="14"/>
+        <Valore v1="15"/>
+      </Valori>
+    </Condizione>
+    <Condizione NomeCampoDb="campo7" Comparazione="Maggiore">
+      <Valori>
+        <Valore v1="26"/>
+      </Valori>
+    </Condizione>
+    <Condizione NomeCampoDb="campo8" Comparazione="Minore">
+      <Valori>
+        <Valore v1="26"/>
+      </Valori>
+    </Condizione>
+    <Condizione NomeCampoDb="campo9" Comparazione="MaggioreUguale">
+      <Valori>
+        <Valore v1="42"/>
+      </Valori>
+    </Condizione>
+    <Condizione NomeCampoDb="campo10" Comparazione="MinoreUguale">
+      <Valori>
+        <Valore v1="47"/>
+      </Valori>
+    </Condizione>
+    <Condizione NomeCampoDb="campo11" Comparazione="Compreso">
+      <Valori>
+        <Valore v1="20120101" v2="20121231"/>
+        <Valore v1="20140101" v2="20141231"/>
+      </Valori>
+    </Condizione>
+    <Condizione NomeCampoDb="campo12" Comparazione="Compreso">
+      <Valori>
+        <Valore v1="20120101" v2="20121231"/>
+      </Valori>
+    </Condizione>
+    <Condizione NomeCampoDb="campo13" Comparazione="IniziaPer">
+      <Valori>
+        <Valore v1="a" />
+      </Valori>
+    </Condizione>
+    <Condizione NomeCampoDb="campo14" Comparazione="IniziaPer">
+      <Valori>
+        <Valore v1="a" />
+        <Valore v1="b" />
+      </Valori>
+    </Condizione>
+    <Condizione NomeCampoDb="campo15" Comparazione="FiniscePer">
+      <Valori>
+        <Valore v1="a" />
+      </Valori>
+    </Condizione>
+    <Condizione NomeCampoDb="campo16" Comparazione="FiniscePer">
+      <Valori>
+        <Valore v1="a" />
+        <Valore v1="b" />
+      </Valori>
+    </Condizione>
+    <Condizione NomeCampoDb="campo17" Comparazione="Contiene">
+      <Valori>
+        <Valore v1="a" />
+      </Valori>
+    </Condizione>
+    <Condizione NomeCampoDb="campo18" Comparazione="Contiene">
+      <Valori>
+        <Valore v1="a" />
+        <Valore v1="b" />
+      </Valori>
+    </Condizione>
+  </Condizioni>
+</Filtro>

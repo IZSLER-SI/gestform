@@ -1,0 +1,20 @@
+﻿<asp:Menu SkinID="STLApplicationMenu" runat="server" StaticEnableDefaultPopOutImage="False">
+                <StaticMenuItemStyle CssClass="amn_l0" HorizontalPadding="15px" ItemSpacing="0px" />
+                <DynamicMenuStyle CssClass="amn_l1" />
+                <DynamicMenuItemStyle CssClass="amn_l1_b" />
+</asp:Menu>
+<stl:StlGridView runat="server" CssClass="stl_grd" CellSpacing="0" CellPadding="0" GridLines="None">
+    <SelectedRowStyle CssClass="sr" />
+    <HeaderStyle CssClass="h" />
+    <RowStyle CssClass="r" />
+</stl:StlGridView>
+<stl:StlFormView runat="server" CssClass="stl_frt">
+    <HeaderStyle CssClass="h" />
+    <EditRowStyle CssClass="b" />
+    <RowStyle CssClass="b" />
+    <InsertRowStyle CssClass="b" />
+    <EmptyDataRowStyle CssClass="h" />
+</stl:StlFormView>
+<stl:StlFormViewLinkButton runat="server" CssClass="stl_lbt" />
+<stl:StlFormViewHyperLink runat="server" CssClass="stl_lbt" />
+<ajaxToolkit:TabContainer runat="server" CssClass="ajax__tab_stl" AutoPostBack="false" />

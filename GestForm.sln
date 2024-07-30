@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SiteTailorIzs", "Soluzioni Web\SiteTailorIzs\SiteTailorIzs\SiteTailorIzs.vbproj", "{B3FA3606-D9D6-4862-B4C7-FF71D88442F1}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Softailor.ReportEngine", "Softailor\Softailor.ReportEngine\Softailor.ReportEngine.vbproj", "{9A48C4F3-240E-47ED-8E8F-0F0DAE731B8E}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GestioneFormazione.FrontOffice", "Soluzioni Web\GestioneFormazione.FrontOffice\GestioneFormazione.FrontOffice\GestioneFormazione.FrontOffice.vbproj", "{C18F385F-5CED-4ADF-88D4-6AB1280CA518}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Softailor.Global", "Softailor\Softailor.Global\Softailor.Global.vbproj", "{9508C2C2-7435-475A-8A3A-24D473F34CD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softailor.ImageQuantization", "Softailor\Softailor.ImageQuantization\Softailor.ImageQuantization.csproj", "{DD40A0A0-1E62-4600-96FA-8AFF0C208864}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Softailor.SiteTailor.ACL", "Softailor\Softailor.SiteTailor.ACL\Softailor.SiteTailor.ACL.vbproj", "{6FEA2A85-650A-4963-9465-058822CC6CF1}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Softailor.SiteTailor.Binaries", "Softailor\Softailor.SiteTailor.Binaries\Softailor.SiteTailor.Binaries.vbproj", "{A9946492-7D88-4CCB-8187-06546CB974A6}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Softailor.Web.UI.DbForms", "Softailor\Softailor.Web.UI.DbForms\Softailor.Web.UI.DbForms.vbproj", "{93CF90C7-D1C7-4E28-89C4-62013B12890F}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Softailor.XmlXsl", "Softailor\Softailor.XmlXsl\Softailor.XmlXsl.vbproj", "{683F0842-5B6D-4C43-819F-FFC14EE30C8B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Softailor", "Softailor", "{7215E61B-DA66-47ED-80C9-05EB7F77058F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3FA3606-D9D6-4862-B4C7-FF71D88442F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3FA3606-D9D6-4862-B4C7-FF71D88442F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3FA3606-D9D6-4862-B4C7-FF71D88442F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3FA3606-D9D6-4862-B4C7-FF71D88442F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A48C4F3-240E-47ED-8E8F-0F0DAE731B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A48C4F3-240E-47ED-8E8F-0F0DAE731B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A48C4F3-240E-47ED-8E8F-0F0DAE731B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A48C4F3-240E-47ED-8E8F-0F0DAE731B8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C18F385F-5CED-4ADF-88D4-6AB1280CA518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C18F385F-5CED-4ADF-88D4-6AB1280CA518}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C18F385F-5CED-4ADF-88D4-6AB1280CA518}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C18F385F-5CED-4ADF-88D4-6AB1280CA518}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9508C2C2-7435-475A-8A3A-24D473F34CD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9508C2C2-7435-475A-8A3A-24D473F34CD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9508C2C2-7435-475A-8A3A-24D473F34CD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9508C2C2-7435-475A-8A3A-24D473F34CD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD40A0A0-1E62-4600-96FA-8AFF0C208864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD40A0A0-1E62-4600-96FA-8AFF0C208864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD40A0A0-1E62-4600-96FA-8AFF0C208864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD40A0A0-1E62-4600-96FA-8AFF0C208864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FEA2A85-650A-4963-9465-058822CC6CF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FEA2A85-650A-4963-9465-058822CC6CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FEA2A85-650A-4963-9465-058822CC6CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FEA2A85-650A-4963-9465-058822CC6CF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9946492-7D88-4CCB-8187-06546CB974A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9946492-7D88-4CCB-8187-06546CB974A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9946492-7D88-4CCB-8187-06546CB974A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9946492-7D88-4CCB-8187-06546CB974A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93CF90C7-D1C7-4E28-89C4-62013B12890F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93CF90C7-D1C7-4E28-89C4-62013B12890F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93CF90C7-D1C7-4E28-89C4-62013B12890F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93CF90C7-D1C7-4E28-89C4-62013B12890F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{683F0842-5B6D-4C43-819F-FFC14EE30C8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{683F0842-5B6D-4C43-819F-FFC14EE30C8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{683F0842-5B6D-4C43-819F-FFC14EE30C8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{683F0842-5B6D-4C43-819F-FFC14EE30C8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9A48C4F3-240E-47ED-8E8F-0F0DAE731B8E} = {7215E61B-DA66-47ED-80C9-05EB7F77058F}
+		{9508C2C2-7435-475A-8A3A-24D473F34CD0} = {7215E61B-DA66-47ED-80C9-05EB7F77058F}
+		{DD40A0A0-1E62-4600-96FA-8AFF0C208864} = {7215E61B-DA66-47ED-80C9-05EB7F77058F}
+		{6FEA2A85-650A-4963-9465-058822CC6CF1} = {7215E61B-DA66-47ED-80C9-05EB7F77058F}
+		{A9946492-7D88-4CCB-8187-06546CB974A6} = {7215E61B-DA66-47ED-80C9-05EB7F77058F}
+		{93CF90C7-D1C7-4E28-89C4-62013B12890F} = {7215E61B-DA66-47ED-80C9-05EB7F77058F}
+		{683F0842-5B6D-4C43-819F-FFC14EE30C8B} = {7215E61B-DA66-47ED-80C9-05EB7F77058F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B1EA435-8481-4882-8391-BAC471001427}
+	EndGlobalSection
+EndGlobal

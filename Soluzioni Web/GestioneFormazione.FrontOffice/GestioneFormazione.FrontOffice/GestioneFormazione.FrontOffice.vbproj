@@ -1,0 +1,681 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{C18F385F-5CED-4ADF-88D4-6AB1280CA518}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GestioneFormazione.FrontOffice</RootNamespace>
+    <AssemblyName>GestioneFormazione.FrontOffice</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>GestioneFormazione.FrontOffice.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>GestioneFormazione.FrontOffice.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=20.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\AjaxControlToolkit.20.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\..\..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DocX">
+      <HintPath>..\..\..\Librerie\Docx 1-0-1-13\DocX.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.0.4.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Librerie\epplus 4.0.4\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Softailor\Softailor.ReportEngine\Microsoft.SharePoint.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Runtime, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\..\..\packages\AspNet.ScriptManager.jQuery.1.8.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\..\..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.20\lib\net45\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\DotNetOpenAuth.AspNet.4.1.4.12333\lib\net45-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.1\lib\net45\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.0.0\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.0\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Softailor.XmlXsl" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.SqlClient" />
+    <Import Include="System.Data.SqlTypes" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bundle.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Content\IZSLER\CImg\Header.png" />
+    <Content Include="Content\IZSLER\CImg\Key.png" />
+    <Content Include="Content\IZSLER\CImg\Logout.png" />
+    <Content Include="Content\IZSLER\CImg\Mail\LogoHdr.png" />
+    <Content Include="Content\IZSLER\CImg\spid-button-link-hover.png" />
+    <Content Include="Content\IZSLER\CImg\spid-button-link-link.png" />
+    <Content Include="Content\IZSLER\CImg\User.png" />
+    <Content Include="Content\IZSLER\FavIcon\favicon.ico" />
+    <Content Include="Content\IZSLER\Styles\Global.css" />
+    <Content Include="GestioneFormazione.FrontOffice.vbproj.vspscc" />
+    <Content Include="GfWs.asmx" />
+    <Content Include="Img\icoPdf.gif" />
+    <Content Include="Img\important.png" />
+    <Content Include="Img\Info30.png" />
+    <Content Include="Img\IZSLER\logo_invisiblefarm.png" />
+    <Content Include="Img\map.png" />
+    <Content Include="Img\RightArrow.png" />
+    <Content Include="Pages\AttestatoECM.aspx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pages\AttestatoPART.aspx" />
+    <Content Include="Pages\FormazioneEsterna.aspx" />
+    <Content Include="Pages\ControlloPreLogin.aspx" />
+    <Content Include="Pages\FormazioneIndividuale.aspx" />
+    <Content Include="Pages\InserimentoPresenze.aspx" />
+    <Content Include="Pages\IscrizioniAttive.aspx" />
+    <Content Include="Pages\ValidazioneEsternaPG.aspx" />
+    <Content Include="Pages\Portfolio.aspx" />
+    <Content Include="Pages\PortfolioExcel.aspx" />
+    <Content Include="Pages\StampaAutoCertificazione.aspx" />
+    <Content Include="Scripts\jquery.maskedinput.min.js" />
+    <Content Include="Templates\IZSLER\Ext_EventList.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Templates\IZSLER\Autocertificazione_Formazione_Individuale.xslt" />
+    <Content Include="Templates\IZSLER\Autocertificazioni_Formazione_Individuale.xslt" />
+    <Content Include="Templates\IZSLER\InserimentoPresenze_Done.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Templates\IZSLER\InserimentoPresenze.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Templates\IZSLER\FilesEvento.xslt" />
+    <Content Include="Templates\IZSLER\Mail\NotificaModProfiloUfficio.xslt" />
+    <Content Include="Templates\IZSLER\Mail\NotificaModuloFormazioneEsterna.xslt" />
+    <Content Include="Templates\IZSLER\MFS_Eventi.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Templates\IZSLER\Portfolio.xslt" />
+    <Content Include="Templates\IZSLER\Home_Reminders.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Templates\IZSLER\IscrizioniAttive.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Templates\IZSLER\EventRegistrationPopupDone.xslt" />
+    <Content Include="Templates\IZSLER\EventRegistrationPopup.xslt" />
+    <Content Include="Templates\IZSLER\EventRegistration.xslt" />
+    <Content Include="Templates\IZSLER\EventDetail.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Templates\IZSLER\Mail\AcceptanceConfirmation.xslt" />
+    <Content Include="Templates\IZSLER\Mail\RegistrationConfirmation.xslt" />
+    <Content Include="Templates\IZSLER\Mail\MailContainer.xslt" />
+    <Content Include="Templates\IZSLER\Mail\PasswordReset.xslt" />
+    <Content Include="Img\waiting.gif" />
+    <Content Include="Pages\ChangeMail.aspx" />
+    <Content Include="Pages\ChangePassword.aspx" />
+    <Content Include="Pages\CompleteProfile.aspx" />
+    <Content Include="Pages\DoPasswordReset.aspx" />
+    <Content Include="Pages\Download.aspx" />
+    <Content Include="Pages\EditProfile.aspx" />
+    <Content Include="Pages\Events.aspx" />
+    <Content Include="Pages\News.aspx" />
+    <Content Include="Pages\PasswordReset.aspx" />
+    <Content Include="Pages\Registration.aspx" />
+    <Content Include="Scripts\Global.js" />
+    <Content Include="Scripts\Login.js" />
+    <Content Include="Templates\Common.xslt" />
+    <Content Include="Templates\IZSLER\Download.xslt" />
+    <Content Include="Templates\IZSLER\News.xslt" />
+    <Content Include="Templates\IZSLER\Home_News.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Templates\IZSLER\Common_EventList.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Templates\IZSLER\GenericContent\GenericContent_Content.xslt" />
+    <Content Include="Templates\IZSLER\GenericContent\GenericContent_Title.xslt" />
+    <Content Include="Templates\IZSLER\PortfolioExcel.xslt" />
+    <Content Include="Templates\IZSLER\UserZone.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Templates\IZSLER\MainMenu.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Pages\GenericContent.aspx" />
+    <Content Include="Templates\IZSLER\Footer.xslt" />
+    <Content Include="Templates\IZSLER\Header.xslt" />
+    <Content Include="Global.asax" />
+    <Content Include="packages.config" />
+    <Content Include="Pages\EventDetail.aspx" />
+    <Content Include="Pages\Home.aspx" />
+    <Content Include="RootMP.Master" />
+    <Content Include="MenuUserMP.master" />
+    <Content Include="Binaries\DOC_GEN_T01.ashx" />
+    <Content Include="Binaries\DOC_GEN.ashx" />
+    <Content Include="Binaries\DOC_EVE_T01.ashx" />
+    <Content Include="Binaries\DOC_EVE.ashx" />
+    <Content Include="Reports\dstAttestatiEcm.xsc">
+      <DependentUpon>dstAttestatiEcm.xsd</DependentUpon>
+    </Content>
+    <Content Include="Files\BasePortfolioExcel_ECM.xlsx" />
+    <Content Include="Files\BasePortfolioExcel_NOECM.xlsx" />
+    <Content Include="Files\public.pem" />
+    <None Include="My Project\PublishProfiles\Pubblicazione.pubxml" />
+    <None Include="Reports\dstAttestatiEcm.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dstAttestatiEcm.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Reports\dstAttestatiEcm.xss">
+      <DependentUpon>dstAttestatiEcm.xsd</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Templates\IZSLER\Bundle.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\_references.js" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.vb" />
+    <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="Binaries\DOC_EVE.ashx.vb">
+      <DependentUpon>DOC_EVE.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Binaries\DOC_EVE_T01.ashx.vb">
+      <DependentUpon>DOC_EVE_T01.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Binaries\DOC_GEN.ashx.vb">
+      <DependentUpon>DOC_GEN.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Binaries\DOC_GEN_T01.ashx.vb">
+      <DependentUpon>DOC_GEN_T01.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\CodiceEsternoProfilo.vb" />
+    <Compile Include="Classes\ContextHandler.vb" />
+    <Compile Include="Classes\GFMailHandler.vb" />
+    <Compile Include="Classes\IFOPage.vb" />
+    <Compile Include="GfWs.asmx.vb">
+      <DependentUpon>GfWs.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MenuUserMP.master.designer.vb">
+      <DependentUpon>MenuUserMP.master</DependentUpon>
+    </Compile>
+    <Compile Include="MenuUserMP.master.vb">
+      <DependentUpon>MenuUserMP.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Pages\AttestatoECM.aspx.designer.vb">
+      <DependentUpon>AttestatoECM.aspx</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Pages\AttestatoECM.aspx.vb">
+      <DependentUpon>AttestatoECM.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Pages\AttestatoPART.aspx.designer.vb">
+      <DependentUpon>AttestatoPART.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AttestatoPART.aspx.vb">
+      <DependentUpon>AttestatoPART.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ChangeMail.aspx.designer.vb">
+      <DependentUpon>ChangeMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ChangeMail.aspx.vb">
+      <DependentUpon>ChangeMail.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ChangePassword.aspx.designer.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ChangePassword.aspx.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CompleteProfile.aspx.designer.vb">
+      <DependentUpon>CompleteProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CompleteProfile.aspx.vb">
+      <DependentUpon>CompleteProfile.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ControlloPreLogin.aspx.designer.vb">
+      <DependentUpon>ControlloPreLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ControlloPreLogin.aspx.vb">
+      <DependentUpon>ControlloPreLogin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DoPasswordReset.aspx.designer.vb">
+      <DependentUpon>DoPasswordReset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DoPasswordReset.aspx.vb">
+      <DependentUpon>DoPasswordReset.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Download.aspx.designer.vb">
+      <DependentUpon>Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Download.aspx.vb">
+      <DependentUpon>Download.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\FormazioneEsterna.aspx.designer.vb">
+      <DependentUpon>FormazioneEsterna.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FormazioneEsterna.aspx.vb">
+      <DependentUpon>FormazioneEsterna.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\EditProfile.aspx.designer.vb">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditProfile.aspx.vb">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\EventDetail.aspx.designer.vb">
+      <DependentUpon>EventDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EventDetail.aspx.vb">
+      <DependentUpon>EventDetail.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Events.aspx.designer.vb">
+      <DependentUpon>Events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Events.aspx.vb">
+      <DependentUpon>Events.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\FormazioneIndividuale.aspx.designer.vb">
+      <DependentUpon>FormazioneIndividuale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FormazioneIndividuale.aspx.vb">
+      <DependentUpon>FormazioneIndividuale.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GenericContent.aspx.designer.vb">
+      <DependentUpon>GenericContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GenericContent.aspx.vb">
+      <DependentUpon>GenericContent.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Home.aspx.designer.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Home.aspx.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\InserimentoPresenze.aspx.designer.vb">
+      <DependentUpon>InserimentoPresenze.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\InserimentoPresenze.aspx.vb">
+      <DependentUpon>InserimentoPresenze.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\IscrizioniAttive.aspx.designer.vb">
+      <DependentUpon>IscrizioniAttive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\IscrizioniAttive.aspx.vb">
+      <DependentUpon>IscrizioniAttive.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ValidazioneEsternaPG.aspx.designer.vb">
+      <DependentUpon>ValidazioneEsternaPG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ValidazioneEsternaPG.aspx.vb">
+      <DependentUpon>ValidazioneEsternaPG.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\News.aspx.designer.vb">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\News.aspx.vb">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\PasswordReset.aspx.designer.vb">
+      <DependentUpon>PasswordReset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PasswordReset.aspx.vb">
+      <DependentUpon>PasswordReset.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Portfolio.aspx.designer.vb">
+      <DependentUpon>Portfolio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Portfolio.aspx.vb">
+      <DependentUpon>Portfolio.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\PortfolioExcel.aspx.designer.vb">
+      <DependentUpon>PortfolioExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PortfolioExcel.aspx.vb">
+      <DependentUpon>PortfolioExcel.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Registration.aspx.designer.vb">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Registration.aspx.vb">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Pages\StampaAutoCertificazione.aspx.designer.vb">
+      <DependentUpon>StampaAutoCertificazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StampaAutoCertificazione.aspx.vb">
+      <DependentUpon>StampaAutoCertificazione.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reports\CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\dstAttestatiEcm.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dstAttestatiEcm.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RootMP.Master.designer.vb">
+      <DependentUpon>RootMP.Master</DependentUpon>
+    </Compile>
+    <Compile Include="RootMP.Master.vb">
+      <DependentUpon>RootMP.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Softailor\Softailor.Global\Softailor.Global.vbproj">
+      <Project>{9508c2c2-7435-475a-8a3a-24d473f34cd0}</Project>
+      <Name>Softailor.Global</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Softailor\Softailor.XmlXsl\Softailor.XmlXsl.vbproj">
+      <Project>{683f0842-5b6d-4c43-819f-ffc14ee30c8b}</Project>
+      <Name>Softailor.XmlXsl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Text</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55827</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64802/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

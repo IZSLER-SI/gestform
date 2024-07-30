@@ -1,0 +1,90 @@
+﻿.stl_dfo
+{
+    font-size: 11px;
+}
+
+.stl_dfo .title
+{
+    font-family: Arial, Sans-Serif;
+    font-size: 24px;
+    line-height:26px;
+    color: #ff6600;
+    padding-left: 15px;
+    background: url(img/dfo_title_arrowleft.gif);
+    background-repeat: no-repeat;
+    margin-bottom:3px;
+}
+
+.stl_dfo .fieldtable
+{
+    font-size: 11px;
+    width:100%;
+}
+
+.stl_dfo .fieldtable .labelcol
+{
+    vertical-align: top;
+    background-color: #f2f2f2;
+    padding: 5px 0px 2px 3px;
+    border-bottom: solid 1px #c0c0c0;
+    min-height:18px;
+}
+
+.stl_dfo .fieldtable .datacol
+{
+    vertical-align: top;
+    padding: 2px 0px 2px 5px;
+    border-bottom: solid 1px #c0c0c0;
+    width: 420px;
+    line-height:18px;
+}
+.stl_dfo .fieldtable .datacol .txtwide
+{
+    width:411px;
+}
+.stl_dfo .fieldtable .datacol .txtultrawide
+{
+    width:611px;
+}
+.stl_dfo .fieldtable .datacol .txtnarrow
+{
+    width:100px;
+}
+.stl_dfo .fieldtable .datacol .txtdate
+{
+    width:80px;
+}
+.stl_dfo .fieldtable .datacol .txtmedium
+{
+    width:205px;
+}
+.stl_dfo .fieldtable .datacol .ddnwide
+{
+    width:415px;
+}
+.stl_dfo .fieldtable .datacol .ddnnarrow
+{
+    width:104px;
+}
+.stl_dfo .fieldtable .datacol .ddnmedium
+{
+    width:209px;
+}
+.stl_dfo .fieldtable .errorcol
+{
+    vertical-align: top;
+    padding: 5px 0px 2px 3px;
+    color: #ff0000;
+    border-bottom: solid 1px #c0c0c0;
+    width: 190px;
+    background-color: #f2f2f2;
+}
+.stl_dfo .fieldtable .bordertop
+{
+    border-top: solid 1px #c0c0c0;
+}
+.stl_dfo .endCommands
+{
+    padding-top:10px;
+    font-size:13px;
+}

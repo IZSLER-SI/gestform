@@ -1,0 +1,245 @@
+﻿.titBarcode
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:400px; 
+}
+.pnlBarcode
+{
+    position:absolute;
+    top:30px;
+    left:0px;
+    width:390px;
+    background-color:#e0e0e0;
+    border:solid 1px #c0c0c0;
+    padding:10px 0px 0px 10px;
+    height:38px;
+}
+.lblBarcode
+{
+    font-family:Arial, Helvetica;
+    font-size:16px;
+    font-weight:bold;
+    vertical-align:top;
+    line-height:26px;
+}
+.txtBarcode
+{
+    font-family:Arial, Helvetica;
+    font-size:17px;
+    font-weight:bold;
+    padding:2px;
+    margin:0px;
+    width:230px;
+    border:1px solid #666666;
+    vertical-align:top;
+}
+.btnBarcode
+{
+    font-family:Arial, Helvetica;
+    vertical-align:top;
+    font-weight:bold;
+    font-size:16px;
+}
+.titCognomeNome
+{
+    position:absolute;
+    top:0px;
+    left:420px;
+    width:530px; 
+}
+.pnlCognomeNome
+{
+    position:absolute;
+    top:30px;
+    left:420px;
+    width:520px; 
+    background-color:#e0e0e0;
+    border:solid 1px #c0c0c0;
+    padding:10px 0px 0px 10px;
+    height:38px;
+}
+.lblCognomeNome
+{
+    font-family:Arial, Helvetica;
+    font-size:16px;
+    font-weight:bold;
+    vertical-align:top;
+    line-height:26px;
+}
+.ddnCognomeNome
+{
+    font-family:Arial, Helvetica;
+    font-size:17px;
+    font-weight:bold;
+    padding:1px;
+    margin:0px;
+    width:417px;
+    border:1px solid #666666;
+    vertical-align:top;
+}
+.titLetture
+{
+    position:absolute;
+    top:100px;
+    left:0px;
+    width:950px;   
+}
+.pnlLetture
+{
+    position:absolute;
+    top:130px;
+    left:0px;
+    width:950px;   
+    font-family:Arial, Helvetica; 
+}
+.lettura
+{
+    height:40px;
+    margin-bottom:10px;
+}
+.llet
+{
+    display:block;
+    float:left;
+    overflow:hidden;
+    padding:5px;
+    height:30px;
+    font-size:27px;
+}
+.nome
+{
+    width:620px;
+    margin-right:10px;
+    text-align:left;
+}
+.inout
+{
+    width:80px;
+    margin-right:10px;    
+    text-align:center;
+    font-weight:bold;
+}
+.orario
+{
+    width:100px;
+    margin-right:10px;    
+    text-align:center;
+    font-weight:bold;
+}
+.blet
+{
+    display:block;
+    float:left;
+    height:40px;
+    width:30px;
+    margin-right:10px;
+    background-image:url(../img/bigtrash.png);
+    background-repeat:no-repeat;
+    text-decoration:none;
+}
+.bletd
+{
+    display:block;
+    float:left;
+    height:40px;
+    width:40px;
+    background-image:url(../img/biglens.png);
+    background-repeat:no-repeat;
+    text-decoration:none;
+}
+.inactive
+{
+    background-color:#e0e0e0;
+}
+.active_ok
+{
+    background-color:#D7E4BC;
+}
+.active_ko
+{
+    background-color:#e6b9b8;
+    color:#9c0006;
+}
+.deleted
+{
+    background-color:#e0e0e0;    
+}
+.titStatistiche
+{
+    position:absolute;
+    top:390px;
+    left:0px;
+    width:400px;   
+}
+.pnlStatistiche
+{
+    position:absolute;
+    top:420px;
+    left:0px;
+    width:380px;   
+    font-family:Arial, Helvetica; 
+    background-color:#e0e0e0;
+    border:solid 1px #c0c0c0;
+    padding:10px 10px 0px 10px;
+    height:70px;
+}
+.stLeft
+{
+    font-size:15px;
+    font-weight:normal;    
+}
+.stRight
+{
+    font-size:15px;
+    font-weight:bold;   
+    text-align:right; 
+}
+.stRight a
+{
+    font-size:13px;
+    font-weight:normal;
+    text-decoration:none;
+    color:#336699;   
+}
+.stRight a:hover
+{
+    color:#ff6600;    
+}
+.titCognomeNomeManuale
+{
+    position:absolute;
+    top:390px;
+    left:420px;
+    width:530px; 
+}
+.pnlCognomeNomeManuale
+{
+    position:absolute;
+    top:420px;
+    left:420px;
+    width:520px; 
+    background-color:#e0e0e0;
+    border:solid 1px #c0c0c0;
+    padding:10px 0px 0px 10px;
+    height:38px;
+}
+.titUscitaGenerale
+{
+    position:absolute;
+    top:480px;
+    left:420px;
+    width:530px; 
+}
+.pnlUscitaGenerale
+{
+    position:absolute;
+    top:510px;
+    left:420px;
+    width:520px; 
+    background-color:#e0e0e0;
+    border:solid 1px #c0c0c0;
+    padding:10px 0px 0px 10px;
+    height:38px;
+}

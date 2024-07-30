@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softailor.ImageQuantization", "..\Softailor.ImageQuantization\Softailor.ImageQuantization.csproj", "{DD40A0A0-1E62-4600-96FA-8AFF0C208864}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Softailor.XmlXsl", "..\Softailor.XmlXsl\Softailor.XmlXsl.vbproj", "{683F0842-5B6D-4C43-819F-FFC14EE30C8B}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Softailor.Global", "..\Softailor.Global\Softailor.Global.vbproj", "{9508C2C2-7435-475A-8A3A-24D473F34CD0}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Softailor.SiteTailor.Binaries", "..\Softailor.SiteTailor.Binaries\Softailor.SiteTailor.Binaries.vbproj", "{A9946492-7D88-4CCB-8187-06546CB974A6}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Softailor.SiteTailor.ACL", "..\Softailor.SiteTailor.ACL\Softailor.SiteTailor.ACL.vbproj", "{6FEA2A85-650A-4963-9465-058822CC6CF1}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Softailor.Web.UI.DbForms", "..\Softailor.Web.UI.DbForms\Softailor.Web.UI.DbForms.vbproj", "{93CF90C7-D1C7-4E28-89C4-62013B12890F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD40A0A0-1E62-4600-96FA-8AFF0C208864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD40A0A0-1E62-4600-96FA-8AFF0C208864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD40A0A0-1E62-4600-96FA-8AFF0C208864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD40A0A0-1E62-4600-96FA-8AFF0C208864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{683F0842-5B6D-4C43-819F-FFC14EE30C8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{683F0842-5B6D-4C43-819F-FFC14EE30C8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{683F0842-5B6D-4C43-819F-FFC14EE30C8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{683F0842-5B6D-4C43-819F-FFC14EE30C8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9508C2C2-7435-475A-8A3A-24D473F34CD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9508C2C2-7435-475A-8A3A-24D473F34CD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9508C2C2-7435-475A-8A3A-24D473F34CD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9508C2C2-7435-475A-8A3A-24D473F34CD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9946492-7D88-4CCB-8187-06546CB974A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9946492-7D88-4CCB-8187-06546CB974A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9946492-7D88-4CCB-8187-06546CB974A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9946492-7D88-4CCB-8187-06546CB974A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FEA2A85-650A-4963-9465-058822CC6CF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FEA2A85-650A-4963-9465-058822CC6CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FEA2A85-650A-4963-9465-058822CC6CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FEA2A85-650A-4963-9465-058822CC6CF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93CF90C7-D1C7-4E28-89C4-62013B12890F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93CF90C7-D1C7-4E28-89C4-62013B12890F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93CF90C7-D1C7-4E28-89C4-62013B12890F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93CF90C7-D1C7-4E28-89C4-62013B12890F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://invisiblefarmformazione.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\Softailor.Global\\Softailor.Global.vbproj
+		SccProjectName1 = ../Softailor.Global
+		SccLocalPath1 = ..\\Softailor.Global
+		SccProjectUniqueName2 = ..\\Softailor.ImageQuantization\\Softailor.ImageQuantization.csproj
+		SccProjectName2 = ../Softailor.ImageQuantization
+		SccLocalPath2 = ..\\Softailor.ImageQuantization
+		SccProjectUniqueName3 = ..\\Softailor.SiteTailor.ACL\\Softailor.SiteTailor.ACL.vbproj
+		SccProjectName3 = ../Softailor.SiteTailor.ACL
+		SccLocalPath3 = ..\\Softailor.SiteTailor.ACL
+		SccProjectUniqueName4 = ..\\Softailor.SiteTailor.Binaries\\Softailor.SiteTailor.Binaries.vbproj
+		SccProjectName4 = ../Softailor.SiteTailor.Binaries
+		SccLocalPath4 = ..\\Softailor.SiteTailor.Binaries
+		SccProjectUniqueName5 = ..\\Softailor.Web.UI.DbForms\\Softailor.Web.UI.DbForms.vbproj
+		SccProjectName5 = ../Softailor.Web.UI.DbForms
+		SccLocalPath5 = ..\\Softailor.Web.UI.DbForms
+		SccProjectUniqueName6 = ..\\Softailor.XmlXsl\\Softailor.XmlXsl.vbproj
+		SccProjectName6 = ../Softailor.XmlXsl
+		SccLocalPath6 = ..\\Softailor.XmlXsl
+	EndGlobalSection
+EndGlobal

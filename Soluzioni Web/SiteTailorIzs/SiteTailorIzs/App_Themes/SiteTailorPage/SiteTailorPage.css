@@ -1,0 +1,137 @@
+﻿body
+{
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	font-family: Tahoma, Arial, Sans-Serif;
+	font-size:11px;
+	background-color:#ffffff;
+}
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+#ApplicationContentDiv
+{
+    position:absolute;	
+	left:15px;
+	top:70px;
+}
+/* stili per barra superiore */
+#MainBarDiv
+{
+}
+#ApplicationStatusDiv
+{
+	height:36px;
+	background-color:#000000;
+	color:#ffffff;
+	font-size:8px;
+    width:100%;
+    min-width:800px;
+    overflow:hidden;
+}
+#ApplicationStatusLeft
+{
+	display:block;
+    float:left;
+    height:36px;
+}
+#ApplicationStatusLeft img
+{
+    border-width:0px;
+}
+#ApplicationStatusRight
+{
+	display:block;
+    float:right;
+    height:36px;
+}
+#UserStatusTable
+{
+    border-spacing:0px 0px;
+}
+#UserStatusTable .tdi
+{
+	background-image:url(img/ast_left.gif);
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-color:#333333;
+	white-space:nowrap;
+	padding-left:15px;
+	padding-right:0px;
+	color:#999999;
+	font-size:11px;
+	height:36px;
+}
+#UserStatusTable .tdf
+{
+	background-image:url(img/ast_right.gif);
+	background-position:top left;
+	background-repeat:no-repeat;
+	white-space:nowrap;
+	padding-left:0px;
+	padding-right:0px;
+	width:30px;
+	font-size:11px;
+	height:36px;
+}
+
+#ApplicationStatusDiv .ast_a
+{
+	color:#ffffff;
+	text-decoration:underline;
+}
+#ApplicationStatusDiv .ast_a:hover
+{
+	color:#ffffff;
+	text-decoration:underline;
+}
+#ApplicationStatusDiv .ast_a_disabled
+{
+	color:#666666;
+	text-decoration:underline;
+}
+#ApplicationMenuDiv
+{	
+    clear:both;
+	height:28px;
+	background-image:url(img/amd_bg.gif);
+	background-repeat:repeat-x;
+}
+/* stili per menu applicazione */
+.amn_l0
+{
+	background-image:url(img/mnu0_bg.gif);
+	background-position:right top;
+	background-repeat:no-repeat;
+	font-size:11px;
+	font-weight:bold;
+    height:18px;
+    line-height:18px;
+    color:#ffffff;
+    cursor:default;
+}
+.amn_l0:hover
+{
+	background-image:url(img/mnu0_bg_h.gif);
+}
+.amn_l1
+{
+	background-color:#ffffff;
+	border-top:solid 1px #cccccc;
+    border-left:solid 1px #cccccc;
+    border-right:solid 1px #cccccc;
+}
+.amn_l1_b
+{
+    display:block;
+	font-size:11px;
+	font-weight:bold;
+	border-bottom:solid 1px #cccccc !important;
+	color:#000000;
+	line-height:19px;
+	padding:0px 15px 0px 14px;
+}
+.amn_l1_b:hover
+{
+    background-color:#900e14;
+    color:#ffffff;
+}

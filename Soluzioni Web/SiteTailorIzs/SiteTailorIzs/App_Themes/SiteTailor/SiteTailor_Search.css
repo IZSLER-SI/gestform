@@ -1,0 +1,104 @@
+﻿/* stili per search form */
+.stl_srf				/* div contenitore */
+{
+	border:solid 1px #6593cf;
+	background-color:#FBFDFF;
+}
+.stl_srf .stl_sft	/* tabella */
+{
+	width:100%;
+	font-size:11px;
+}
+.stl_srf .stl_sft .title	/* cella titolo */
+{
+	height:22px;
+	padding-left:5px;
+	padding-right:3px;
+	vertical-align:middle;
+	padding-bottom:1px;
+	background-image:url(img/grd_ph_bg.gif);
+	background-position:left bottom;
+	background-repeat:repeat-x;
+	width:100%;
+	text-align:left;
+	font-family:Arial;
+	font-weight:bold;
+	font-size:14px;
+	color:#15428b;
+}
+.stl_srf .stl_sft .controls	/* cella controlli */
+{
+	padding: 5px 0px 5px 0px;
+	text-align:left;
+	vertical-align:top;
+}
+.stl_srf .stl_sft .controls .stl_sft_ctt	/* tabella controlli */
+{
+	font-size:11px;
+}
+.stl_srf .stl_sft .controls .stl_sft_ctt .lbl	/* tabella controlli > cella label*/
+{
+	text-align:left;
+	line-height:21px;
+	padding-left:5px;
+}
+.stl_srf .stl_sft .controls .stl_sft_ctt .cnt_l	/* tabella controlli > cella controllo, align left*/
+{
+	text-align:left;
+	vertical-align:middle;
+	padding-bottom:0px;
+	font-family:Verdana, Arial, Sans-Serif;
+}
+.stl_srf .stl_sft .controls .stl_sft_ctt .cnt_r	/* tabella controlli > cella controllo, align right*/
+{
+	text-align:right;
+	vertical-align:middle;
+	padding-bottom:0px;
+	padding-right:5px;
+	width:10px;
+	font-family:Verdana, Arial, Sans-Serif;
+}
+.stl_srf .stl_sft .commands	/* cella comandi */
+{
+	padding:0px 0px 0px 6px;
+	height:18px;
+	border-top:solid 1px #6593cf;
+	background-image:url(img/frt_h_bg.gif);
+	background-position:top left;
+	background-repeat:no-repeat;
+	font-size:1px;
+	text-align:right;
+}
+.stl_srf .stl_sft .commands .btnSearch	/* bottone cerca */
+{
+	
+    color: #15428b;
+    border-right: none; 
+    border-bottom: none; 
+    border-left: none; 
+    border-top: none; 
+    margin:0px;
+    padding:0px 15px 0px 17px;
+    cursor:pointer;
+    font: bold 11px Tahoma, Arial, sans-serif;
+    line-height:18px;
+    background-image:url(img/srf_btn_bg.gif);
+	background-position:top left;
+	background-repeat:no-repeat;
+}
+.stl_srf .stl_sft .commands .btnNewClear	/* bottone nuovo e pulisci */
+{
+	color: #15428b;
+    border-right: none; 
+    border-bottom: none; 
+    border-left: none; 
+    border-top: none; 
+    margin:0px;
+    padding:0px 15px 0px 17px;
+    cursor:pointer;
+    font: normal 11px Tahoma, Arial, sans-serif;
+    line-height:18px;
+    background-image:url(img/srf_btn_bg.gif);
+	background-position:top left;
+	background-repeat:no-repeat;
+}

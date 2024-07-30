@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace ="http://schemas.softailor.com/ReportEngine/Fonte"
+           xmlns:tns="http://schemas.softailor.com/ReportEngine/Fonte"
+           >
+  <xs:element name="Fonte" nillable="true" type="tns:Fonte" />
+  <xs:complexType name="Fonte">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="CampiLista" type="tns:ArrayOfCampoLista" />
+      <xs:element minOccurs="0" maxOccurs="1" name="CampiIntestazione" type="tns:ArrayOfCampo" />
+      <xs:element minOccurs="0" maxOccurs="1" name="CampiCorpo" type="tns:ArrayOfCampo" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Ordinamenti" type="tns:ArrayOfOrdinamento" />
+    </xs:sequence>
+    <xs:attribute name="Codice" type="xs:string" />
+    <xs:attribute name="Descrizione" type="xs:string" />
+    <xs:attribute name="VistaIntestazione" type="xs:string" />
+    <xs:attribute name="VistaCorpo" type="xs:string" />
+    <xs:attribute name="ChiaveIntestazione" type="xs:string" />
+    <xs:attribute name="TipoChiaveIntestazione" type="tns:TipoDato" />
+    <xs:attribute name="ChiaveCorpo" type="xs:string" />
+    <xs:attribute name="TipoChiaveCorpo" type="tns:TipoDato" />
+    <xs:attribute name="CampoFiltroBase" type="xs:string" />
+    <xs:attribute name="CampoMail" type="xs:string" />
+    <xs:attribute name="TipoDatoFiltroBase" type="tns:TipoDato" use="required" />
+  </xs:complexType>
+  <xs:complexType name="ArrayOfCampoLista">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CampoLista" nillable="true" type="tns:CampoLista" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfCampo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Campo" nillable="true" type="tns:Campo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Campo">
+    <xs:attribute name="NomeDb" type="xs:string" use="required" />
+    <xs:attribute name="Segnaposto" type="xs:string" use="required" />
+    <xs:attribute name="Descrizione" type="xs:string" use="required" />
+    <xs:attribute name="Tipo" type="tns:TipoDato" use="required" />
+    <xs:attribute name="Ordinamento" type="xs:boolean" />
+    <xs:attribute name="Output" type="xs:boolean" use="required" />
+    <xs:attribute name="Filtro" type="xs:boolean" />
+    <xs:attribute name="TipoControllo" type="tns:TipoControllo" />
+    <xs:attribute name="QueryLista" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="CampoLista">
+    <xs:attribute name="NomeDb" type="xs:string" use="required" />
+    <xs:attribute name="Tipo" type="tns:TipoDato" use="required" />
+    <xs:attribute name="Descrizione" type="xs:string" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="TipoDato">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Stringa" />
+      <xs:enumeration value="Intero" />
+      <xs:enumeration value="Data" />
+      <xs:enumeration value="Decimale" />
+      <xs:enumeration value="DataOra" />
+      <xs:enumeration value="Ora" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="TipoControllo">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Standard" />
+      <xs:enumeration value="DropDown" />
+      <xs:enumeration value="CheckBoxList" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="ArrayOfOrdinamento">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Ordinamento" nillable="true" type="tns:Ordinamento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Ordinamento">
+    <xs:attribute name="Descrizione" type="xs:string" />
+    <xs:attribute name="Sql" type="xs:string" />
+  </xs:complexType>
+</xs:schema>

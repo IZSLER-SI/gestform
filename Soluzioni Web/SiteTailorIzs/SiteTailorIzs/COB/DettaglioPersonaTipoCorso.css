@@ -1,0 +1,62 @@
+﻿.orange
+{
+    color:#ff6600;
+}
+.red
+{
+    color:#ff0000;
+}
+.green
+{
+    color:#009900;
+}
+.container
+{
+    margin-top:-10px;
+    padding-right:15px;
+}
+.sezione
+{
+    font-size:18px;
+    padding-bottom:7px;
+    padding-top:10px;
+    color:#ff6600;
+}
+.regole
+{
+    border: 1px solid #c0c0c0;
+    background-color:#f8f8f8;
+    padding:5px;
+    font-size:12px;
+}
+.table
+{
+    empty-cells:show;
+    font-size:11px;
+    line-height:14px;
+}
+.table th
+{
+    color:#ffffff;
+    background-color:#336699;
+    padding:3px;
+    font-weight:bold;
+    text-align:left;
+    vertical-align:top;
+}
+.table td
+{
+    color:#000000;
+    border-bottom:1px solid #c0c0c0;
+    padding:3px;
+    text-align:left;
+    vertical-align:top;
+}
+.table td.first
+{
+    border-top:1px solid #c0c0c0;
+}
+.table tr:hover td
+{
+    background-color:#f0f0f0;
+}

@@ -1,0 +1,1850 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{B3FA3606-D9D6-4862-B4C7-FF71D88442F1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Softailor.SiteTailorIzs</RootNamespace>
+    <AssemblyName>Softailor.SiteTailorIzs</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Softailor.SiteTailorIzs.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Softailor.SiteTailorIzs.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\Librerie\AjaxControlToolkit\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin, Version=4.97.4951.28478, Culture=neutral, PublicKeyToken=21ef50ce11b5d80f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\AjaxMin.4.97.4951.28483\lib\net40\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="CKEditor.NET">
+      <HintPath>..\..\..\Librerie\Ckeditor.net\CKEditor.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DocX, Version=1.0.1.13, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Librerie\Docx 1-0-1-13\DocX.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>..\..\..\Librerie\epplus 4.0.4\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\..\..\packages\HtmlAgilityPack.1.4.6\lib\Net40\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\..\Librerie\DotNetZip\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Softailor\Softailor.ReportEngine\Microsoft.SharePoint.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Runtime, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Softailor\Softailor.ReportEngine\Microsoft.SharePoint.Client.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp">
+      <HintPath>..\..\..\Librerie\PdfSharp-MigraDoc-1-3-2\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\..\..\packages\AspNet.ScriptManager.jQuery.1.8.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\..\..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.20\lib\net45\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.0.0\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Softailor.SiteTailor.ACL" />
+    <Import Include="Softailor.XmlXsl" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.SqlClient" />
+    <Import Include="System.Data.SqlTypes" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+    <Import Include="System.Xml.Xsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\ApplicazioniFunzioni.aspx" />
+    <Content Include="Admin\AziendeUtenti.aspx" />
+    <Content Include="Admin\GruppiAutorizzazioni.aspx" />
+    <Content Include="Admin\Menu.aspx" />
+    <Content Include="Admin\Ricerche.aspx" />
+    <Content Include="AGE\Albi.aspx" />
+    <Content Include="AGE\CDC.aspx" />
+    <Content Include="AGE\CentriReferenza.aspx" />
+    <Content Include="AGE\CodiciIva.aspx" />
+    <Content Include="AGE\Delibere.aspx" />
+    <Content Include="AGE\ModalitaPagamento.aspx" />
+    <Content Include="AGE\Organizzatori.aspx" />
+    <Content Include="AGE\Persona.aspx" />
+    <Content Include="AGE\Persone.aspx" />
+    <Content Include="AGE\PortfolioExcel.aspx" />
+    <Content Include="AGE\ProviderEcm.aspx" />
+    <Content Include="AGE\SediAule.aspx" />
+    <Content Include="AGE\SegreterieOrganizzative.aspx" />
+    <Content Include="AGE\Templates\PortfolioExcel.xslt" />
+    <Content Include="AGE\TipologieDelibere.aspx" />
+    <Content Include="AGE\TipologieEventi.aspx" />
+    <Content Include="AGE\TipologieEventiEcm.aspx" />
+    <Content Include="AGE\VociSpesaRicavo.aspx" />
+    <Content Include="AGE_FOF\SezioniDocumentiEventi.aspx" />
+    <Content Include="API\GFWS.asmx" />
+    <Content Include="App_Themes\SiteTailorCustom\img\grd_hh_bg.gif" />
+    <Content Include="App_Themes\SiteTailorCustom\img\grd_h_bg.gif" />
+    <Content Include="App_Themes\SiteTailorCustom\img\grd_ph_bg.gif" />
+    <Content Include="App_Themes\SiteTailorCustom\img\icoDelete.gif" />
+    <Content Include="App_Themes\SiteTailorCustom\img\icoEdit.gif" />
+    <Content Include="App_Themes\SiteTailorCustom\img\icoPrint.gif" />
+    <Content Include="App_Themes\SiteTailorCustom\SiteTailor_CustomGrid.css" />
+    <Content Include="App_Themes\SiteTailorPage\SiteTailorPage.css" />
+    <Content Include="App_Themes\SiteTailorPopup\img\BgTopBar.gif" />
+    <Content Include="App_Themes\SiteTailorPopup\img\icoBack.gif" />
+    <Content Include="App_Themes\SiteTailorPopup\img\icoPrint.gif" />
+    <Content Include="App_Themes\SiteTailorPopup\img\icoSave.gif" />
+    <Content Include="App_Themes\SiteTailorPopup\img\icoX.gif" />
+    <Content Include="App_Themes\SiteTailorPopup\img\SepTopBar.gif" />
+    <Content Include="App_Themes\SiteTailorPopup\SiteTailorPopup.css" />
+    <Content Include="App_Themes\SiteTailor\AjaxControlToolkit.css" />
+    <Content Include="App_Themes\SiteTailor\img\gen_box_cmd_bg.gif" />
+    <Content Include="App_Themes\SiteTailor\img\gen_box_tit_bg.gif" />
+    <Content Include="App_Themes\SiteTailor\img\grd_ph_bg_grey.gif" />
+    <Content Include="App_Themes\SiteTailor\img\icoInfoSmall.gif" />
+    <Content Include="App_Themes\SiteTailor\jquery-ui-1.10.3.custom.css" />
+    <Content Include="App_Themes\SiteTailor\SiteTailor_DataForm.css" />
+    <Content Include="App_Themes\SiteTailor\SiteTailor_Generic.css" />
+    <Content Include="App_Themes\SiteTailor\img\icoDelete.gif" />
+    <Content Include="App_Themes\SiteTailor\img\icoEdit.gif" />
+    <Content Include="App_Themes\SiteTailor\img\Tabs\tab-line.gif" />
+    <Content Include="App_Themes\SiteTailor\SiteTailor_Common.css" />
+    <Content Include="App_Themes\SiteTailor\SiteTailor_Form.css" />
+    <Content Include="App_Themes\SiteTailorPage\img\amd_bg.gif" />
+    <Content Include="App_Themes\SiteTailorPage\img\ast_left.gif" />
+    <Content Include="App_Themes\SiteTailorPage\img\ast_right.gif" />
+    <Content Include="App_Themes\SiteTailorPage\img\ast_sep.gif" />
+    <Content Include="App_Themes\SiteTailor\img\frm_sep_hor.gif" />
+    <Content Include="App_Themes\SiteTailor\img\frm_sep_ver.gif" />
+    <Content Include="App_Themes\SiteTailor\img\frt_h_bg.gif" />
+    <Content Include="App_Themes\SiteTailor\img\frt_h_btn_bg.gif" />
+    <Content Include="App_Themes\SiteTailor\img\grd_hh_bg.gif" />
+    <Content Include="App_Themes\SiteTailor\img\grd_h_bg.gif" />
+    <Content Include="App_Themes\SiteTailor\img\grd_ph_bg.gif" />
+    <Content Include="App_Themes\SiteTailorCustom\img\grd_ph_bg_active.gif" />
+    <Content Include="App_Themes\SiteTailorCustom\img\grd_ph_bg_grey.gif" />
+    <Content Include="App_Themes\SiteTailor\img\icoInfo.gif" />
+    <Content Include="App_Themes\SiteTailorPage\img\mnu0_bg.gif" />
+    <Content Include="App_Themes\SiteTailorPage\img\mnu0_bg_h.gif" />
+    <Content Include="App_Themes\SiteTailor\img\srf_btn_bg.gif" />
+    <Content Include="App_Themes\SiteTailor\img\dfo_title_arrowleft.gif" />
+    <Content Include="App_Themes\SiteTailor\SiteTailor_Grid.css" />
+    <Content Include="App_Themes\SiteTailor\SiteTailor_Helped.css" />
+    <Content Include="App_Themes\SiteTailor\SiteTailor_Search.css" />
+    <Content Include="App_Themes\SiteTailor\SiteTailor_Tree.css" />
+    <Content Include="Binaries\AddBinary.aspx" />
+    <Content Include="Binaries\AddBinary.css" />
+    <Content Include="Binaries\AddBinary.js" />
+    <Content Include="Binaries\BOThumbnail.aspx" />
+    <Content Include="Binaries\CategorieBinari.aspx" />
+    <Content Include="Binaries\ChooseBinary.aspx" />
+    <Content Include="Binaries\Element.aspx" />
+    <Content Include="Binaries\ElementForPlayer.aspx" />
+    <Content Include="Binaries\ElementPreview.aspx" />
+    <Content Include="Binaries\ElementPreview.css" />
+    <Content Include="Binaries\GruppiUtentiAutorizzazioni.aspx" />
+    <Content Include="Binaries\Templates\ChooseBinary.xslt" />
+    <Content Include="Binaries\Templates\ElementPreview.xslt" />
+    <Content Include="Binaries\Templates\SWF_FLV.xslt" />
+    <Content Include="Binaries\Thumbnail.aspx" />
+    <Content Include="ckeditor\adapters\jquery.js" />
+    <Content Include="ckeditor\build-config.js" />
+    <Content Include="ckeditor\ckeditor.js" />
+    <Content Include="ckeditor\config.js" />
+    <Content Include="ckeditor\contents.css" />
+    <Content Include="ckeditor\lang\en.js" />
+    <Content Include="ckeditor\lang\it.js" />
+    <Content Include="ckeditor\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="ckeditor\plugins\colordialog\dialogs\colordialog.js" />
+    <Content Include="ckeditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="ckeditor\plugins\icons.png" />
+    <Content Include="ckeditor\plugins\icons_hidpi.png" />
+    <Content Include="ckeditor\plugins\image\dialogs\image.js" />
+    <Content Include="ckeditor\plugins\image\images\noimage.png" />
+    <Content Include="ckeditor\plugins\link\dialogs\anchor.js" />
+    <Content Include="ckeditor\plugins\link\dialogs\link.js" />
+    <Content Include="ckeditor\plugins\link\images\anchor.png" />
+    <Content Include="ckeditor\plugins\link\images\hidpi\anchor.png" />
+    <Content Include="ckeditor\plugins\liststyle\dialogs\liststyle.js" />
+    <Content Include="ckeditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\ar.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\bg.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\ca.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\cs.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\cy.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\de.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\el.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\en-gb.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\en.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\eo.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\es.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\et.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\fa.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\fi.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\fr-ca.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\fr.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\gl.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\he.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\hr.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\hu.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\id.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\it.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\ja.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\km.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\ku.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\lv.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\nb.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\nl.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\no.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\pl.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\pt-br.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\pt.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\ru.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\si.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\sk.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\sl.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\sq.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\sv.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\th.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\tr.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\tt.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\ug.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\uk.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\vi.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\zh-cn.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\zh.js" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\lang\_translationstatus.txt" />
+    <Content Include="ckeditor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="ckeditor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="ckeditor\plugins\table\dialogs\table.js" />
+    <Content Include="ckeditor\skins\moonocolor\dialog.css" />
+    <Content Include="ckeditor\skins\moonocolor\dialog_ie.css" />
+    <Content Include="ckeditor\skins\moonocolor\dialog_ie7.css" />
+    <Content Include="ckeditor\skins\moonocolor\dialog_ie8.css" />
+    <Content Include="ckeditor\skins\moonocolor\dialog_iequirks.css" />
+    <Content Include="ckeditor\skins\moonocolor\dialog_opera.css" />
+    <Content Include="ckeditor\skins\moonocolor\editor.css" />
+    <Content Include="ckeditor\skins\moonocolor\editor_gecko.css" />
+    <Content Include="ckeditor\skins\moonocolor\editor_ie.css" />
+    <Content Include="ckeditor\skins\moonocolor\editor_ie7.css" />
+    <Content Include="ckeditor\skins\moonocolor\editor_ie8.css" />
+    <Content Include="ckeditor\skins\moonocolor\editor_iequirks.css" />
+    <Content Include="ckeditor\skins\moonocolor\icons.png" />
+    <Content Include="ckeditor\skins\moonocolor\icons_hidpi.png" />
+    <Content Include="ckeditor\skins\moonocolor\images\arrow.png" />
+    <Content Include="ckeditor\skins\moonocolor\images\close.png" />
+    <Content Include="ckeditor\skins\moonocolor\images\hidpi\close.png" />
+    <Content Include="ckeditor\skins\moonocolor\images\hidpi\lock-open.png" />
+    <Content Include="ckeditor\skins\moonocolor\images\hidpi\lock.png" />
+    <Content Include="ckeditor\skins\moonocolor\images\hidpi\refresh.png" />
+    <Content Include="ckeditor\skins\moonocolor\images\lock-open.png" />
+    <Content Include="ckeditor\skins\moonocolor\images\lock.png" />
+    <Content Include="ckeditor\skins\moonocolor\images\refresh.png" />
+    <Content Include="ckeditor\skins\moonocolor\readme.md" />
+    <Content Include="ckeditor\skins\softailor\dialog.css" />
+    <Content Include="ckeditor\skins\softailor\dialog_ie.css" />
+    <Content Include="ckeditor\skins\softailor\dialog_ie7.css" />
+    <Content Include="ckeditor\skins\softailor\dialog_ie8.css" />
+    <Content Include="ckeditor\skins\softailor\dialog_iequirks.css" />
+    <Content Include="ckeditor\skins\softailor\dialog_opera.css" />
+    <Content Include="ckeditor\skins\softailor\editor.css" />
+    <Content Include="ckeditor\skins\softailor\editor_gecko.css" />
+    <Content Include="ckeditor\skins\softailor\editor_ie.css" />
+    <Content Include="ckeditor\skins\softailor\editor_ie7.css" />
+    <Content Include="ckeditor\skins\softailor\editor_ie8.css" />
+    <Content Include="ckeditor\skins\softailor\editor_iequirks.css" />
+    <Content Include="ckeditor\skins\softailor\icons.png" />
+    <Content Include="ckeditor\skins\softailor\icons_hidpi.png" />
+    <Content Include="ckeditor\skins\softailor\images\arrow.png" />
+    <Content Include="ckeditor\skins\softailor\images\close.png" />
+    <Content Include="ckeditor\skins\softailor\images\hidpi\close.png" />
+    <Content Include="ckeditor\skins\softailor\images\hidpi\lock-open.png" />
+    <Content Include="ckeditor\skins\softailor\images\hidpi\lock.png" />
+    <Content Include="ckeditor\skins\softailor\images\hidpi\refresh.png" />
+    <Content Include="ckeditor\skins\softailor\images\lock-open.png" />
+    <Content Include="ckeditor\skins\softailor\images\lock.png" />
+    <Content Include="ckeditor\skins\softailor\images\refresh.png" />
+    <Content Include="ckeditor\styles.js" />
+    <Content Include="COB\CalendarioCorsiObbligatori.aspx" />
+    <Content Include="COB\CalendarioCorsiObbligatori.css" />
+    <Content Include="COB\CalendarioCorsiObbligatori.js" />
+    <Content Include="COB\DettaglioPersonaTipoCorso.aspx" />
+    <Content Include="COB\DettaglioPersonaTipoCorso.css" />
+    <Content Include="COB\DettaglioTipoCorso.aspx" />
+    <Content Include="COB\RuoliAziendaliPersone.aspx" />
+    <Content Include="COB\Templates\CalendarioCorsiObbligatori.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="COB\Templates\CobCommon.xslt" />
+    <Content Include="COB\Templates\DettaglioPersonaTipoCorso.xslt" />
+    <Content Include="Common.xslt" />
+    <Content Include="CustomContextHandlers\GecFinalContextHandlerTdPanels.xslt" />
+    <Content Include="Default.aspx" />
+    <Content Include="EVE\AttestatoECM.aspx" />
+    <Content Include="EVE\AttestatoPART.aspx" />
+    <Content Include="EVE\AttribuzioneOrari.aspx" />
+    <Content Include="EVE\AttribuzionePresenze.aspx" />
+    <Content Include="EVE\CalcoloPresenze.aspx" />
+    <Content Include="EVE\ConferimentoCreditiECM.aspx" />
+    <Content Include="EVE\ControlloAccessi.aspx" />
+    <Content Include="EVE\ControlloAccessiStyles.css" />
+    <Content Include="EVE\CorrezioneQuestionariApprendimento.aspx" />
+    <Content Include="EVE\CorrezioneQuestionarioApprendimento.aspx" />
+    <Content Include="EVE\CorrezioneQuestionarioApprendimento.css" />
+    <Content Include="EVE\CorrezioneQuestionarioApprendimento.js" />
+    <Content Include="EVE\DefinizioneQuestionarioApprendimento.aspx" />
+    <Content Include="EVE\DefinizioneQuestionarioApprendimento.css" />
+    <Content Include="EVE\DefinizioneQuestionarioApprendimento.js" />
+    <Content Include="EVE\DuplicaEvento.aspx" />
+    <Content Include="EVE\GenerazioneRapportoEcmXml.aspx" />
+    <Content Include="EVE\GestioneQuestionarioQualita.aspx" />
+    <Content Include="EVE\GestioneQuestionariQualita.aspx" />
+    <Content Include="EVE\HomeEvento.aspx" />
+    <Content Include="EVE\GestioneQuestionarioQualita.css" />
+    <Content Include="EVE\GestioneQuestionarioQualita.js" />
+    <Content Include="EVE\ModificaDatiEvento.aspx" />
+    <Content Include="EVE\NuovoEvento.aspx" />
+    <Content Include="EVE\NuovoPartecipante.aspx" />
+    <Content Include="EVE\NuovoPartecipante.js" />
+    <Content Include="EVE\OrariEvento.aspx" />
+    <Content Include="EVE\PartecipantiEvento.aspx" />
+    <Content Include="EVE\QuoteIscrizione.aspx" />
+    <Content Include="EVE\SchedaPartecipante.aspx" />
+    <Content Include="EVE\SchedaPartecipante.js" />
+    <Content Include="EVE\SelezioneEvento.aspx" />
+    <Content Include="EVE\SetupAttestatoECM.aspx" />
+    <Content Include="EVE\Sounds\LetturaIN.mp3" />
+    <Content Include="EVE\Sounds\LetturaIN.wav" />
+    <Content Include="EVE\Sounds\LetturaNO.mp3" />
+    <Content Include="EVE\Sounds\LetturaNO.wav" />
+    <Content Include="EVE\Sounds\LetturaOUT.mp3" />
+    <Content Include="EVE\Sounds\LetturaOUT.wav" />
+    <Content Include="EVE\SpeseRicaviEvento.aspx" />
+    <Content Include="EVE\StatoPresenze.aspx" />
+    <Content Include="EVE\Templates\AttribuzioneOrari_Orari.xslt" />
+    <Content Include="EVE\Templates\AttribuzioneOrari_Iscritti.xslt" />
+    <Content Include="EVE\Templates\EcmXml_Totali.xslt" />
+    <Content Include="EVE\Templates\ImmissioneQuestionarioQualita.xslt" />
+    <Content Include="EVE\Templates\SchedaPartecipante_StatoPresenza.xslt" />
+    <Content Include="EVE\Templates\HomeEvento_Comandi.xslt" />
+    <Content Include="EVE\Templates\HomeEvento_Evento.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EVE\Templates\HomeEvento_Iscritti.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EVE\Templates\SearchIscritti.xslt" />
+    <Content Include="EVE\Templates\StatisticheQualitaExportFile.xslt" />
+    <Content Include="EVE\Templates\StatisticheQualita.xslt" />
+    <Content Include="EVE\Templates\StatoPresenze.xslt" />
+    <Content Include="EVE\ValidazioneDatiECM.aspx" />
+    <Content Include="EVE_IOL\ChiusuraListeAttesa.aspx" />
+    <Content Include="EVE_IOL\CriteriAccesso.aspx" />
+    <Content Include="EVE_IOL\CriteriAccesso.css" />
+    <Content Include="EVE_IOL\CriteriAccesso.js" />
+    <Content Include="EVE_IOL\CriterioAccesso.aspx" />
+    <Content Include="EVE_IOL\CriterioAccesso.css" />
+    <Content Include="EVE_IOL\CriterioAccesso.js" />
+    <Content Include="EVE_IOL\DelegatiInserimentoPresenzeFO.aspx" />
+    <Content Include="EVE_IOL\DelegatiInserimentoPresenzeFO.js" />
+    <Content Include="EVE_IOL\FilesEvento.aspx" />
+    <Content Include="EVE_IOL\GestioneAttestatiOnLine.aspx" />
+    <Content Include="EVE_IOL\GestioneAttestatiPartecipazioneOnLine.aspx" />
+    <Content Include="EVE_IOL\MailAttestatiOnLine.aspx" />
+    <Content Include="EVE_IOL\MailAttestatiPartecipazioneOnLine.aspx" />
+    <Content Include="EVE_IOL\MailChiusuraListe.aspx" />
+    <Content Include="EVE_IOL\SetupMailAccettazione.aspx" />
+    <Content Include="EVE_IOL\Templates\ChiusuraListeAttesa.xslt" />
+    <Content Include="EVE_IOL\Templates\StatoInvioMailAttestatiPART.xslt" />
+    <Content Include="EVE_IOL\Templates\StatoScaricamentoPART.xslt" />
+    <Content Include="EVE_IOL\Templates\CriteriAccesso_Criteri.xslt" />
+    <Content Include="EVE_IOL\Templates\CriterioAccesso_Criterio.xslt" />
+    <Content Include="EVE_IOL\Templates\DelegatiInserimentoPresenzeFO.xslt" />
+    <Content Include="EVE_IOL\Templates\StatoInvioMailAttestatiECM.xslt" />
+    <Content Include="EVE_IOL\Templates\StatoInvioMailChiusuraListe.xslt" />
+    <Content Include="EVE_IOL\Templates\StatoScaricamentoECM.xslt" />
+    <Content Include="Files\PortfolioExcel.xslt" />
+    <Content Include="Flash\mediaplayer.swf" />
+    <Content Include="Flash\SWFObject.js" />
+    <Content Include="FOF\Downloads.aspx" />
+    <Content Include="FOF\News.aspx" />
+    <Content Include="FOR\Autocertificazione.aspx" />
+    <Content Include="FOR\FormazioneEsterna.aspx" />
+    <Content Include="FOR\FormazioneIndividualeEsterna.aspx" />
+    <Content Include="FOR\Partecipazione.aspx" />
+    <Content Include="FOR\PianiFormativi.aspx" />
+    <Content Include="FOR\PickEvento.aspx" />
+    <Content Include="FOR\Templates\PickEvento.xslt" />
+    <Content Include="FOR\Templates\FormazioneEsterna_NuovaPartecipazione.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="GEO\LocalitaItaliane.aspx" />
+    <Content Include="GFTemplates\FormatCommon.xslt" />
+    <Content Include="GFTemplates\Mail\AttestatoPartecipazioneDisponibile.xslt" />
+    <Content Include="GFTemplates\Mail\IZSLER_AcceptanceConfirmation.xslt" />
+    <Content Include="GFTemplates\Mail\AttestatoDisponibile.xslt" />
+    <Content Include="GFTemplates\Mail\IZSLER_NotificaModProfiloUfficio.xslt" />
+    <Content Include="GFTemplates\Mail\IZSLER_ParticipationReminderDRM.xslt" />
+    <Content Include="GFTemplates\Mail\MailContainer.xslt" />
+    <Content Include="GFTemplates\Mail\MailContainerWeb.xslt" />
+    <Content Include="GFTemplates\Mail\IZSLER_NotAccepted.xslt" />
+    <Content Include="GFTemplates\Mail\IZSLER_ParticipationReminder.xslt" />
+    <Content Include="Img\AppTitle\GF.gif" />
+    <Content Include="Img\BigLens.png" />
+    <Content Include="Img\BigTrash.png" />
+    <Content Include="Img\BigWarning.png" />
+    <Content Include="Img\Calendar.png" />
+    <Content Include="Img\chk_d_c.gif" />
+    <Content Include="Img\chk_d_u.gif" />
+    <Content Include="Img\chk_e_c.gif" />
+    <Content Include="Img\chk_e_u.gif" />
+    <Content Include="Img\EmptyBinary.gif" />
+    <Content Include="Img\flag_en.gif" />
+    <Content Include="Img\flag_fr.gif" />
+    <Content Include="Img\flag_it.gif" />
+    <Content Include="Img\icoDelete.gif" />
+    <Content Include="Img\icoDeleteGrey.gif" />
+    <Content Include="Img\icoEdit.gif" />
+    <Content Include="Img\icoExcl.gif" />
+    <Content Include="Img\icoExclOrange.png" />
+    <Content Include="Img\icoForbidden.gif" />
+    <Content Include="Img\icoImage.gif" />
+    <Content Include="Img\icoInfo.gif" />
+    <Content Include="Img\icoInfoSmall.gif" />
+    <Content Include="Img\icoLens.gif" />
+    <Content Include="Img\icoLensGrey.gif" />
+    <Content Include="Img\Icons\icoWarning.gif" />
+    <Content Include="Img\icoPrint.gif" />
+    <Content Include="Img\icoSave.gif" />
+    <Content Include="Img\icoV.gif" />
+    <Content Include="Img\spacer.gif" />
+    <Content Include="Img\Tree\dash.gif" />
+    <Content Include="Img\Tree\dashminus.gif" />
+    <Content Include="Img\Tree\dashplus.gif" />
+    <Content Include="Img\Tree\i.gif" />
+    <Content Include="Img\Tree\l.gif" />
+    <Content Include="Img\Tree\lminus.gif" />
+    <Content Include="Img\Tree\lplus.gif" />
+    <Content Include="Img\Tree\minus.gif" />
+    <Content Include="Img\Tree\myMinus.gif" />
+    <Content Include="Img\Tree\myPlus.gif" />
+    <Content Include="Img\Tree\noexpand.gif" />
+    <Content Include="Img\Tree\plus.gif" />
+    <Content Include="Img\Tree\r.gif" />
+    <Content Include="Img\Tree\rminus.gif" />
+    <Content Include="Img\Tree\rplus.gif" />
+    <Content Include="Img\Tree\t.gif" />
+    <Content Include="Img\Tree\tminus.gif" />
+    <Content Include="Img\Tree\tplus.gif" />
+    <Content Include="Img\TrueCalendar.png" />
+    <Content Include="Img\Waiting.gif" />
+    <Content Include="Logon.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="App_Themes\SiteTailor\SiteTailor.skin" />
+    <Content Include="Img\Web.config" />
+    <Content Include="ckeditor\skins\softailor\readme.md" />
+    <Content Include="RPT\Fonti\PARTEVENTIALL.xml" />
+    <Content Include="RPT\ReportPartecipantiEventi.aspx" />
+    <Content Include="RPT\ReportQualitaApprendimento.aspx" />
+    <Content Include="RPT\ReportRimborsiDocenze.aspx" />
+    <Content Include="Scripts\DatePicker\css\bootstrap.css" />
+    <Content Include="Scripts\DatePicker\css\calendar-disabled.png" />
+    <Content Include="Scripts\DatePicker\css\calendar.png" />
+    <Content Include="Scripts\DatePicker\css\softailor.css" />
+    <Content Include="Scripts\DatePicker\css\default.css" />
+    <Content Include="Scripts\DatePicker\css\metallic.css" />
+    <Content Include="Scripts\DatePicker\css\metallic\default-date.png" />
+    <Content Include="Scripts\DatePicker\css\metallic\disabled-date.png" />
+    <Content Include="Scripts\DatePicker\css\metallic\header.png" />
+    <Content Include="Scripts\DatePicker\css\metallic\selected-date.png" />
+    <Content Include="Scripts\DatePicker\css\themes.png" />
+    <Content Include="Scripts\DatePicker\javascript\zebra_datepicker.js" />
+    <Content Include="Scripts\DatePicker\javascript\zebra_datepicker.src.js" />
+    <Content Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <Content Include="Scripts\shieldui\css\img\stars.png" />
+    <Content Include="Scripts\shieldui\css\less\shieldui-all.min.css" />
+    <Content Include="Scripts\shieldui\js\shieldui-all.min.js" />
+    <Content Include="WIP\WipEventi_Controls.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WIP\WipEventi.aspx" />
+    <Content Include="WIP\WipEvento_Summary.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WIP\WipEvento.aspx" />
+    <Content Include="WIP\WipEvento.css" />
+    <Content Include="WIP\WipEvento.js" />
+    <Content Include="WIP\WipEvento_Controls.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="AjaxControlToolkit.config" />
+    <Content Include="Files\BasePortfolioExcel_ECM.xlsx" />
+    <Content Include="Files\BasePortfolioExcel_NOECM.xlsx" />
+    <Content Include="Files\QuestionarioResult.xlsx" />
+    <None Include="My Project\PublishProfiles\Pubblicazione.pubxml">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="PageWs\ServiziEventi.asmx" />
+    <Content Include="PageWs\ServiziPersone.asmx" />
+    <Content Include="Reports\dstValutazioneQualita.xsc">
+      <DependentUpon>dstValutazioneQualita.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\dstAttestatiEcm.xsc">
+      <DependentUpon>dstAttestatiEcm.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\dstAttestatiEcm.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dstAttestatiEcm.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Reports\dstAttestatiEcm.xss">
+      <DependentUpon>dstAttestatiEcm.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\dstIscrittiEvento.xsc">
+      <DependentUpon>dstIscrittiEvento.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\dstIscrittiEvento.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dstIscrittiEvento.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Reports\dstIscrittiEvento.xss">
+      <DependentUpon>dstIscrittiEvento.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\dstValutazioneQualita.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dstValutazioneQualita.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Reports\dstValutazioneQualita.xss">
+      <DependentUpon>dstValutazioneQualita.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\ReportPresenzeEvento.aspx" />
+    <Content Include="Reports\Templates\PrintAttestatiEcmGF.xslt" />
+    <Content Include="Reports\Templates\PrintBadgesGF.xslt" />
+    <Content Include="Reports\Templates\PrintFoglioFirmeGF.xslt" />
+    <Content Include="Reports\Templates\PrintIscrittiGF.xslt" />
+    <Content Include="RPT\AnteprimaMail.aspx" />
+    <Content Include="RPT\CampiFonte.aspx" />
+    <Content Include="RPT\CampiFonte.css" />
+    <Content Include="RPT\CampiFonte.js" />
+    <Content Include="RPT\Fonti\AUTOC.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="RPT\Fonti\PG.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="RPT\MailReportMP.js" />
+    <Content Include="RPT\MailReportMP.css" />
+    <Content Include="RPT\EditorFiltro.aspx" />
+    <Content Include="RPT\EditorFiltro.css" />
+    <Content Include="RPT\EditorFiltro.js" />
+    <Content Include="RPT\FiltriStandard.aspx" />
+    <Content Include="RPT\FiltriStandard.js" />
+    <Content Include="RPT\Fonti\MOVIMENTIEVENTI.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="RPT\Fonti\EVENTI.xml" />
+    <Content Include="RPT\Fonti\MOVIMENTIEVENTI_GRP.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="RPT\Fonti\MOVIMENTIEVENTO.xml" />
+    <Content Include="RPT\Fonti\PERSONE.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="RPT\Fonti\EVENTO.xml" />
+    <Content Include="RPT\Fonti\Schemas\SampleFonte.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="RPT\Fonti\Schemas\SampleFiltro.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="RPT\MailReportPartecipantiEvento.aspx" />
+    <Content Include="RPT\ModelliMailReport.aspx" />
+    <Content Include="RPT\ReportAutocertificazioniEveExt.aspx" />
+    <Content Include="RPT\ReportEventi.aspx" />
+    <Content Include="RPT\ReportMovimentiEventi.aspx" />
+    <Content Include="RPT\ReportMovimentiEventi_Group.aspx" />
+    <Content Include="RPT\ReportMovimentiEvento.aspx" />
+    <Content Include="RPT\ReportMP.css" />
+    <Content Include="RPT\ReportMP.js" />
+    <Content Include="RPT\ReportMP.master" />
+    <None Include="RPT\Fonti\Excels\Sorgenti Reports.xlsx" />
+    <None Include="RPT\Fonti\Schemas\Filtro.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RPT\Fonti\Schemas\Fonte.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="RPT\MailReportMP.master" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="PageWs\AutoCompleteCapComuneProvincia.asmx" />
+    <Content Include="PageWs\AutoCompleteQuote.asmx" />
+    <Content Include="RPT\Fonti\PARTEVENTI.xml" />
+    <Content Include="RPT\ModelliReport.aspx" />
+    <Content Include="RPT\ReportEvento.aspx" />
+    <Content Include="RPT\ReportPartecipantiEvento.aspx" />
+    <Content Include="RPT\ReportPersone.aspx" />
+    <Content Include="Reports\ReportStandardEvento.aspx" />
+    <Content Include="RPT\ReportPG.aspx" />
+    <Content Include="RPT\SpedizioneMailProxy.aspx" />
+    <Content Include="RPT\SpedizioneMailStep1.aspx" />
+    <Content Include="RPT\SpedizioneMailStep2.aspx" />
+    <Content Include="RPT\SpedizioneMailStep2.js" />
+    <Content Include="RPT\Templates\ControlliFonte.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="RPT\Templates\CampiFonte.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="RPT\Templates\ListaDestinatari.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Scripts\date-it-IT.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery.maskedinput.min.js" />
+    <Content Include="Scripts\jquery.qtip.css" />
+    <Content Include="Scripts\jquery.qtip.js" />
+    <Content Include="Scripts\jquery.qtip.min.css" />
+    <Content Include="Scripts\jquery.qtip.min.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\messages_it.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\StlWebUI.js" />
+    <Content Include="Scripts\StlWebUI_CustomGrids.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Selettori\Img\docx.png" />
+    <Content Include="Selettori\Img\xlsx.png" />
+    <Content Include="Selettori\SelettoreFileSharePoint.aspx" />
+    <Content Include="Selettori\SelettorePersonaGForm.aspx" />
+    <Content Include="Selettori\Templates\ListaFileSharePoint.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Templates\Common.xslt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\ApplicazioniFunzioni.aspx.designer.vb">
+      <DependentUpon>ApplicazioniFunzioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ApplicazioniFunzioni.aspx.vb">
+      <DependentUpon>ApplicazioniFunzioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AziendeUtenti.aspx.designer.vb">
+      <DependentUpon>AziendeUtenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AziendeUtenti.aspx.vb">
+      <DependentUpon>AziendeUtenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GruppiAutorizzazioni.aspx.designer.vb">
+      <DependentUpon>GruppiAutorizzazioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GruppiAutorizzazioni.aspx.vb">
+      <DependentUpon>GruppiAutorizzazioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Menu.aspx.designer.vb">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Menu.aspx.vb">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Ricerche.aspx.designer.vb">
+      <DependentUpon>Ricerche.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Ricerche.aspx.vb">
+      <DependentUpon>Ricerche.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AGE\Albi.aspx.designer.vb">
+      <DependentUpon>Albi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AGE\Albi.aspx.vb">
+      <DependentUpon>Albi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AGE\CDC.aspx.designer.vb">
+      <DependentUpon>CDC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AGE\CDC.aspx.vb">
+      <DependentUpon>CDC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AGE\CentriReferenza.aspx.designer.vb">
+      <DependentUpon>CentriReferenza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AGE\CentriReferenza.aspx.vb">
+      <DependentUpon>CentriReferenza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AGE\CodiciIva.aspx.designer.vb">
+      <DependentUpon>CodiciIva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AGE\CodiciIva.aspx.vb">
+      <DependentUpon>CodiciIva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AGE\Delibere.aspx.designer.vb">
+      <DependentUpon>Delibere.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AGE\Delibere.aspx.vb">
+      <DependentUpon>Delibere.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AGE\ModalitaPagamento.aspx.designer.vb">
+      <DependentUpon>ModalitaPagamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AGE\ModalitaPagamento.aspx.vb">
+      <DependentUpon>ModalitaPagamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AGE\Organizzatori.aspx.designer.vb">
+      <DependentUpon>Organizzatori.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AGE\Organizzatori.aspx.vb">
+      <DependentUpon>Organizzatori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AGE\Persona.aspx.designer.vb">
+      <DependentUpon>Persona.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AGE\Persona.aspx.vb">
+      <DependentUpon>Persona.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AGE\Persone.aspx.designer.vb">
+      <DependentUpon>Persone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AGE\Persone.aspx.vb">
+      <DependentUpon>Persone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AGE\PortfolioExcel.aspx.designer.vb">
+      <DependentUpon>PortfolioExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AGE\PortfolioExcel.aspx.vb">
+      <DependentUpon>PortfolioExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AGE\ProviderEcm.aspx.designer.vb">
+      <DependentUpon>ProviderEcm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AGE\ProviderEcm.aspx.vb">
+      <DependentUpon>ProviderEcm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AGE\SediAule.aspx.designer.vb">
+      <DependentUpon>SediAule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AGE\SediAule.aspx.vb">
+      <DependentUpon>SediAule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AGE\SegreterieOrganizzative.aspx.designer.vb">
+      <DependentUpon>SegreterieOrganizzative.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AGE\SegreterieOrganizzative.aspx.vb">
+      <DependentUpon>SegreterieOrganizzative.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AGE\TipologieDelibere.aspx.designer.vb">
+      <DependentUpon>TipologieDelibere.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AGE\TipologieDelibere.aspx.vb">
+      <DependentUpon>TipologieDelibere.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AGE\TipologieEventi.aspx.designer.vb">
+      <DependentUpon>TipologieEventi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AGE\TipologieEventi.aspx.vb">
+      <DependentUpon>TipologieEventi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AGE\TipologieEventiEcm.aspx.designer.vb">
+      <DependentUpon>TipologieEventiEcm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AGE\TipologieEventiEcm.aspx.vb">
+      <DependentUpon>TipologieEventiEcm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AGE\VociSpesaRicavo.aspx.designer.vb">
+      <DependentUpon>VociSpesaRicavo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AGE\VociSpesaRicavo.aspx.vb">
+      <DependentUpon>VociSpesaRicavo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AGE_FOF\SezioniDocumentiEventi.aspx.designer.vb">
+      <DependentUpon>SezioniDocumentiEventi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AGE_FOF\SezioniDocumentiEventi.aspx.vb">
+      <DependentUpon>SezioniDocumentiEventi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="API\GFWS.asmx.vb">
+      <DependentUpon>GFWS.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.vb" />
+    <Compile Include="Binaries\AddBinary.aspx.designer.vb">
+      <DependentUpon>AddBinary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Binaries\AddBinary.aspx.vb">
+      <DependentUpon>AddBinary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Binaries\BOThumbnail.aspx.designer.vb">
+      <DependentUpon>BOThumbnail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Binaries\BOThumbnail.aspx.vb">
+      <DependentUpon>BOThumbnail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Binaries\CategorieBinari.aspx.designer.vb">
+      <DependentUpon>CategorieBinari.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Binaries\CategorieBinari.aspx.vb">
+      <DependentUpon>CategorieBinari.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Binaries\ChooseBinary.aspx.designer.vb">
+      <DependentUpon>ChooseBinary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Binaries\ChooseBinary.aspx.vb">
+      <DependentUpon>ChooseBinary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Binaries\Element.aspx.designer.vb">
+      <DependentUpon>Element.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Binaries\Element.aspx.vb">
+      <DependentUpon>Element.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Binaries\ElementForPlayer.aspx.designer.vb">
+      <DependentUpon>ElementForPlayer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Binaries\ElementForPlayer.aspx.vb">
+      <DependentUpon>ElementForPlayer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Binaries\ElementPreview.aspx.designer.vb">
+      <DependentUpon>ElementPreview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Binaries\ElementPreview.aspx.vb">
+      <DependentUpon>ElementPreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Binaries\GruppiUtentiAutorizzazioni.aspx.designer.vb">
+      <DependentUpon>GruppiUtentiAutorizzazioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Binaries\GruppiUtentiAutorizzazioni.aspx.vb">
+      <DependentUpon>GruppiUtentiAutorizzazioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Binaries\Thumbnail.aspx.designer.vb">
+      <DependentUpon>Thumbnail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Binaries\Thumbnail.aspx.vb">
+      <DependentUpon>Thumbnail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="COB\CalendarioCorsiObbligatori.aspx.designer.vb">
+      <DependentUpon>CalendarioCorsiObbligatori.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="COB\CalendarioCorsiObbligatori.aspx.vb">
+      <DependentUpon>CalendarioCorsiObbligatori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="COB\DettaglioPersonaTipoCorso.aspx.designer.vb">
+      <DependentUpon>DettaglioPersonaTipoCorso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="COB\DettaglioPersonaTipoCorso.aspx.vb">
+      <DependentUpon>DettaglioPersonaTipoCorso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="COB\DettaglioTipoCorso.aspx.designer.vb">
+      <DependentUpon>DettaglioTipoCorso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="COB\DettaglioTipoCorso.aspx.vb">
+      <DependentUpon>DettaglioTipoCorso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="COB\RuoliAziendaliPersone.aspx.designer.vb">
+      <DependentUpon>RuoliAziendaliPersone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="COB\RuoliAziendaliPersone.aspx.vb">
+      <DependentUpon>RuoliAziendaliPersone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CtlSelettoreIndirizzoConEnte.vb" />
+    <Compile Include="Controls\CtlSelettoreFileSharepoint.vb" />
+    <Compile Include="Controls\CtlSelettoreFiltroReport.vb" />
+    <Compile Include="Controls\CtlSelettoreRuoloProfilo.vb" />
+    <Compile Include="Controls\CtlSelettoreComuneItalia.vb" />
+    <Compile Include="Controls\CtlSelettoreIndirizzo.vb" />
+    <Compile Include="Controls\CtlSelettorePersonaGForm.vb" />
+    <Compile Include="Controls\CtlSelettoreProfessioneDisciplina.vb" />
+    <Compile Include="Controls\SearchIscrittiGF.vb" />
+    <Compile Include="Controls\UnboundBinaryElementBox.vb" />
+    <Compile Include="CustomContextHandlers\GecFinalContextHandler.vb" />
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\AttestatoECM.aspx.designer.vb">
+      <DependentUpon>AttestatoECM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\AttestatoECM.aspx.vb">
+      <DependentUpon>AttestatoECM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\AttestatoPART.aspx.designer.vb">
+      <DependentUpon>AttestatoPART.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\AttestatoPART.aspx.vb">
+      <DependentUpon>AttestatoPART.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\AttribuzioneOrari.aspx.designer.vb">
+      <DependentUpon>AttribuzioneOrari.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\AttribuzioneOrari.aspx.vb">
+      <DependentUpon>AttribuzioneOrari.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\AttribuzionePresenze.aspx.designer.vb">
+      <DependentUpon>AttribuzionePresenze.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\AttribuzionePresenze.aspx.vb">
+      <DependentUpon>AttribuzionePresenze.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\CalcoloPresenze.aspx.designer.vb">
+      <DependentUpon>CalcoloPresenze.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\CalcoloPresenze.aspx.vb">
+      <DependentUpon>CalcoloPresenze.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\ConferimentoCreditiECM.aspx.designer.vb">
+      <DependentUpon>ConferimentoCreditiECM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\ConferimentoCreditiECM.aspx.vb">
+      <DependentUpon>ConferimentoCreditiECM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\ControlloAccessi.aspx.designer.vb">
+      <DependentUpon>ControlloAccessi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\ControlloAccessi.aspx.vb">
+      <DependentUpon>ControlloAccessi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\CorrezioneQuestionariApprendimento.aspx.designer.vb">
+      <DependentUpon>CorrezioneQuestionariApprendimento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\CorrezioneQuestionariApprendimento.aspx.vb">
+      <DependentUpon>CorrezioneQuestionariApprendimento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\CorrezioneQuestionarioApprendimento.aspx.designer.vb">
+      <DependentUpon>CorrezioneQuestionarioApprendimento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\CorrezioneQuestionarioApprendimento.aspx.vb">
+      <DependentUpon>CorrezioneQuestionarioApprendimento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\DefinizioneQuestionarioApprendimento.aspx.designer.vb">
+      <DependentUpon>DefinizioneQuestionarioApprendimento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\DefinizioneQuestionarioApprendimento.aspx.vb">
+      <DependentUpon>DefinizioneQuestionarioApprendimento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\DuplicaEvento.aspx.designer.vb">
+      <DependentUpon>DuplicaEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\DuplicaEvento.aspx.vb">
+      <DependentUpon>DuplicaEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\GenerazioneRapportoEcmXml.aspx.designer.vb">
+      <DependentUpon>GenerazioneRapportoEcmXml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\GenerazioneRapportoEcmXml.aspx.vb">
+      <DependentUpon>GenerazioneRapportoEcmXml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\GestioneQuestionarioQualita.aspx.designer.vb">
+      <DependentUpon>GestioneQuestionarioQualita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\GestioneQuestionarioQualita.aspx.vb">
+      <DependentUpon>GestioneQuestionarioQualita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\GestioneQuestionariQualita.aspx.designer.vb">
+      <DependentUpon>GestioneQuestionariQualita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\GestioneQuestionariQualita.aspx.vb">
+      <DependentUpon>GestioneQuestionariQualita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\HomeEvento.aspx.designer.vb">
+      <DependentUpon>HomeEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\HomeEvento.aspx.vb">
+      <DependentUpon>HomeEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\ModificaDatiEvento.aspx.designer.vb">
+      <DependentUpon>ModificaDatiEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\ModificaDatiEvento.aspx.vb">
+      <DependentUpon>ModificaDatiEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\NuovoEvento.aspx.designer.vb">
+      <DependentUpon>NuovoEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\NuovoEvento.aspx.vb">
+      <DependentUpon>NuovoEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\NuovoPartecipante.aspx.designer.vb">
+      <DependentUpon>NuovoPartecipante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\NuovoPartecipante.aspx.vb">
+      <DependentUpon>NuovoPartecipante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\OrariEvento.aspx.designer.vb">
+      <DependentUpon>OrariEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\OrariEvento.aspx.vb">
+      <DependentUpon>OrariEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\PartecipantiEvento.aspx.designer.vb">
+      <DependentUpon>PartecipantiEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\PartecipantiEvento.aspx.vb">
+      <DependentUpon>PartecipantiEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\QuoteIscrizione.aspx.designer.vb">
+      <DependentUpon>QuoteIscrizione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\QuoteIscrizione.aspx.vb">
+      <DependentUpon>QuoteIscrizione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\SchedaPartecipante.aspx.designer.vb">
+      <DependentUpon>SchedaPartecipante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\SchedaPartecipante.aspx.vb">
+      <DependentUpon>SchedaPartecipante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\SelezioneEvento.aspx.designer.vb">
+      <DependentUpon>SelezioneEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\SelezioneEvento.aspx.vb">
+      <DependentUpon>SelezioneEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\SetupAttestatoECM.aspx.designer.vb">
+      <DependentUpon>SetupAttestatoECM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\SetupAttestatoECM.aspx.vb">
+      <DependentUpon>SetupAttestatoECM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\SpeseRicaviEvento.aspx.designer.vb">
+      <DependentUpon>SpeseRicaviEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\SpeseRicaviEvento.aspx.vb">
+      <DependentUpon>SpeseRicaviEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\StatoPresenze.aspx.designer.vb">
+      <DependentUpon>StatoPresenze.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\StatoPresenze.aspx.vb">
+      <DependentUpon>StatoPresenze.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE\ValidazioneDatiECM.aspx.designer.vb">
+      <DependentUpon>ValidazioneDatiECM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE\ValidazioneDatiECM.aspx.vb">
+      <DependentUpon>ValidazioneDatiECM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE_IOL\ChiusuraListeAttesa.aspx.designer.vb">
+      <DependentUpon>ChiusuraListeAttesa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE_IOL\ChiusuraListeAttesa.aspx.vb">
+      <DependentUpon>ChiusuraListeAttesa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE_IOL\CriteriAccesso.aspx.designer.vb">
+      <DependentUpon>CriteriAccesso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE_IOL\CriteriAccesso.aspx.vb">
+      <DependentUpon>CriteriAccesso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE_IOL\CriterioAccesso.aspx.designer.vb">
+      <DependentUpon>CriterioAccesso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE_IOL\CriterioAccesso.aspx.vb">
+      <DependentUpon>CriterioAccesso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE_IOL\DelegatiInserimentoPresenzeFO.aspx.designer.vb">
+      <DependentUpon>DelegatiInserimentoPresenzeFO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE_IOL\DelegatiInserimentoPresenzeFO.aspx.vb">
+      <DependentUpon>DelegatiInserimentoPresenzeFO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE_IOL\FilesEvento.aspx.designer.vb">
+      <DependentUpon>FilesEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE_IOL\FilesEvento.aspx.vb">
+      <DependentUpon>FilesEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE_IOL\GestioneAttestatiOnLine.aspx.designer.vb">
+      <DependentUpon>GestioneAttestatiOnLine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE_IOL\GestioneAttestatiOnLine.aspx.vb">
+      <DependentUpon>GestioneAttestatiOnLine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE_IOL\GestioneAttestatiPartecipazioneOnLine.aspx.designer.vb">
+      <DependentUpon>GestioneAttestatiPartecipazioneOnLine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE_IOL\GestioneAttestatiPartecipazioneOnLine.aspx.vb">
+      <DependentUpon>GestioneAttestatiPartecipazioneOnLine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE_IOL\MailAttestatiOnLine.aspx.designer.vb">
+      <DependentUpon>MailAttestatiOnLine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE_IOL\MailAttestatiOnLine.aspx.vb">
+      <DependentUpon>MailAttestatiOnLine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE_IOL\MailAttestatiPartecipazioneOnLine.aspx.designer.vb">
+      <DependentUpon>MailAttestatiPartecipazioneOnLine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE_IOL\MailAttestatiPartecipazioneOnLine.aspx.vb">
+      <DependentUpon>MailAttestatiPartecipazioneOnLine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE_IOL\MailChiusuraListe.aspx.designer.vb">
+      <DependentUpon>MailChiusuraListe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE_IOL\MailChiusuraListe.aspx.vb">
+      <DependentUpon>MailChiusuraListe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EVE_IOL\SetupMailAccettazione.aspx.designer.vb">
+      <DependentUpon>SetupMailAccettazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EVE_IOL\SetupMailAccettazione.aspx.vb">
+      <DependentUpon>SetupMailAccettazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FOF\Downloads.aspx.designer.vb">
+      <DependentUpon>Downloads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FOF\Downloads.aspx.vb">
+      <DependentUpon>Downloads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FOF\News.aspx.designer.vb">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FOF\News.aspx.vb">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FOR\Autocertificazione.aspx.designer.vb">
+      <DependentUpon>Autocertificazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FOR\Autocertificazione.aspx.vb">
+      <DependentUpon>Autocertificazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FOR\FormazioneEsterna.aspx.designer.vb">
+      <DependentUpon>FormazioneEsterna.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FOR\FormazioneEsterna.aspx.vb">
+      <DependentUpon>FormazioneEsterna.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FOR\FormazioneIndividualeEsterna.aspx.designer.vb">
+      <DependentUpon>FormazioneIndividualeEsterna.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FOR\FormazioneIndividualeEsterna.aspx.vb">
+      <DependentUpon>FormazioneIndividualeEsterna.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FOR\Partecipazione.aspx.designer.vb">
+      <DependentUpon>Partecipazione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FOR\Partecipazione.aspx.vb">
+      <DependentUpon>Partecipazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FOR\PianiFormativi.aspx.designer.vb">
+      <DependentUpon>PianiFormativi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FOR\PianiFormativi.aspx.vb">
+      <DependentUpon>PianiFormativi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FOR\PickEvento.aspx.designer.vb">
+      <DependentUpon>PickEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FOR\PickEvento.aspx.vb">
+      <DependentUpon>PickEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GEO\LocalitaItaliane.aspx.designer.vb">
+      <DependentUpon>LocalitaItaliane.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GEO\LocalitaItaliane.aspx.vb">
+      <DependentUpon>LocalitaItaliane.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GFClasses\AttestatiEcmHelper.vb" />
+    <Compile Include="GFClasses\AttestatiPartHelper.vb" />
+    <Compile Include="GFClasses\GFMailHandler.vb" />
+    <Compile Include="GFClasses\GFRoamingData.vb" />
+    <Compile Include="GFClasses\MailSubjectHelperGF.vb" />
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Logon.aspx.designer.vb">
+      <DependentUpon>Logon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logon.aspx.vb">
+      <DependentUpon>Logon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PageWs\AutoCompleteCapComuneProvincia.asmx.vb">
+      <DependentUpon>AutoCompleteCapComuneProvincia.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PageWs\AutoCompleteQuote.asmx.vb">
+      <DependentUpon>AutoCompleteQuote.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PageWs\ServiziEventi.asmx.vb">
+      <DependentUpon>ServiziEventi.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PageWs\ServiziPersone.asmx.vb">
+      <DependentUpon>ServiziPersone.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAttestatoEcm_LOMB.vb">
+      <DependentUpon>rptAttestatoEcm_LOMB.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAttestatoPartecipazione_IZSLER.vb">
+      <DependentUpon>rptAttestatoPartecipazione_IZSLER.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\dstAttestatiEcm.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dstAttestatiEcm.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\dstIscrittiEvento.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dstIscrittiEvento.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\dstValutazioneQualita.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dstValutazioneQualita.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportPresenzeEvento.aspx.designer.vb">
+      <DependentUpon>ReportPresenzeEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportPresenzeEvento.aspx.vb">
+      <DependentUpon>ReportPresenzeEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\rptAttestatoEcm.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAttestatoEcm.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBadges.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptBadges.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptBadgesBarcode.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptBadgesBarcode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptFogliFirme.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptFogliFirme.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\RptValutazioneQualita.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptValutazioneQualita.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\AnteprimaMail.aspx.designer.vb">
+      <DependentUpon>AnteprimaMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\AnteprimaMail.aspx.vb">
+      <DependentUpon>AnteprimaMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPT\CampiFonte.aspx.designer.vb">
+      <DependentUpon>CampiFonte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\CampiFonte.aspx.vb">
+      <DependentUpon>CampiFonte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPT\Classes\FiltroControlsHandler.vb" />
+    <Compile Include="RPT\Classes\IMailReportGenerationPage.vb" />
+    <Compile Include="RPT\EditorFiltro.aspx.designer.vb">
+      <DependentUpon>EditorFiltro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\EditorFiltro.aspx.vb">
+      <DependentUpon>EditorFiltro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPT\Classes\IReportGenerationPage.vb" />
+    <Compile Include="RPT\Classes\OrdinamentoFonte.vb" />
+    <Compile Include="RPT\FiltriStandard.aspx.designer.vb">
+      <DependentUpon>FiltriStandard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\FiltriStandard.aspx.vb">
+      <DependentUpon>FiltriStandard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPT\MailReportMP.master.designer.vb">
+      <DependentUpon>MailReportMP.master</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\MailReportMP.master.vb">
+      <DependentUpon>MailReportMP.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPT\MailReportPartecipantiEvento.aspx.designer.vb">
+      <DependentUpon>MailReportPartecipantiEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\MailReportPartecipantiEvento.aspx.vb">
+      <DependentUpon>MailReportPartecipantiEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPT\ModelliMailReport.aspx.designer.vb">
+      <DependentUpon>ModelliMailReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\ModelliMailReport.aspx.vb">
+      <DependentUpon>ModelliMailReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPT\ModelliReport.aspx.designer.vb">
+      <DependentUpon>ModelliReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\ModelliReport.aspx.vb">
+      <DependentUpon>ModelliReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPT\ReportAutocertificazioniEveExt.aspx.designer.vb">
+      <DependentUpon>ReportAutocertificazioniEveExt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\ReportAutocertificazioniEveExt.aspx.vb">
+      <DependentUpon>ReportAutocertificazioniEveExt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPT\ReportEventi.aspx.designer.vb">
+      <DependentUpon>ReportEventi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\ReportEventi.aspx.vb">
+      <DependentUpon>ReportEventi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPT\ReportEvento.aspx.designer.vb">
+      <DependentUpon>ReportEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\ReportEvento.aspx.vb">
+      <DependentUpon>ReportEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPT\ReportMovimentiEventi.aspx.designer.vb">
+      <DependentUpon>ReportMovimentiEventi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\ReportMovimentiEventi.aspx.vb">
+      <DependentUpon>ReportMovimentiEventi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPT\ReportMovimentiEventi_Group.aspx.designer.vb">
+      <DependentUpon>ReportMovimentiEventi_Group.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\ReportMovimentiEventi_Group.aspx.vb">
+      <DependentUpon>ReportMovimentiEventi_Group.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPT\ReportMovimentiEvento.aspx.designer.vb">
+      <DependentUpon>ReportMovimentiEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\ReportMovimentiEvento.aspx.vb">
+      <DependentUpon>ReportMovimentiEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPT\ReportMP.master.designer.vb">
+      <DependentUpon>ReportMP.master</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\ReportMP.master.vb">
+      <DependentUpon>ReportMP.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPT\ReportPartecipantiEventi.aspx.designer.vb">
+      <DependentUpon>ReportPartecipantiEventi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\ReportPartecipantiEventi.aspx.vb">
+      <DependentUpon>ReportPartecipantiEventi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPT\ReportPartecipantiEvento.aspx.designer.vb">
+      <DependentUpon>ReportPartecipantiEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\ReportPartecipantiEvento.aspx.vb">
+      <DependentUpon>ReportPartecipantiEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPT\ReportPersone.aspx.designer.vb">
+      <DependentUpon>ReportPersone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\ReportPersone.aspx.vb">
+      <DependentUpon>ReportPersone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportStandardEvento.aspx.designer.vb">
+      <DependentUpon>ReportStandardEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportStandardEvento.aspx.vb">
+      <DependentUpon>ReportStandardEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPT\ReportPG.aspx.designer.vb">
+      <DependentUpon>ReportPG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\ReportPG.aspx.vb">
+      <DependentUpon>ReportPG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPT\ReportQualitaApprendimento.aspx.designer.vb">
+      <DependentUpon>ReportQualitaApprendimento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\ReportQualitaApprendimento.aspx.vb">
+      <DependentUpon>ReportQualitaApprendimento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPT\ReportRimborsiDocenze.aspx.designer.vb">
+      <DependentUpon>ReportRimborsiDocenze.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\ReportRimborsiDocenze.aspx.vb">
+      <DependentUpon>ReportRimborsiDocenze.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPT\SpedizioneMailProxy.aspx.designer.vb">
+      <DependentUpon>SpedizioneMailProxy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\SpedizioneMailProxy.aspx.vb">
+      <DependentUpon>SpedizioneMailProxy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPT\SpedizioneMailStep1.aspx.designer.vb">
+      <DependentUpon>SpedizioneMailStep1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\SpedizioneMailStep1.aspx.vb">
+      <DependentUpon>SpedizioneMailStep1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RPT\SpedizioneMailStep2.aspx.designer.vb">
+      <DependentUpon>SpedizioneMailStep2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\SpedizioneMailStep2.aspx.vb">
+      <DependentUpon>SpedizioneMailStep2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Selettori\SelettoreFileSharePoint.aspx.designer.vb">
+      <DependentUpon>SelettoreFileSharePoint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Selettori\SelettoreFileSharePoint.aspx.vb">
+      <DependentUpon>SelettoreFileSharePoint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Selettori\SelettorePersonaGForm.aspx.designer.vb">
+      <DependentUpon>SelettorePersonaGForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Selettori\SelettorePersonaGForm.aspx.vb">
+      <DependentUpon>SelettorePersonaGForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteTailorMP.Master.designer.vb">
+      <DependentUpon>SiteTailorMP.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteTailorMP.Master.vb">
+      <DependentUpon>SiteTailorMP.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteTailorPopupMP.Master.designer.vb">
+      <DependentUpon>SiteTailorPopupMP.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteTailorPopupMP.Master.vb">
+      <DependentUpon>SiteTailorPopupMP.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WIP\WipEventi.aspx.designer.vb">
+      <DependentUpon>WipEventi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WIP\WipEventi.aspx.vb">
+      <DependentUpon>WipEventi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WIP\WipEvento.aspx.designer.vb">
+      <DependentUpon>WipEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WIP\WipEvento.aspx.vb">
+      <DependentUpon>WipEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Reports\RptValutazioneQualita.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptValutazioneQualita.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\rptAttestatoEcm.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAttestatoEcm.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\rptBadges.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBadges.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\rptBadgesBarcode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBadgesBarcode.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\rptFogliFirme.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptFogliFirme.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\rptAttestatoPartecipazione_IZSLER.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAttestatoPartecipazione_IZSLER.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\rptAttestatoEcm_LOMB.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAttestatoEcm_LOMB.vb</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="SiteTailorMP.Master" />
+    <Content Include="SiteTailorPopupMP.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AGE\App_LocalResources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Softailor\Softailor.Global\Softailor.Global.vbproj">
+      <Project>{9508c2c2-7435-475a-8a3a-24d473f34cd0}</Project>
+      <Name>Softailor.Global</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Softailor\Softailor.ImageQuantization\Softailor.ImageQuantization.csproj">
+      <Project>{dd40a0a0-1e62-4600-96fa-8aff0c208864}</Project>
+      <Name>Softailor.ImageQuantization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Softailor\Softailor.ReportEngine\Softailor.ReportEngine.vbproj">
+      <Project>{9a48c4f3-240e-47ed-8e8f-0f0dae731b8e}</Project>
+      <Name>Softailor.ReportEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Softailor\Softailor.SiteTailor.ACL\Softailor.SiteTailor.ACL.vbproj">
+      <Project>{6fea2a85-650a-4963-9465-058822cc6cf1}</Project>
+      <Name>Softailor.SiteTailor.ACL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Softailor\Softailor.SiteTailor.Binaries\Softailor.SiteTailor.Binaries.vbproj">
+      <Project>{a9946492-7d88-4ccb-8187-06546cb974a6}</Project>
+      <Name>Softailor.SiteTailor.Binaries</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Softailor\Softailor.Web.UI.DbForms\Softailor.Web.UI.DbForms.vbproj">
+      <Project>{93cf90c7-d1c7-4e28-89c4-62013b12890f}</Project>
+      <Name>Softailor.Web.UI.DbForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Softailor\Softailor.XmlXsl\Softailor.XmlXsl.vbproj">
+      <Project>{683f0842-5b6d-4c43-819f-ffc14ee30c8b}</Project>
+      <Name>Softailor.XmlXsl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Text</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53260</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64803/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

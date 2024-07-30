@@ -1,0 +1,633 @@
+﻿/* GRIGLIA */
+.stl_cus_upg	/*div per updatepanel griglia custom */
+{
+	overflow:auto;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	border:solid 1px #6593cf;
+	background-color:#ffffff;
+}
+
+.stl_cus_grd_hdr
+{
+    display:none;
+}
+.stl_cus_grd_nopointer td, .stl_cus_grd_nopointer td:hover
+{
+    cursor:default  !important
+}
+.stl_cus_grd_hdr_out	/* DIV header griglia, portato all'esterno */
+{
+	height:22px;
+	font-size:13px;
+	padding-left:3px;
+	padding-right:3px;
+	vertical-align:middle;
+	padding-bottom:1px;
+	background-image:url(img/grd_ph_bg.gif);
+	background-position:left bottom;
+	background-repeat:repeat-x;
+	text-align:left;
+}
+.stl_cus_grd_hdr_out table	/* table all'interno del div */
+{
+	width:100%;
+	height:100%;
+	vertical-align:middle;
+}
+.stl_cus_grd_hdr_out table td.l
+{
+	font-size:11px;
+	color:#333333;
+	text-align:left;
+	font-weight:normal;
+	padding-left:2px;
+}
+.stl_cus_grd_hdr_out table td.l b
+{
+	color:#15428b;
+	font-family:Arial;
+	font-weight:bold;
+	font-size:14px;
+	padding-right:5px;
+}
+.stl_cus_grd_hdr_out table td.l span
+{
+	font-size:11px;
+	color:#333333;
+	padding-right:10px;
+}
+.stl_cus_grd_hdr_out table td.r
+{
+	font-size:11px;
+	color:#333333;
+	text-align:right;
+	font-weight:normal;
+	padding-right:4px;
+}
+.stl_cus_grd_hdr_out table td.r a
+{
+	display:none;
+}
+.stl_cus_grd_hdr_out table td.r span.addenabled
+{
+    color:#15428b;
+	font-size:11px;
+	font-weight:bold;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.stl_cus_grd_hdr_out table td.r span.adddisabled
+{
+    color:#888888;
+    font-size:11px;
+	font-weight:bold;
+}
+
+.stl_cus_grd	/* TABLE griglia */
+{
+	font-size:11px;
+	width:100%;
+    border-spacing:0px 0px;
+}
+
+/* cella pre header - ne viene generata una per ogni colonna - viene sovrapposta dal DIV con i comandi */
+.stl_cus_grd .ph th
+{
+	height:21px;
+	font-size:13px;
+	vertical-align:middle;
+	padding-bottom:1px;
+	background-color:#ffffff;
+}
+.stl_cus_grd .ph th.cmd1
+{
+	height:21px;
+	font-size:13px;
+	vertical-align:middle;
+	padding-bottom:1px;
+	background-color:#ffffff;
+	padding-left:3px;
+	padding-right:3px;
+	width:16px;
+}
+.stl_cus_grd .ph th.cmd2
+{
+	height:21px;
+	font-size:13px;
+	vertical-align:middle;
+	padding-bottom:1px;
+	background-color:#ffffff;
+	padding-left:3px;
+	padding-right:3px;
+	width:32px;
+}
+.stl_cus_grd .ph th.cmd3
+{
+	height:21px;
+	font-size:13px;
+	vertical-align:middle;
+	padding-bottom:1px;
+	background-color:#ffffff;
+	padding-left:3px;
+	padding-right:3px;
+	width:48px;
+}
+.stl_cus_grd .ph th.cmd4
+{
+	height:21px;
+	font-size:13px;
+	vertical-align:middle;
+	padding-bottom:1px;
+	background-color:#ffffff;
+	padding-left:3px;
+	padding-right:3px;
+	width:64px;
+}
+
+/*riga header nella tabella */
+.stl_cus_grd .h
+{
+    visibility:hidden;
+}
+.stl_cus_grd .h th		/* cella header */
+{
+	height:21px;
+	padding-left:3px;
+	padding-right:3px;
+	vertical-align:middle;
+	padding-bottom:1px;
+	text-align:left;
+	font-weight:normal;
+}
+.stl_cus_grd .h th.cmd1		/* cella header comandi */
+{
+	padding-left:3px;
+	padding-right:3px;
+	width:16px;
+}
+.stl_cus_grd .h th.cmd2		/* cella header comandi */
+{
+	padding-left:3px;
+	padding-right:3px;
+	width:32px;
+}
+.stl_cus_grd .h th.cmd3		/* cella header comandi */
+{
+	padding-left:3px;
+	padding-right:3px;
+	width:48px;
+}
+.stl_cus_grd .h th.cmd4		/* cella header comandi */
+{
+	padding-left:3px;
+	padding-right:3px;
+	width:64px;
+}
+
+/* riga std */
+.stl_cus_grd .r td
+{
+	padding:2px 3px 3px 3px;
+	border-bottom:solid 1px #dadada;
+	cursor:pointer;
+    line-height:13px;
+}
+.stl_cus_grd .r:hover
+{
+    background-color:#eeeee6;
+}
+.stl_cus_grd .r td.cmd1
+{
+	padding-top:0px;
+	padding-bottom:0px;
+	border-bottom:solid 1px #dadada;
+	white-space:nowrap;
+	padding-left:3px;
+	padding-right:3px;
+	width:16px;
+    cursor:default;
+}
+.stl_cus_grd .r td.cmd2
+{
+	padding-top:0px;
+	padding-bottom:0px;
+	border-bottom:solid 1px #dadada;
+	white-space:nowrap;
+	padding-left:3px;
+	padding-right:3px;
+	width:32px;
+    cursor:default;
+}
+.stl_cus_grd .r td.cmd3
+{
+	padding-top:0px;
+	padding-bottom:0px;
+	border-bottom:solid 1px #dadada;
+	white-space:nowrap;
+	padding-left:3px;
+	padding-right:3px;
+	width:48px;
+    cursor:default;
+}
+.stl_cus_grd .r td.cmd4
+{
+	padding-top:0px;
+	padding-bottom:0px;
+	border-bottom:solid 1px #dadada;
+	white-space:nowrap;
+	padding-left:3px;
+	padding-right:3px;
+	width:64px;
+    cursor:default;
+}
+.stl_cus_grd .r td.lastcmd
+{
+    cursor:default;
+}
+/* riga selezionata */
+.stl_cus_grd .sr td
+{
+	padding:2px 3px 3px 3px;
+	background-color:#C6C6AA;
+	border-bottom:solid 1px #d9d9c6;
+	cursor:default;
+    line-height:13px;
+}
+.stl_cus_grd .sr td.cmd1
+{
+	padding-top:0px;
+	padding-bottom:0px;
+	background-color:#C6C6AA;
+	border-bottom:solid 1px #d9d9c6;
+	white-space:nowrap;
+	cursor:default;
+	padding-left:3px;
+	padding-right:3px;
+	width:16px;
+}
+.stl_cus_grd .sr td.cmd2
+{
+	padding-top:0px;
+	padding-bottom:0px;
+	background-color:#C6C6AA;
+	border-bottom:solid 1px #d9d9c6;
+	white-space:nowrap;
+	cursor:default;
+	padding-left:3px;
+	padding-right:3px;
+	width:32px;
+}
+.stl_cus_grd .sr td.cmd3
+{
+	padding-top:0px;
+	padding-bottom:0px;
+	background-color:#C6C6AA;
+	border-bottom:solid 1px #d9d9c6;
+	white-space:nowrap;
+	cursor:default;
+	padding-left:3px;
+	padding-right:3px;
+	width:48px;
+}
+.stl_cus_grd .sr td.cmd4
+{
+	padding-top:0px;
+	padding-bottom:0px;
+	background-color:#C6C6AA;
+	border-bottom:solid 1px #d9d9c6;
+	white-space:nowrap;
+	cursor:default;
+	padding-left:3px;
+	padding-right:3px;
+	width:64px;
+}
+/* riga selezionata, cliccabile */
+.stl_cus_grd .src td
+{
+	padding:2px 3px 3px 3px;
+	background-color:#C6C6AA;
+	border-bottom:solid 1px #d9d9c6;
+	cursor:pointer;
+    line-height:13px;
+}
+.stl_cus_grd .src td.cmd1
+{
+	padding-top:0px;
+	padding-bottom:0px;
+	background-color:#C6C6AA;
+	border-bottom:solid 1px #d9d9c6;
+	white-space:nowrap;
+	cursor:default;
+	padding-left:3px;
+	padding-right:3px;
+	width:16px;
+}
+.stl_cus_grd .src td.cmd2
+{
+	padding-top:0px;
+	padding-bottom:0px;
+	background-color:#C6C6AA;
+	border-bottom:solid 1px #d9d9c6;
+	white-space:nowrap;
+	cursor:default;
+	padding-left:3px;
+	padding-right:3px;
+	width:32px;
+}
+.stl_cus_grd .src td.cmd3
+{
+	padding-top:0px;
+	padding-bottom:0px;
+	background-color:#C6C6AA;
+	border-bottom:solid 1px #d9d9c6;
+	white-space:nowrap;
+	cursor:default;
+	padding-left:3px;
+	padding-right:3px;
+	width:48px;
+}
+.stl_cus_grd .src td.cmd4
+{
+	padding-top:0px;
+	padding-bottom:0px;
+	background-color:#C6C6AA;
+	border-bottom:solid 1px #d9d9c6;
+	white-space:nowrap;
+	cursor:default;
+	padding-left:3px;
+	padding-right:3px;
+	width:64px;
+}
+.stl_cus_grd .src td.lastcmd
+{
+    cursor:default;
+}
+
+
+
+/* griglia esterna */
+.stl_cus_outgrd	/* TABLE griglia */
+{
+	font-size:11px;
+    border-spacing:0px 0px;
+}
+.stl_cus_outgrd .h th		/* cella header */
+{
+	height:21px;
+	padding-left:3px;
+	padding-right:3px;
+	vertical-align:middle;
+	padding-bottom:1px;
+	text-align:left;
+	font-weight:normal;
+	background-image:url(img/grd_h_bg.gif);
+	background-position:right bottom;
+	background-repeat:repeat-x;
+}
+.stl_cus_outgrd .h th.cmd1		/* cella header comandi */
+{
+	padding-left:3px;
+	padding-right:3px;
+	width:16px;
+}
+.stl_cus_outgrd .h th.cmd2		/* cella header comandi */
+{
+	padding-left:3px;
+	padding-right:3px;
+	width:32px;
+}
+.stl_cus_outgrd .h th.cmd3		/* cella header comandi */
+{
+	padding-left:3px;
+	padding-right:3px;
+	width:48px;
+}
+.stl_cus_outgrd .h th.cmd4		/* cella header comandi */
+{
+	padding-left:3px;
+	padding-right:3px;
+	width:64px;
+}
+/* pulsanti */
+.stl_cus_grd td.cmd1 span.edit,
+.stl_cus_grd td.cmd2 span.edit,
+.stl_cus_grd td.cmd3 span.edit,
+.stl_cus_grd td.cmd4 span.edit
+{
+    display:inline-block;
+    width:16px;
+    height:16px;
+    background-image:url(Img/icoEdit.gif);
+    cursor:pointer;
+}
+.stl_cus_grd td.cmd1 span.del,
+.stl_cus_grd td.cmd2 span.del,
+.stl_cus_grd td.cmd3 span.del,
+.stl_cus_grd td.cmd4 span.del
+{
+    display:inline-block;
+    width:16px;
+    height:16px;
+    background-image:url(Img/icoDelete.gif);
+    cursor:pointer;
+}
+
+.stl_cus_grd_hdr_grey	/* header griglia con selettore (invisibile) */
+{
+    display:none;
+	/*height:22px;
+	font-size:13px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-bottom:1px;
+	background-image:url(img/grd_ph_bg_grey.gif);
+	background-position:left bottom;
+	background-repeat:repeat-x;
+	width:100%;
+	text-align:left;*/
+}
+.stl_cus_grd_hdr_grey_out	/* header griglia con selettore */
+{
+	height:22px;
+	font-size:13px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-bottom:1px;
+	background-image:url(img/grd_ph_bg_grey.gif);
+	background-position:left bottom;
+	background-repeat:repeat-x;
+	text-align:left;
+}
+
+
+.stl_cus_grd_hdr_ai	/* item attivo */
+{
+	vertical-align:middle;
+	height:21px;
+	font-size:11px;
+	padding-left:15px;
+	padding-right:15px;
+	border-right:solid 1px #6593cf;
+	background-image:url(img/grd_ph_bg_active.gif);
+	background-position:left bottom;
+	background-repeat:repeat-x;
+	color:#666666;
+}
+.stl_cus_grd_hdr_ai .activeText
+{
+	color:#15428b;
+	font-weight:bold;
+}
+.stl_cus_grd_hdr_nai	/* item non attivo */
+{
+	vertical-align:middle;
+	height:21px;
+	font-size:11px;
+	padding-left:15px;
+	padding-right:15px;
+	border-right:solid 1px #6593cf;
+	color:#666666;
+}
+.stl_cus_grd_hdr_nai .link
+{
+	color:#666666;
+	text-decoration:none;
+}
+.stl_cus_grd_hdr_nai .link:hover
+{
+	color:#ff6600;
+	text-decoration:underline;
+}
+/* footer */
+.stl_cus_grd_ftr
+{
+    display:none;
+}
+.stl_cus_grd_ftr_out
+{
+    height:25px;
+    font-size:11px;
+    line-height:25px;
+    padding:0;
+    background-color:#ececec;
+}
+
+/* riga std, non cliccabile */
+.stl_cus_grd .rnc td
+{
+	padding:2px 3px 3px 3px;
+	border-bottom:solid 1px #dadada;
+	cursor:default;
+    line-height:13px;
+}
+.stl_cus_grd .rnc:hover
+{
+    background-color:#eeeee6;
+}
+.stl_cus_grd .rnc td.cmd1
+{
+	padding-top:0px;
+	padding-bottom:0px;
+	border-bottom:solid 1px #dadada;
+	white-space:nowrap;
+	padding-left:3px;
+	padding-right:3px;
+	width:16px;
+    cursor:default;
+}
+.stl_cus_grd .rnc td.cmd2
+{
+	padding-top:0px;
+	padding-bottom:0px;
+	border-bottom:solid 1px #dadada;
+	white-space:nowrap;
+	padding-left:3px;
+	padding-right:3px;
+	width:32px;
+    cursor:default;
+}
+.stl_cus_grd .rnc td.cmd3
+{
+	padding-top:0px;
+	padding-bottom:0px;
+	border-bottom:solid 1px #dadada;
+	white-space:nowrap;
+	padding-left:3px;
+	padding-right:3px;
+	width:48px;
+    cursor:default;
+}
+.stl_cus_grd .rnc td.cmd4
+{
+	padding-top:0px;
+	padding-bottom:0px;
+	border-bottom:solid 1px #dadada;
+	white-space:nowrap;
+	padding-left:3px;
+	padding-right:3px;
+	width:64px;
+    cursor:default;
+}
+.stl_cus_grd .rnc td.lastcmd
+{
+    cursor:default;
+}
+/* riga "checkata" */
+.stl_cus_grd .rchk td
+{
+	padding:2px 3px 3px 3px;
+	background-color:#BEFFB7;
+	border-bottom:solid 1px #d9d9c6;
+	cursor:default;
+    line-height:13px;
+}
+.stl_cus_grd .rchk td.cmd1
+{
+	padding-top:0px;
+	padding-bottom:0px;
+	background-color:#BEFFB7;
+	border-bottom:solid 1px #d9d9c6;
+	white-space:nowrap;
+	cursor:default;
+	padding-left:3px;
+	padding-right:3px;
+	width:16px;
+}
+.stl_cus_grd .rchk td.cmd2
+{
+	padding-top:0px;
+	padding-bottom:0px;
+	background-color:#BEFFB7;
+	border-bottom:solid 1px #d9d9c6;
+	white-space:nowrap;
+	cursor:default;
+	padding-left:3px;
+	padding-right:3px;
+	width:32px;
+}
+.stl_cus_grd .rchk td.cmd3
+{
+	padding-top:0px;
+	padding-bottom:0px;
+	background-color:#BEFFB7;
+	border-bottom:solid 1px #d9d9c6;
+	white-space:nowrap;
+	cursor:default;
+	padding-left:3px;
+	padding-right:3px;
+	width:48px;
+}
+.stl_cus_grd .rchk td.cmd4
+{
+	padding-top:0px;
+	padding-bottom:0px;
+	background-color:#BEFFB7;
+	border-bottom:solid 1px #d9d9c6;
+	white-space:nowrap;
+	cursor:default;
+	padding-left:3px;
+	padding-right:3px;
+	width:64px;
+}

@@ -1,0 +1,79 @@
+﻿.firstsection
+{    
+    font-size:16px;
+    padding:0px 0px 1px 0px;
+    border-bottom:solid 1px #15428b;
+    margin-bottom:3px;
+    width:550px;
+    text-align:left;
+    font-family:Arial;
+    font-weight:bold;
+    color:#15428b;    
+}
+.section
+{    
+    font-size:16px;
+    padding:10px 0px 1px 0px;
+    border-bottom:solid 1px #15428b;
+    margin-bottom:3px;
+    width:550px;
+    text-align:left;
+    font-family:Arial;
+    font-weight:bold;
+    color:#15428b;    
+}
+.upload
+{
+    border-top:solid 1px #15428b;
+    margin-top:15px;
+    padding:8px 8px 8px 8px;
+    width:534px;
+    text-align:right;
+    background-color:#f2f2f2;
+}
+.btnUpload
+{
+    font-family:Arial;
+    font-size:16px;    
+    font-weight:bold;
+}
+.sleft
+{
+    display:block;
+    float:left;
+    width:300px;
+}
+.sleftw
+{
+    display:block;
+    float:left;
+    width:380px;
+}
+.scenter
+{
+    display:block;
+    float:left;
+    width:80px;
+}
+.sright
+{
+    display:block;
+    float:left;
+    width:170px;
+    padding-top:3px;
+}
+.sclear
+{
+    clear:both;
+    font-size:1px;
+}
+.info
+{
+    display:block;
+    width:365px;
+    background-color:#f0f0f0;
+    border:solid 1px #c0c0c0;
+    font-size:10px;
+    padding:2px 3px 2px 3px;
+    margin-top:2px;
+}

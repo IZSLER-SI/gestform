@@ -1,0 +1,78 @@
+﻿.pdo
+{
+    display:block;
+    float:left;
+    width:56px;
+    background-color:#e0e0e0;
+    margin:3px;
+    padding:2px;
+    color:#444444;
+}
+
+.dom
+{
+    font-size:10px;
+    text-align:center;
+}
+
+.ndo
+{
+    font-size:13px;
+    font-weight:normal;
+    text-align:center;
+}
+.tri
+{
+    font-family: Verdana, Arial, Sans-Serif;
+    font-weight:bold;
+    font-size:18px;
+    text-align:center;
+    width:50px;
+    border:none;
+    padding:1px;
+    margin:2px;
+}
+.tiporisp
+{
+    display:block;
+    float:left;
+    margin-right:5px; 
+    line-height:20px;   
+}
+.esatta
+{background-color:#C6EFCE;}
+.errata
+{background-color:#FFC7CE;}
+.nondata
+{background-color:#FFEB9C;}
+
+
+.numero
+{
+    display:block;
+    float:left;
+    width:40px;
+    margin-right:10px;
+    height:20px;
+    text-align:center;
+    line-height:20px;
+    font-weight:bold;
+}
+.esito
+{
+    display:block;
+    float:left;
+    width:210px;
+    padding-left:4px;
+    margin-right:20px;
+    height:20px;
+    text-align:left;
+    line-height:20px;
+    font-weight:bold;
+}
+.esitoOK
+{background-color:#C6EFCE;}  
+.esitoKO
+{background-color:#FFC7CE;}
+.esitoNA
+{background-color:#e0e0e0;}

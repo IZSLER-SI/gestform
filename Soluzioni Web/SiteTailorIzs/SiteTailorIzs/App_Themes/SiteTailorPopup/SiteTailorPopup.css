@@ -1,0 +1,125 @@
+﻿body {
+    margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	font-family: Tahoma, Arial, Sans-Serif;
+	font-size:11px;
+	background-color:#ffffff;
+}
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+#popupHeader
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    height:32px;
+    background-image:url(img/BgTopBar.gif);
+    background-position:top left;
+    background-repeat:repeat-x;
+    overflow:hidden;
+}
+#popupHeader .title
+{
+    display:block;
+    float:left;
+    height:32px;
+	padding-left:15px;
+}
+#popupHeader .title div.singlerow
+{
+    font-size:18px;
+    line-height:33px;
+    font-weight:bold;
+    color:#15428b;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#popupHeader .title div.tworows_1
+{
+    padding-top:0px;
+    font-size:13px;
+    line-height:15px;
+	font-weight:bold;
+	color:#15428b;
+}
+#popupHeader .title div.tworows_2
+{
+    font-size:13px;
+    line-height:14px;
+	font-weight:normal;
+	color:#000000;
+}
+
+#popupHeader .buttons
+{
+    display:block;
+    float:right;
+    height:32px;
+}
+#popupHeader .buttons .buttonsection
+{
+    display:block;
+    float:left;
+    height:31px;
+    line-height:32px;
+    font-size:11px;
+    color:#000;
+    background-image:url(img/SepTopBar.gif);
+    background-position:top left;
+    background-repeat:no-repeat;
+    padding-left:9px;
+}
+#popupHeader .buttons .buttonsection a.tbbtn
+{
+    display:block;
+    float:left;
+	font-size:11px;
+	cursor:pointer;
+    margin-right:10px;
+	text-decoration:none;
+	color:#000000;
+}
+#popupHeader .buttons .buttonsection a.tbbtn:hover
+{
+	color:#ff0000;
+	text-decoration:none;
+}
+#popupHeader .buttons .buttonsection a.tbbtn span.icon
+{
+	display:block;
+    float:left;
+    vertical-align:middle;
+	width:18px;
+    height:31px;
+    background-repeat:no-repeat;
+    background-position:0px 7px;
+}
+#popupHeader .buttons .buttonsection a.tbbtn span.close
+{
+    background-image:url(img/icoX.gif);
+}
+#popupHeader .buttons .buttonsection a.tbbtn span.print
+{
+    background-image:url(img/icoPrint.gif);
+}
+#popupHeader .buttons .buttonsection a.tbbtn span.save
+{
+    background-image:url(img/icoSave.gif);
+    margin-right:3px;
+}
+#popupHeader .buttons .buttonsection a.tbbtn span.back
+{
+    background-image:url(img/icoBack.gif);
+    margin-right:3px;
+}
+#popupContent
+{
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:32px;
+    background-color:#fff;
+    bottom:0px;
+    padding:15px 0px 0px 15px;
+    overflow:auto;
+}

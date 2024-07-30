@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace ="http://schemas.softailor.com/ReportEngine/Filtro"
+    xmlns:tns="http://schemas.softailor.com/ReportEngine/Filtro"
+  >
+  <xs:element name="Filtro" nillable="true" type="tns:Filtro" />
+  <xs:complexType name="Filtro">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Condizioni" type="tns:ArrayOfCondizione" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfCondizione">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Condizione" nillable="true" type="tns:Condizione" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Condizione">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Valori" type="tns:ArrayOfValore" />
+    </xs:sequence>
+    <xs:attribute name="NomeCampoDb" type="xs:string" />
+    <xs:attribute name="Comparazione" type="tns:Comparazioni" use="required" />
+  </xs:complexType>
+  <xs:complexType name="ArrayOfValore">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Valore" nillable="true" type="tns:Valore" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Valore">
+    <xs:attribute name="v1" type="xs:string" />
+    <xs:attribute name="v2" type="xs:string" />
+  </xs:complexType>
+  <xs:simpleType name="Comparazioni">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Vuoto" />
+      <xs:enumeration value="NonVuoto" />
+      <xs:enumeration value="Uguale" />
+      <xs:enumeration value="Diverso" />
+      <xs:enumeration value="Maggiore" />
+      <xs:enumeration value="Minore" />
+      <xs:enumeration value="MaggioreUguale" />
+      <xs:enumeration value="MinoreUguale" />
+      <xs:enumeration value="Compreso" />
+      <xs:enumeration value="IniziaPer" />
+      <xs:enumeration value="FiniscePer" />
+      <xs:enumeration value="Contiene" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

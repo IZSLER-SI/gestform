@@ -1,0 +1,1 @@
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="AttestatoPART.aspx.vb" Inherits="GestioneFormazione.FrontOffice.AttestatoPART" %>

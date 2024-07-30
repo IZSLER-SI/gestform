@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Fonte xmlns="http://schemas.softailor.com/ReportEngine/Fonte"
+       
+       Codice="PARTEVENTI"
+       Descrizione="Partecipanti Evento"
+       CampoFiltroBase="id_EVENTO"
+       TipoDatoFiltroBase="Intero"
+       VistaIntestazione="vw_rpt_eve_EVENTI"
+       VistaCorpo="vw_rpt_eve_ISCRITTI"
+       >
+  <CampiIntestazione>
+    <Campo NomeDb="tx_TITOLO"                   Segnaposto="TITOLO_EVENTO"             Descrizione="Titolo Evento"           Tipo="Stringa" />
+    <Campo NomeDb="dt_INIZIO"                   Segnaposto="DATA_INIZIO_EVENTO"               Descrizione="Data Inizio"             Tipo="Data" />
+    <Campo NomeDb="dt_FINE"                     Segnaposto="DATA_FINE_EVENTO"                 Descrizione="Data Fine"               Tipo="Data" />
+    <Campo NomeDb="tx_DETTAGLISEDE"             Segnaposto="DETTAGLISEDE"             Descrizione="Dettagli sede"           Tipo="Stringa" />
+  </CampiIntestazione>
+  <CampiCorpo>
+    <Campo NomeDb="campo1" Segnaposto="campo1" Descrizione="campo1" Filtro="true" Ordinamento="true" Tipo="Stringa" />
+    <Campo NomeDb="campo2" Segnaposto="campo2" Descrizione="campo2" Filtro="true" Ordinamento="true" Tipo="Stringa" />
+    <Campo NomeDb="campo3" Segnaposto="campo3" Descrizione="campo3" Filtro="true" Ordinamento="true" Tipo="Stringa" />
+    <Campo NomeDb="campo4" Segnaposto="campo4" Descrizione="campo4" Filtro="true" Ordinamento="true" Tipo="DataOra" />
+    <Campo NomeDb="campo5" Segnaposto="campo5" Descrizione="campo5" Filtro="true" Ordinamento="true" Tipo="Stringa" />
+    <Campo NomeDb="campo6" Segnaposto="campo6" Descrizione="campo6" Filtro="true" Ordinamento="true" Tipo="Stringa" />
+    <Campo NomeDb="campo7" Segnaposto="campo7" Descrizione="campo7" Filtro="true" Ordinamento="true" Tipo="Stringa" />
+    <Campo NomeDb="campo8" Segnaposto="campo8" Descrizione="campo8" Filtro="true" Ordinamento="true" Tipo="Stringa" />
+    <Campo NomeDb="campo9" Segnaposto="campo9" Descrizione="campo9" Filtro="true" Ordinamento="true" Tipo="Stringa" />
+    <Campo NomeDb="campo10" Segnaposto="campo10" Descrizione="campo10" Filtro="true" Ordinamento="true" Tipo="Stringa" />
+    <Campo NomeDb="campo11" Segnaposto="campo11" Descrizione="campo11" Filtro="true" Ordinamento="true" Tipo="Stringa" />
+    <Campo NomeDb="campo12" Segnaposto="campo12" Descrizione="campo12" Filtro="true" Ordinamento="true" Tipo="Stringa" />
+    <Campo NomeDb="campo13" Segnaposto="campo13" Descrizione="campo13" Filtro="true" Ordinamento="true" Tipo="Stringa" />
+    <Campo NomeDb="campo14" Segnaposto="campo14" Descrizione="campo14" Filtro="true" Ordinamento="true" Tipo="Stringa" />
+    <Campo NomeDb="campo15" Segnaposto="campo15" Descrizione="campo15" Filtro="true" Ordinamento="true" Tipo="Stringa" />
+    <Campo NomeDb="campo16" Segnaposto="campo16" Descrizione="campo16" Filtro="true" Ordinamento="true" Tipo="Stringa" />
+    <Campo NomeDb="campo17" Segnaposto="campo17" Descrizione="campo17" Filtro="true" Ordinamento="true" Tipo="Stringa" />
+    <Campo NomeDb="campo18" Segnaposto="campo18" Descrizione="campo18" Filtro="true" Ordinamento="true" Tipo="Stringa" />
+  </CampiCorpo>
+  <Ordinamenti>
+    <Ordinamento Descrizione="Cognome, Nome" Sql="tx_COGNOME, tx_NOME" />
+    <Ordinamento Descrizione="Dipendente/Esterno, Cognome, Nome" Sql="ac_DIPEXT, tx_COGNOME, tx_NOME" />
+    <Ordinamento Descrizione="Ruolo, Cognome, Nome" Sql="tx_RUOLO, tx_COGNOME, tx_NOME" />
+    <Ordinamento Descrizione="Unità Operativa, Cognome, Nome" Sql="ac_UNITAOPERATIVA, tx_COGNOME, tx_NOME" />
+  </Ordinamenti>
+</Fonte>

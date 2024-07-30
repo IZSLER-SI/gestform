@@ -1,0 +1,269 @@
+﻿/* FORM */
+.stl_lbt
+{
+	text-decoration:underline;
+	color:#15428b;
+}
+.stl_lbt:hover
+{
+	color:#ff0000;
+}
+.stl_upf	/* div per updatepanel form */
+{
+	border:solid 1px #6593cf;
+	background-color:#f9f9f7;
+}
+.stl_frt	/* tabella form (header, body) */
+{
+	border-style:none;
+	border-width:0px;
+	width:100%;
+	height:100%;
+}
+.stl_frt .h td	/* cella comandi (header) */
+{
+	padding:0px 0px 0px 6px;
+	height:18px;
+	border-bottom:solid 1px #6593cf;
+	background-image:url(img/frt_h_bg.gif);
+	background-position:top left;
+	background-repeat:no-repeat;
+	font-size:11px;
+    overflow:hidden;
+}
+.stl_frt .h .status	/* scritta "nuova riga" */
+{
+	font-size:11px;
+	padding-left:17px;
+	display:-moz-inline-block;
+	display:inline-block;
+	vertical-align:top;
+	padding-top:2px;
+	color:#666666;
+}
+.stl_frt .h .btne	/* bottone comandi, abilitato */
+{
+    color: #15428b;
+    border-right: none; 
+    border-bottom: none; 
+    border-left: none; 
+    border-top: none; 
+    margin:0px;
+    padding:0px 22px 0px 20px;
+    cursor:pointer;
+    font: bold 11px Tahoma, Arial, sans-serif;
+    line-height:18px;
+    background-image:url(img/frt_h_btn_bg.gif);
+	background-position:top right;
+	background-repeat:no-repeat;
+}
+.stl_frt .h .btnd	/* bottone comandi, disabilitato */
+{
+    color: #999999;
+    border-right: none; 
+    border-bottom: none; 
+    border-left: none; 
+    border-top: none; 
+    margin:0px;
+    padding:0px 22px 0px 20px;
+    cursor:default;
+    font: bold 11px Tahoma, Arial, sans-serif;
+    line-height:18px;
+    background-image:url(img/frt_h_btn_bg.gif);
+	background-position:top right;
+	background-repeat:no-repeat;
+}
+.stl_frt tr.b td.b	/* cella corpo */
+{
+	font-size:11px;
+	padding-top:4px;
+	padding-left:6px;
+	padding-right:2px;
+	vertical-align:top;
+}
+.stl_frt tr.b td.b span.flbl	/* label: prima della riga */
+{
+	display:inline-block;
+	text-indent:0px;
+    line-height:21px;
+}
+.stl_frt tr.b td.b span.flbl img
+{
+    vertical-align:top;
+    line-height:21px;
+    margin-top:2px;
+    margin-left:3px;
+}
+
+.stl_frt tr.b td.b span.slbl	/* labels successive */
+{
+	display:inline-block;
+    line-height:21px;
+	text-indent:6px;
+}
+.stl_frt tr.b td.b span.slbl img
+{
+    vertical-align:top;
+    line-height:21px;
+    margin-top:2px;
+    margin-left:3px;
+}
+.stl_frt tr.b td.b .sep_hor
+{
+	display:block;
+	width:100%;
+	height:8px;
+	background-image:url(img/frm_sep_hor.gif);
+	background-position:top left;
+	background-repeat:repeat-x;
+	font-size:1px;
+}
+.stl_frt tr.b td.b .sep_2px		/* separatore altezza 2 pixel */
+{
+	display:block;
+	width:100%;
+	height:2px;
+	font-size:1px;
+}
+
+/* form > binary element block */
+.stl_frt tr.b td.b .beb_tbl	/* tabella esterna */
+{
+	display:inline-block;
+	vertical-align:top;
+	width:250px;
+	margin-bottom:1px;
+    margin-top:1px;
+	font-size:11px;
+    border-spacing:0;
+}
+
+.stl_frt tr.b td.b .beb_tdi	/* TD immagine */
+{
+	width:70px;
+	height:70px;
+	border:solid 1px #cacaca;
+	padding:0px 0px 0px 0px;
+	background-color:#ffffff;
+}
+.stl_frt tr.b td.b .beb_tdi	img
+{
+	border-width:0px;
+    vertical-align:bottom;
+}
+.stl_frt tr.b td.b .beb_tdd	/* TD dati */
+{
+	height:70px;
+	border-top:solid 1px #cacaca;
+	border-right:solid 1px #cacaca;
+	border-bottom:solid 1px #cacaca;
+	padding:0px 0px 0px 0px;
+    background-color:#ffffff;
+    vertical-align:top;
+}
+.stl_frt tr.b td.b .beb_dtf	/* descrizione, formato, categoria */
+{
+	display:block;
+	width:171px;
+	height:47px;
+	padding:2px 3px 2px 3px;
+	border-bottom:solid 1px #cacaca;
+	overflow:hidden;
+    vertical-align:top;
+}
+.stl_frt tr.b td.b .beb_err	/* immagine errore */
+{
+	vertical-align:middle;
+	margin-right:3px;
+}
+.stl_frt tr.b td.b .beb_dsc	/* label descrizione */
+{
+	color:#000000;
+	line-height:11px;
+	padding-bottom:2px;
+	font-family:Verdana, Arial, Sans-Serif;
+}
+.stl_frt tr.b td.b .beb_fmt	/* label formato */
+{
+	display:block;
+	color:#999999;
+	font-size:10px;
+	line-height:11px;
+}
+.stl_frt tr.b td.b .beb_cat	/* label categoria */
+{
+	display:block;
+	color:#999999;
+	font-size:10px;
+	line-height:11px;
+}
+
+.stl_frt tr.b td.b .beb_cmd	/* div comandi */
+{
+	display:block;
+	width:177px;
+    height:18px;
+    overflow:hidden;
+    background-color:#000000;
+	padding:0px 0px 0px 0px;
+}
+
+.stl_frt tr.b td.b .beb_cmd a
+{
+    cursor:pointer;
+    color:#15428b;
+}
+.stl_frt tr.b td.b .beb_cmd a:hover
+{
+	background-color:#e3efff;	
+}
+.stl_frt tr.b td.b .beb_cmd a.aspNetDisabled
+{
+    cursor:default;
+    color:#999999;
+}
+.stl_frt tr.b td.b .beb_cmd a.aspNetDisabled:hover
+{
+    background-color:#eaeaea;
+}
+.stl_frt tr.b td.b .beb_a	/* comandi nuovo e seleziona */
+{
+	display:inline-block;
+	width:58px;
+	line-height:18px;
+	height:18px;
+	border-right:solid 1px #cacaca;
+	text-align:center;
+	background-color:#eaeaea;
+	text-decoration:none;
+}
+.stl_frt tr.b td.b .beb_al	/* comando rimuovi */
+{
+	display:inline-block;
+	width:59px;
+	line-height:18px;
+	height:18px;
+	text-align:center;
+	background-color:#eaeaea;
+	color:#15428b;
+	text-decoration:none;
+}
+.stl_frt tr.b td.b div.hteddis_out
+{
+	border:1px solid #888888;
+    padding:0px;
+    margin:1px 0px 1px 0px;
+    overflow:auto;
+    background-color:#ffffff;
+    color:#a0a0a0;
+    font-family:Verdana, Arial, sans-serif;
+}
+.stl_frt tr.b td.b div.hteddis_in
+{
+	padding:3px;
+}
+.stl_frt tr.b td.b .hteddis_in p
+{
+	margin:0px;
+    padding:0px;
+}

@@ -1,0 +1,69 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/RootMP.Master" AutoEventWireup="false" CodeBehind="MenuUserMP.master.vb" Inherits="GestioneFormazione.FrontOffice.MenuUserMP" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="contentMiddle" ContentPlaceHolderID="cphMiddle" runat="server">
+    <script src="/Scripts/Login.js"></script>
+    <div id="navigation">
+        <asp:UpdatePanel ID="navleft" runat="server" UpdateMode="Conditional" RenderMode="Block" EnableViewState="false" ClientIDMode="Static">
+            <ContentTemplate>
+                <asp:PlaceHolder ID="phdNavLeft" runat="server" EnableViewState="false" />
+            </ContentTemplate>
+        </asp:UpdatePanel>
+        <asp:UpdatePanel ID="navright" runat="server" UpdateMode="Conditional" EnableViewState="false" ClientIDMode="Static">
+            <ContentTemplate>
+                <asp:PlaceHolder ID="phdNavRight" runat="server" EnableViewState="false" />
+            </ContentTemplate>
+        </asp:UpdatePanel>
+        <div class="clear"></div>
+    </div>
+    <div id="content">
+        <asp:ContentPlaceHolder ID="cphContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</asp:Content>
+<asp:Content ID="contentOther" ContentPlaceHolderID="cphOther" runat="server">
+    <asp:UpdatePanel ID="loginddn" runat="server" RenderMode="Block" EnableViewState="false" ClientIDMode="Static">
+        <ContentTemplate>
+            <asp:Panel ID="pnlLogin" runat="server" EnableViewState="false" DefaultButton="login_lnk_login">
+            <div class="u_p">
+                <span class="label">Codice Fiscale</span>
+                <asp:TextBox ID="login_txt_username" ClientIDMode="Static" runat="server" MaxLength="50" CssClass="txt" />
+            </div>
+            <div class="u_p" style="margin-bottom: 5px">
+                <span class="label">Password</span>
+                <asp:TextBox ID="login_txt_password" ClientIDMode="Static" runat="server" MaxLength="50" CssClass="txt" TextMode="Password"/>
+            </div>
+            <div class="btn" style="display:inline">
+                <asp:LinkButton ID="login_lnk_login" ClientIDMode="Static" runat="server" CssClass="btnlink btnlink_green btn_login">Accedi</asp:LinkButton>
+            </div>
+            <div class="err">
+                <asp:Label ID="login_lbl_error" runat="server" EnableViewState="false" />
+            </div>
+            <div class="info">
+                <div><br /></div>
+                <div>
+                    <strong>Dipendente <asp:Label ID="lblCompanyName_1" runat="server" />?</strong>
+                </div>
+                <div>
+                    Se è la prima volta che accedi al portale, inserisci il tuo codice fiscale nel campo "Codice Fiscale" 
+                    ed utilizza come password la tua matricola.<br />
+                    Ti sarà in seguito richiesto di creare una nuova password.<br />
+                    Se hai già creato una nuova password ma l'hai smarrita, utilizza la funzione di
+                    <a class="classica" href="/password-smarrita">reimpostazione password</a>.
+                </div>
+                <div><br /></div>
+                <div>
+                    <strong>Non dipendente <asp:Label ID="lblCompanyName_2" runat="server" />?</strong>
+                </div>
+                <div>
+                    Immetti le credenziali che ti sono state assegnate in fase di registrazione.<br />
+                    Se non ti sei ancora registrato <a class="classica" href="/registrazione">clicca qui</a>.<br />
+                    Se hai smarrito le credenziali per l'accesso utilizza la funzione di
+                    <a class="classica" href="/password-smarrita">reimpostazione password</a>.
+                </div>
+            </div>
+            </asp:Panel>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+
+</asp:Content>

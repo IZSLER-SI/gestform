@@ -1,0 +1,63 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="SiteTailorPopupMP.master.vb" Inherits="Softailor.SiteTailorIzs.SiteTailorPopupMP" %>
+
+<!DOCTYPE html>
+<html lang="it-it">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="App_Themes/SiteTailorPopup/SiteTailorPopup.css" rel="stylesheet" />
+    <script type="text/javascript">
+        <asp:Literal ID="ltrPageWs" runat="server" EnableViewState="false" />     
+    </script> 
+    <asp:ContentPlaceHolder ID="phdHeadContent" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <span runat="server" id="i_d_e_v_e" style="display:none;"></span>
+        <ajaxToolkit:ToolkitScriptManager ID="ScriptManager1" runat="server" CombineScripts="true" EnableScriptGlobalization="true" EnableScriptLocalization="true">
+            <Scripts>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Path="Scripts/jquery-ui-1.8.20.min.js" />
+                <asp:ScriptReference Name="WebForms.js" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+
+                <%--<asp:ScriptReference Name="MsAjaxBundle" />--%>
+
+                <%--Site Scripts--%>
+                <asp:ScriptReference Path="~/Scripts/jquery.maskedinput.min.js" />
+                <asp:ScriptReference Path="~/Scripts/jquery.validate.min.js" />
+                <asp:ScriptReference Path="~/Scripts/messages_it.js" />
+                <asp:ScriptReference Path="~/Scripts/StlWebUI.js" />
+
+            </Scripts>
+        </ajaxToolkit:ToolkitScriptManager>
+        <div id="popupHeader">
+            <div class="title">
+                <asp:ContentPlaceHolder runat="server" ID="phdPopupTitle" />
+            </div>
+            <div class="buttons">
+                <asp:ContentPlaceHolder runat="server" ID="phdPopupButtons" />
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div id="popupContent">
+            <asp:ContentPlaceHolder runat="server" ID="phdContent" />
+        </div>
+        <asp:ContentPlaceHolder ID="phdAuxilary" runat="server" />
+    </form>
+    <div id="ajaxwaiting">
+        <asp:Image ID="ajaxWaitingImage" runat="server" ImageUrl="~/Img/Waiting.gif" />
+    </div>
+    <iframe id="stl_popup_iframe" name="stl_popup_iframe" frameborder="0" style="display:none;"></iframe>
+    <asp:ContentPlaceHolder ID="phdOutOfForm" runat="server" />
+</body>
+</html>

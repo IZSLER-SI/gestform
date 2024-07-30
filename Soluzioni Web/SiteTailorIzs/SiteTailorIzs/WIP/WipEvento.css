@@ -1,0 +1,257 @@
+﻿#wip
+{
+    font-family:Arial;
+    font-weight:normal;
+    position:absolute;
+    left:15px;
+    top:15px;
+    overflow:visible;
+}
+.text
+{
+    position:absolute;
+    display:block;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+.value
+{
+    position:absolute;
+    display:block;
+    overflow:hidden;
+    box-sizing:border-box;
+    background-color:#ffffff;
+    padding-left:2px;
+    padding-right:2px;
+}
+.boolvalue
+{
+    text-align:center;
+    font-weight:bold;
+}
+.box
+{
+    position:absolute;
+    display:block;
+}
+.field
+{
+    position:absolute;
+    display:block;
+    overflow:hidden;
+    box-sizing:border-box;
+    cursor:pointer;
+}
+.inactive
+{
+    background-color:#ffffff;
+    color:#000000;
+    margin:0px;
+    padding:2px 4px 2px 4px;
+}
+    .inactive:hover
+    {
+        padding:0px 2px 0px 2px;
+        border:2px solid #666666;
+    }
+.active
+{
+    padding:0px 2px 0px 2px;
+    border:2px solid #666666;
+    background-color:#ffffff;
+}
+.boolfield
+{
+    font-weight:bold;
+    text-align:center;
+}
+.wip
+{
+    position:absolute;
+    display:block;
+    overflow:hidden;
+    box-sizing:border-box;
+    padding-left:2px;
+    padding-right:2px;
+    cursor:pointer;
+    font-weight:bold;
+    text-align:center;
+}
+.wip_TBC
+{
+    background-color:#ffffff;
+}
+.wip_KO
+{
+    background-color:#ff0000;
+}
+.wip_OK
+{
+    background-color:#009900;
+}
+.wip_NN
+{
+    background-color:#c0c0c0;
+}
+.popup
+{
+    display:block;
+    position:absolute;
+    left:50px;
+    top:50px;
+    z-index:102;
+    background-color:#f5f5f5;
+    padding:10px 10px 0px 10px;
+    border:2px solid #666666;
+    font-family:Arial;
+    font-size:14px;
+}
+    .popup .labelDiv
+    {
+        display:none;
+    }
+    .popup .valueDiv
+    {
+        padding-bottom:10px;
+    }
+    .popup .buttonsDiv
+    {
+        padding-bottom:10px;
+        font-size:14px;
+        white-space:nowrap;
+    }
+    .popup .save
+    {
+        display:inline-block;
+        background-color:#666666;
+        color:#ffffff;
+        padding:3px 10px 3px 10px;
+        cursor:pointer;
+        font-weight:bold;
+        margin-right:3px;
+    }
+    .popup .cancel
+    {
+        display:inline-block;
+        background-color:#666666;
+        color:#ffffff;
+        padding:3px 10px 3px 10px;
+        cursor:pointer;
+    }
+    .popup .updatedDiv
+    {
+        color:#888888;
+        font-size:11px;
+        padding-bottom:10px;
+    }
+    .popup .inputtext
+    {
+        border:1px solid #666666;
+        font-family:Arial;
+        margin:0px;
+        padding:3px;
+    }
+    .popup .inputstring
+    {
+        width:600px;
+    }
+    .popup .inputint
+    {
+        width:122px;
+    }
+    .popup .inputmoney
+    {
+        width:122px;
+    }
+    .popup .inputdate
+    {
+        width:85px;
+    }
+    .popup .calcontainer
+    {
+        font-size:11px;
+       margin-bottom:-3px;
+        margin-top:10px;
+    }
+    .popup .calcontainerspt
+    {
+        font-size:11px;
+        margin-bottom:-3px;
+        margin-top:3px;
+    }
+.wipTitle
+{
+    font-weight:bold;
+    color:#336699;
+    font-size:14px;
+}
+.wipTitle2
+{
+    font-weight:bold;
+    color:#ff6600;
+    font-size:14px;
+}
+.wipExpiry
+{
+    font-size:12px;
+}
+.wipButtons
+{
+    font-size:14px;
+    padding-top:10px;
+}
+.wipButtonsEnd
+{
+    font-size:14px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.wipButtonsMain
+{
+    font-size:14px;
+    padding-top:3px;
+    padding-bottom:10px;
+}
+.wipBtn
+{
+    display:inline-block;
+    padding:3px 10px 3px 10px;
+    cursor:pointer;
+    margin-right:3px;
+}
+.wipBtnOK
+{
+    background-color:#009900;
+    color:#ffffff;
+    font-weight:bold;
+}
+.wipBtnNN
+{
+    background-color:#666666;
+    color:#ffffff;
+    font-weight:bold;
+}
+.wipBtnTBC
+{
+    background-color:#999999;
+    color:#ffffff;
+    font-weight:bold;
+}
+.wipBtnModScad
+{
+    background-color:#666666;
+    color:#ffffff;
+    font-weight:bold;
+}
+.wipExpiryDate
+{
+    border:1px solid #666666;
+    font-family:Arial;
+    margin:0px;
+    padding:3px 3px 2px 3px;
+    width:73px;
+}
+.wipExpiryDiv
+{
+    padding-top:10px;
+}

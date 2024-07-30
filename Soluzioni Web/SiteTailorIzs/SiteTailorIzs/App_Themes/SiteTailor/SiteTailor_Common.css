@@ -1,0 +1,209 @@
+﻿.clear
+{
+    clear:both;    
+}
+a
+{
+    outline:none;
+}
+table
+{
+    border-spacing:0px 0px;
+}
+/* stili base */
+.classicA
+{
+	color:#336699;
+	text-decoration:underline;
+    cursor:pointer;
+}
+.classicA:hover
+{
+	color:#ff6600;
+}
+.classicA_nu
+{
+	color:#336699;
+	text-decoration:none;
+    cursor:pointer;
+}
+.classicA_nu:hover
+{
+	color:#ff6600;
+}
+#ajaxwaiting
+{
+    display:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:101;
+    width:80px;
+    height:80px;
+    margin-left:-40px;
+    margin-top:-40px;
+}
+#stl_popup_covering
+{
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    background-color:#000000;
+	opacity:0.4;
+    filter:alpha(opacity=40); 
+    z-index:101;
+}
+#stl_popup_iframe
+{
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 102;
+    width:10px;
+    height:10px;
+    box-shadow: 0 0 30px 0px #000;
+	left: 0px;
+	right: 0px;
+	margin: 0 auto;
+}
+
+input.txt		/* controlli input type=text */
+{
+	font-family:Verdana, Arial, Sans-Serif;
+	font-size:11px;
+    padding:2px 0px 2px 2px;
+    margin:1px 0px 1px 0px;
+    border:1px solid #888888;
+    background-color:#ffffff;
+    color:#000000;
+}
+input.txt[disabled]    /*controlli input type=text */
+{
+    color:#555555;
+}
+textarea.txt		/* controlli textarea */
+{
+	font-family:Verdana, Arial, Sans-Serif;
+	font-size:11px;
+    padding:2px 0px 2px 2px;
+    margin:1px 0px 1px 0px;
+    border:1px solid #888888;
+    background-color:#ffffff;
+    color:#000000;
+    vertical-align:top;
+}
+textarea.txt[disabled]    /*controlli input type=text */
+{
+    color:#555555;
+}
+select.ddn		/* controlli select */
+{
+	font-family:Verdana, Arial, Sans-Serif;
+	font-size:11px;
+    padding:1px 1px 1px 0px;
+    margin:1px 0px 1px 0px;
+    border:1px solid #888888;
+}
+select.ddn[disabled]    /*controlli input type=text */
+{
+    color:#555555;
+}
+span.chk
+{
+    display:inline-block;
+    padding-top:2px;
+    padding-right:3px;
+    padding-left:3px;
+    vertical-align:middle;
+}
+input.chk, span.chk input		/* controlli chk */
+{
+    margin:0px 5px 0px 0px;
+    padding:0px;
+}
+input.btn
+{
+    font-family:Verdana;
+    font-size:11px;
+}
+.rbl                            /* radio button lists (in tabella) */
+{
+    border-spacing:0px 0px;
+    font-size:11px;
+    font-family:Verdana, Arial, Sans-Serif;
+}
+a.btnlink, span.btnlink
+{
+    display:inline-block;
+    background-image:url(img/grd_ph_bg.gif);
+    background-position:left bottom;
+	background-repeat:repeat-x;
+    border-left:1px solid #6593cf;
+    border-right:1px solid #6593cf;
+    border-top:1px solid #6593cf;
+    color:#15428b;
+    padding:2px 20px 3px 20px;
+    cursor:pointer;
+    text-decoration:none;
+}
+a.btnlink:hover, span.btnlink:hover
+{
+    color:#2064D5;
+}
+a.btnlink_narrow, span.btnlink_narrow
+{
+    display:inline-block;
+    background-image:url(img/grd_ph_bg.gif);
+    background-position:left bottom;
+	background-repeat:repeat-x;
+    border-left:1px solid #6593cf;
+    border-right:1px solid #6593cf;
+    border-top:1px solid #6593cf;
+    color:#15428b;
+    padding:2px 7px 3px 7px;
+    cursor:pointer;
+    text-decoration:none;
+}
+a.btnlink_narrow:hover, span.btnlink_narrow:hover
+{
+    color:#2064D5;
+}
+input.btnlink
+{
+    display:inline-block;
+    background-image:url(img/grd_ph_bg.gif);
+    background-position:left bottom;
+	background-repeat:repeat-x;
+    border-left:1px solid #6593cf;
+    border-right:1px solid #6593cf;
+    border-top:1px solid #6593cf;
+    border-bottom-style:none;
+    color:#15428b;
+    padding:2px 20px 3px 20px;
+    cursor:pointer;
+    text-decoration:none;
+    font-family:Tahoma, Arial, sans-serif;
+    font-size:11px;
+}
+input.btnlink:hover
+{
+    color:#2064D5;
+}
+input.btnlink:disabled
+{
+    display:inline-block;
+    background-image:url(img/grd_ph_bg_grey.gif);
+    background-position:left bottom;
+	background-repeat:repeat-x;
+    border-left:1px solid #9a9a9a;
+    border-right:1px solid #9a9a9a;
+    border-top:1px solid #9a9a9a;
+    border-bottom-style:none;
+    color:#9a9a9a;
+    padding:2px 20px 3px 20px;
+    text-decoration:none;
+    font-family:Tahoma, Arial, sans-serif;
+    font-size:11px;
+    cursor:default;
+}

@@ -1,0 +1,1 @@
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/RPT/ReportMP.master" CodeBehind="ReportMovimentiEventi_Group.aspx.vb" Inherits="Softailor.SiteTailorIzs.ReportMovimentiEventi_Group" %>

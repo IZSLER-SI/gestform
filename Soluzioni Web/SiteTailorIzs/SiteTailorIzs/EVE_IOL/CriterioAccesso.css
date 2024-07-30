@@ -1,0 +1,16 @@
+﻿#uocontainer {
+    margin-left:19px;
+    margin-top:4px;
+    height:445px;
+    overflow-y:scroll;
+    border:1px solid #a0a0a0;
+    background-color:#ffffff;
+}
+#profilocontainer {
+    margin-left:19px;
+    margin-top:4px;
+    height:487px;
+    overflow-y:scroll;
+    border:1px solid #a0a0a0;
+    background-color:#ffffff;
+}

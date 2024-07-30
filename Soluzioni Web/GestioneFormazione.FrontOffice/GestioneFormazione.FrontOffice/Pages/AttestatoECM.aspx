@@ -1,0 +1,1 @@
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="AttestatoECM.aspx.vb" Inherits="GestioneFormazione.FrontOffice.AttestatoECM" %>

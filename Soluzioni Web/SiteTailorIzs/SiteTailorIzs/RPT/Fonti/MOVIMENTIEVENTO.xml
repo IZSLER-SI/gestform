@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Fonte xmlns="http://schemas.softailor.com/ReportEngine/Fonte"
+       
+       Codice="PARTEVENTI"
+       Descrizione="Singolo evento: movimenti economici"
+       CampoFiltroBase="id_EVENTO"
+       TipoDatoFiltroBase="Intero"
+       
+       VistaIntestazione="vw_rpt_eve_EVENTI"
+       VistaCorpo="vw_rpt_COSTIRICAVI"
+       >
+  <CampiIntestazione>
+    <Campo NomeDb="tx_TITOLO" Segnaposto="EVE_TITOLO" Descrizione="Evento: titolo" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_EDIZIONE" Segnaposto="EVE_EDIZIONE" Descrizione="Evento: edizione" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="id_EVENTO" Segnaposto="EVE_ID_TESTATA" Descrizione="Evento: ID" Tipo="Intero" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="ni_ANNO" Segnaposto="EVE_ANNO" Descrizione="Evento: anno" Tipo="Intero" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="dt_INIZIO" Segnaposto="EVE_DATA_INIZIO" Descrizione="Evento: data inizio" Tipo="Data" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="dt_FINE" Segnaposto="EVE_DATA_FINE" Descrizione="Evento: data fine" Tipo="Data" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_TIPOLOGIAEVENTO" Segnaposto="EVE_TIPOLOGIA" Descrizione="Evento: tipologia" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_CENTROREFERENZA" Segnaposto="EVE_CENTRO_REFERENZA" Descrizione="Evento: centro di referenza / Class/" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_CDC" Segnaposto="EVE_CDC" Descrizione="Evento: centro di costo" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_PIANOFORMATIVO" Segnaposto="EVE_PIANO_FORMATIVO" Descrizione="Evento: piano formativo" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_DURATAORE_RAGGR" Segnaposto="EVE_DURATA_ORE" Descrizione="Evento: durata in ore" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_DURATAORE_NONRAGGR" Segnaposto="EVE_DURATA_ORE_NONRAGGR" Descrizione="Evento: durata in ore (comprensiva di sessioni parallele)" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="ni_ISCRITTI" Segnaposto="EVE_ISCRITTI" Descrizione="Evento: numero iscritti (iscritto, presente, lista attesa - solo discenti)" Tipo="Intero" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="id_TIPOLOGIAEVENTO" Segnaposto="EVE_TIPOLOGIA_ID" Descrizione="Evento: tipologia" Tipo="Intero" Filtro="false" Ordinamento="false" Output="false" />
+    <Campo NomeDb="id_CENTROREFERENZA" Segnaposto="EVE_CENTRO_REFERENZA_ID" Descrizione="Evento: centro di referenza / Classi" Tipo="Intero" Filtro="false" Ordinamento="false" Output="false" />
+    <Campo NomeDb="ac_CDC" Segnaposto="EVE_CDC_AC" Descrizione="Evento: centro di costo" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="false" />
+    <Campo NomeDb="id_PIANOFORMATIVO" Segnaposto="EVE_PIANO_FORMATIVO_ID" Descrizione="Evento: piano formativo" Tipo="Intero" Filtro="false" Ordinamento="false" Output="false" />
+    <Campo NomeDb="tx_SEDE" Segnaposto="SEDE_NOME" Descrizione="Sede: nome" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_DETTAGLISEDE" Segnaposto="SEDE_DETTAGLI" Descrizione="Sede: dettagli" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_INDIRIZZO_SEDE" Segnaposto="SEDE_INDIRIZZO" Descrizione="Sede: indirizzo" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_TELEFONO_SEDE" Segnaposto="SEDE_TELEFONO" Descrizione="Sede: telefono" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_FAX_SEDE" Segnaposto="SEDE_FAX" Descrizione="Sede: fax" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_CELLULARE_SEDE" Segnaposto="SEDE_CELL" Descrizione="Sede: cellulare" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_EMAIL_SEDE" Segnaposto="SEDE_EMAIL" Descrizione="Sede: e-mail" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="id_SEDE" Segnaposto="SEDE_ID" Descrizione="Sede: nome" Tipo="Intero" Filtro="false" Ordinamento="false" Output="false" />
+    <Campo NomeDb="iol_ni_MAXPARTECIPANTI" Segnaposto="IOL_MAX_PARTECIPANTI" Descrizione="Iscrizioni on line: max partecipanti" Tipo="Intero" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="iol_dt_INIZIOVISIBILITA" Segnaposto="IOL_INIZIO_VISIBILITA" Descrizione="Iscrizioni on line: data inizio visibilità" Tipo="Data" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="iol_dt_APERTURAISCRIZIONI" Segnaposto="IOL_DATA_APERTURA" Descrizione="Iscrizioni on line: data apertura" Tipo="Data" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="iol_dt_CHIUSURAISCRIZIONI" Segnaposto="IOL_DATA_CHIUSURA" Descrizione="Iscrizioni on line: data chiusura" Tipo="Data" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_ACCREDITATOECM" Segnaposto="ECM_ACCREDITATO" Descrizione="ECM: evento accreditato" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="ecm2_COD_EVE" Segnaposto="ECM_CODICE_EVENTO" Descrizione="ECM: codice evento" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="ecm2_COD_EDI" Segnaposto="ECM_CODICE_EDIZIONE" Descrizione="ECM: codice edizione" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_TIPOLOGIAECMEVENTO" Segnaposto="ECM_TIPO_FORMAZIONE" Descrizione="ECM: tipo formazione" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="ecm2_TIPOLOGIA_FORM" Segnaposto="ECM_TIPOLOGIA_FORMATIVA" Descrizione="ECM: tipologia formativa" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="ecm2_TIPO_EVE" Segnaposto="ECM_TIPO_EVENTO" Descrizione="ECM: tipo evento" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="ecm2_NUM_CRED" Segnaposto="ECM_NUM_CREDITI" Descrizione="ECM: numero crediti" Tipo="Decimale" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="ecm2_NUM_ORE" Segnaposto="ECM_DURATA_ORE" Descrizione="ECM: durata in ore" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_OBBIETTIVIECM" Segnaposto="ECM_OBBIETTIVI" Descrizione="ECM: obbiettivi" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="fl_ACCREDITATOECM" Segnaposto="ECM_ACCREDITATO_FL" Descrizione="ECM: evento accreditato" Tipo="Intero" Filtro="false" Ordinamento="false" Output="false" />
+    <Campo NomeDb="id_TIPOLOGIAECMEVENTO" Segnaposto="ECM_TIPO_FORMAZIONE_ID" Descrizione="ECM: tipo formazione" Tipo="Intero" Filtro="false" Ordinamento="false" Output="false" />
+    <Campo NomeDb="ecm2_COD_OBI" Segnaposto="ECM_OBBIETTIVI_AC" Descrizione="ECM: obbiettivi" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="false" />
+    <Campo NomeDb="tx_PROFESSIONIECM" Segnaposto="ECM_PROFESSIONI" Descrizione="ECM: professioni accreditate" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_PROVIDERECM" Segnaposto="PROVECM_NOME" Descrizione="Provider ECM: nome" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_RESPONSABILE_PRO" Segnaposto="PROVECM_NOME_RAPPRLEGALE" Descrizione="Provider ECM: nome rappresentante legale" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="id_PROVIDERECM" Segnaposto="PROVECM_ID" Descrizione="Provider ECM: nome" Tipo="Intero" Filtro="false" Ordinamento="false" Output="false" />
+    <Campo NomeDb="tx_SEGRETERIAORGANIZZATIVA" Segnaposto="SEGR_NOME" Descrizione="Segreteria organizzativa: nome" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_RESPONSABILE_SORG" Segnaposto="SEGR_NOME_RESPONSABILE" Descrizione="Segreteria organizzativa: nome responsabile" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_INDIRIZZO_SORG" Segnaposto="SEGR_INDIRIZZO" Descrizione="Segreteria organizzativa: indirizzo" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_TELEFONO_SORG" Segnaposto="SEGR_TELEFONO" Descrizione="Segreteria organizzativa: telefono" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_FAX_SORG" Segnaposto="SEGR_FAX" Descrizione="Segreteria organizzativa: fax" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_CELLULARE_SORG" Segnaposto="SEGR_CELL" Descrizione="Segreteria organizzativa: cellulare" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_EMAIL_SORG" Segnaposto="SEGR_EMAIL" Descrizione="Segreteria organizzativa: e-mail" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="id_SEGRETERIAORGANIZZATIVA" Segnaposto="SEGR_ID" Descrizione="Segreteria organizzativa: nome" Tipo="Intero" Filtro="false" Ordinamento="false" Output="false" />
+    <Campo NomeDb="tx_ORGANIZZATORE" Segnaposto="ORG_NOME" Descrizione="Organizzatore: nome" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_RESPONSABILE_ORG" Segnaposto="ORG_NOME_RESPONSABILE" Descrizione="Organizzatore: nome rappresentante legale" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_INDIRIZZO_ORG" Segnaposto="ORG_INDIRIZZO" Descrizione="Organizzatore: indirizzo" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_TELEFONO_ORG" Segnaposto="ORG_TELEFONO" Descrizione="Organizzatore: telefono" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_FAX_ORG" Segnaposto="ORG_FAX" Descrizione="Organizzatore: fax" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_CELLULARE_ORG" Segnaposto="ORG_CELLULARE" Descrizione="Organizzatore: cellulare" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_EMAIL_ORG" Segnaposto="ORG_EMAIL" Descrizione="Organizzatore: e-mail" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="id_ORGANIZZATORE" Segnaposto="ORG_ID" Descrizione="Organizzatore: nome" Tipo="Intero" Filtro="false" Ordinamento="false" Output="false" />
+    <Campo NomeDb="tx_COGNOME_RS" Segnaposto="RS_COGNOME" Descrizione="Responsabile Scientifico: cognome" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_NOME_RS" Segnaposto="RS_NOME" Descrizione="Responsabile Scientifico: nome" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_OBBIETTIVI" Segnaposto="OBBIETTIVI_TESTO" Descrizione="Obbiettivi (testo libero)" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+  </CampiIntestazione>
+  <CampiCorpo>
+    <Campo NomeDb="id_EVENTO" Segnaposto="EVE_ID" Descrizione="Evento: ID" Tipo="Intero" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="id_DELIBERA" Segnaposto="MOV_DELIBERA_ID" Descrizione="Movimento: delibera" Tipo="Intero" Filtro="true" Ordinamento="false" Output="false" TipoControllo="CheckBoxList" QueryLista="SELECT id_DELIBERA, ac_DELIBERA + ' - ' + tx_DELIBERA as tx_DELIBERA FROM age_DELIBERE ORDER BY tx_DELIBERA" />
+    <Campo NomeDb="ac_DELIBERA" Segnaposto="MOV_DELIBERA_COD" Descrizione="Movimento: codice delibera" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_DELIBERA" Segnaposto="MOV_DELIBERA_DESC" Descrizione="Movimento: descrizione delibera" Tipo="Stringa" Filtro="false" Ordinamento="true" Output="true" />
+    <Campo NomeDb="ac_PROTOCOLLO" Segnaposto="MOV_PROTOCOLLO_NUM" Descrizione="Movimento: numero protocollo" Tipo="Stringa" Filtro="false" Ordinamento="true" Output="true" />
+    <Campo NomeDb="dt_PROTOCOLLO" Segnaposto="MOV_PROTOCOLLO_DATA" Descrizione="Movimento: data protocollo" Tipo="Data" Filtro="false" Ordinamento="true" Output="true" />
+    <Campo NomeDb="ac_COMPETENZA" Segnaposto="MOV_COMPETENZA_AC" Descrizione="Movimento: competenza" Tipo="Stringa" Filtro="true" Ordinamento="false" Output="false" TipoControllo="CheckBoxList" QueryLista="SELECT 'EVE' as cod, 'Evento' as descr UNION ALL SELECT 'PAX' as cod, 'Persona' as descr ORDER BY descr" />
+    <Campo NomeDb="tx_COMPETENZA" Segnaposto="MOV_COMPETENZA" Descrizione="Movimento: competenza" Tipo="Stringa" Filtro="false" Ordinamento="true" Output="true" />
+    <Campo NomeDb="ac_SPESARICAVO" Segnaposto="MOV_SPESARICAVO_AC" Descrizione="Movimento: spesa / ricavo" Tipo="Stringa" Filtro="true" Ordinamento="false" Output="false" TipoControllo="CheckBoxList" QueryLista="SELECT 'S' as cod, 'Spesa' as descr UNION ALL SELECT 'R' as cod, 'Ricavo' as descr ORDER BY descr desc" />
+    <Campo NomeDb="tx_SPESARICAVO" Segnaposto="MOV_SPESARICAVO" Descrizione="Movimento: spesa / ricavo" Tipo="Stringa" Filtro="false" Ordinamento="true" Output="true" />
+    <Campo NomeDb="ac_VOCESPESARICAVO" Segnaposto="MOV_VOCESPESARICAVO_AC" Descrizione="Movimento: voce spesa / ricavo" Tipo="Stringa" Filtro="true" Ordinamento="false" Output="false" TipoControllo="CheckBoxList" QueryLista="SELECT ac_VOCESPESARICAVO, tx_VOCESPESARICAVO + CASE ac_SPESARICAVO WHEN 'S' THEN ' (Spesa)' WHEN 'R' THEN ' (Ricavo)' END as tx_SPESARICAVO FROM age_VOCISPESARICAVO ORDER BY ac_SPESARICAVO desc, tx_VOCESPESARICAVO" />
+    <Campo NomeDb="tx_VOCESPESARICAVO" Segnaposto="MOV_VOCESPESARICAVO" Descrizione="Movimento: voce spesa / ricavo" Tipo="Stringa" Filtro="false" Ordinamento="true" Output="true" />
+    <Campo NomeDb="ac_TIPOPAG" Segnaposto="MOV_TIPOPAG_AC" Descrizione="Movimento: tipo pagamento" Tipo="Stringa" Filtro="true" Ordinamento="false" Output="false" TipoControllo="CheckBoxList" QueryLista="SELECT ac_TIPOPAG, tx_TIPOPAG FROM age_TIPIPAG ORDER BY tx_TIPOPAG" />
+    <Campo NomeDb="tx_TIPOPAG" Segnaposto="MOV_TIPOPAG" Descrizione="Movimento: tipo pagamento" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="tx_DESCRIZIONE" Segnaposto="MOV_DESCRIZIONE" Descrizione="Movimento: descrizione" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="mo_IMPORTOPREVISTO" Segnaposto="MOV_PREVENTIVO" Descrizione="Movimento: importo previsto (valore assoluto)" Tipo="Decimale" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="mo_CONSUNTIVO" Segnaposto="MOV_CONSUNTIVO" Descrizione="Movimento: consuntivo (valore assoluto)" Tipo="Decimale" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="mo_IMPORTOPREVISTO_SEGNO" Segnaposto="MOV_PREVENTIVO_S" Descrizione="Movimento: importo previsto (con segno)" Tipo="Decimale" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="mo_CONSUNTIVO_SEGNO" Segnaposto="MOV_CONSUNTIVO_S" Descrizione="Movimento: consuntivo (con segno)" Tipo="Decimale" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="dt_PAGAMENTO" Segnaposto="MOV_DATA_PAGAMENTO" Descrizione="Movimento: data pagamento" Tipo="Data" Filtro="true" Ordinamento="false" Output="true" TipoControllo="Standard" />
+    <Campo NomeDb="tx_NOTE" Segnaposto="MOV_NOTE" Descrizione="Movimento: note" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="ac_ORDINE" Segnaposto="MOV_ORDINE_NUM" Descrizione="Movimento: numero ordine" Tipo="Stringa" Filtro="false" Ordinamento="true" Output="true" />
+    <Campo NomeDb="dt_ORDINE" Segnaposto="MOV_ORDINE_DATA" Descrizione="Movimento: data ordine" Tipo="Data" Filtro="false" Ordinamento="true" Output="true" />
+    <Campo NomeDb="ac_DDT" Segnaposto="MOV_BOLLA_NUM" Descrizione="Movimento: numero bolla" Tipo="Stringa" Filtro="false" Ordinamento="true" Output="true" />
+    <Campo NomeDb="dt_DDT" Segnaposto="MOV_BOLLA_DATA" Descrizione="Movimento: data bolla" Tipo="Data" Filtro="false" Ordinamento="true" Output="true" />
+    <Campo NomeDb="ac_FATTURA" Segnaposto="MOV_FATTURA_NUM" Descrizione="Movimento: numero fattura" Tipo="Stringa" Filtro="false" Ordinamento="true" Output="true" />
+    <Campo NomeDb="dt_FATTURA" Segnaposto="MOV_FATTURA_DATA" Descrizione="Movimento: data fattura" Tipo="Data" Filtro="false" Ordinamento="true" Output="true" />
+    <Campo NomeDb="tx_COGNOME" Segnaposto="PERS_COGNOME" Descrizione="Persona: cognome (o azienda: ragione sociale)" Tipo="Stringa" Filtro="true" Ordinamento="false" Output="true" TipoControllo="Standard" />
+    <Campo NomeDb="tx_NOME" Segnaposto="PERS_NOME" Descrizione="Persona: nome" Tipo="Stringa" Filtro="true" Ordinamento="false" Output="true" TipoControllo="Standard" />
+    <Campo NomeDb="ac_CODICEFISCALE" Segnaposto="PERS_CODICEFISCALE" Descrizione="Persona: codice fiscale (o azienda: CF o PI)" Tipo="Stringa" Filtro="true" Ordinamento="false" Output="true" TipoControllo="Standard" />
+    <Campo NomeDb="tx_EMAIL" Segnaposto="PERS_EMAIL" Descrizione="Persona: e-mail" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+    <Campo NomeDb="ac_MATRICOLA" Segnaposto="PERS_MATRICOLA" Descrizione="Persona: matricola" Tipo="Stringa" Filtro="true" Ordinamento="false" Output="true" TipoControllo="Standard" />
+    <Campo NomeDb="ac_CATEGORIAECM" Segnaposto="PERS_CATEGORIA_AC" Descrizione="Persona: categoria" Tipo="Stringa" Filtro="true" Ordinamento="false" Output="true" TipoControllo="CheckBoxList" QueryLista="SELECT ac_CATEGORIAECM, tx_CATEGORIAECM FROM eve_CATEGORIEECM ORDER BY ni_ORDINE" />
+    <Campo NomeDb="tx_CATEGORIAECM" Segnaposto="PERS_CATEGORIA" Descrizione="Persona: categoria" Tipo="Stringa" Filtro="false" Ordinamento="false" Output="true" />
+  </CampiCorpo>
+  <Ordinamenti>
+    <Ordinamento Descrizione="Spesa / Ricavo, cognome, nome, voce spesa / ricavo" Sql="ac_SPESARICAVO desc, tx_COGNOME, tx_NOME, tx_VOCESPESARICAVO" />
+    <Ordinamento Descrizione="Cognome e Nome" Sql="tx_COGNOME, tx_NOME" />
+  </Ordinamenti>
+</Fonte>

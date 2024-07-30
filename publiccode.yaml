@@ -1,0 +1,98 @@
+# This repository adheres to the publiccode.yml standard by including this 
+# metadata file that makes public software easily discoverable.
+# More info at https://github.com/italia/publiccode.yml
+
+publiccodeYmlVersion: '0.2'
+applicationSuite: GestForm
+categories:
+  - event-management
+  - learning-management-system
+  - online-booking
+  - survey
+  - office
+  - data-visualization
+description:
+  it:
+    features:
+      - BackOffice
+      - FrontOffice
+    genericName: GestForm
+    longDescription: |2
+       Il Gestionale della Formazione è un software che consente la gestione di tutti i dati relativi agli eventi progettati gestiti ed erogati dall'Ufficio Formazione e la rendicontazione dei dati di fruizione all'Organismo di Accreditamento ECM AGENAS. Si integra con le altre soluzioni per le diverse specifiche funzioni attraverso Web-Service e Middleware appositamente realizzati.
+
+      Il gestionale può essere interfacciato con il sistema di gestione delle
+      risorse umane da cui attingerà quotidianamente i dati anagrafici del
+      personale dipendente mantenendo aggiornata l'anagrafica di base del
+      personale interno per l'ufficio della formazione. Lo scambio delle
+      informazioni avviene a mezzo routine di allineamento dei Database. 
+
+
+      I dati anagrafici delle persone che accedono alla formazione come esterni,
+      invece sono inseriti e aggiornati direttamente dagli utenti che si
+      registrano sul portale della formazione. Questo portale è il front-end del
+      gestionale e costituisce una vera e propria vetrina dei corsi con
+      funzionalità dedicate agli utenti registrati e ai dipendenti.
+
+      Si tratta di un CMS accessibile via WEB in cui vengono pubblicati i dati
+      degli eventi formativi e che consente la raccolta delle iscrizioni, la
+      rendicontazione da remoto delle presenze da parte dei tutor, l'invio di
+      promemoria ai partecipanti e l'accesso in SSO al software Valutazione-Web,
+      alla Piattaforma di Formazione a Distanza e agli altri applicativi
+      integrati con il gestionale.
+
+
+      Gli utenti esterni si registrano con i propri dati da questo sito, i
+      dipendenti e gli esterni si iscrivono ai corsi e, sempre dallo stesso
+      portale, accedono agli altri applicativi della formazione. Oltre al
+      catalogo dell'offerta formativa, gli utenti trovano i propri attestati, il
+      proprio portfolio formativo aggiornato e strumenti di interazione che
+      consentono di candidarsi come docenti, di rendicontare le presenze dei
+      corsisti per gli eventi per cui svolgono la funzione di Tutor, di
+      richiedere l'autorizzazione a svolgere formazione esterna finanziata
+      dall'Istituto(solo per i dipendenti) e di autocertificare la formazione
+      individuale svolta presso altri enti senza la partecipazione economica
+      dell'Istituto(solo per i dipendenti). 
+
+
+      Sul portale sono pubblicati documenti di natura generale, news e allegati
+      che concernono il sistema della formazione oltre al materiale didattico
+      specifico di ogni evento formativo gestito.
+    shortDescription: 'Gestionale della Formazione: BackOffice e FrontOffice'
+developmentStatus: stable
+it:
+  conforme:
+    gdpr: false
+    lineeGuidaDesign: false
+    misureMinimeSicurezza: false
+    modelloInteroperabilita: false
+  countryExtensionVersion: '0.2'
+  piattaforme:
+    anpr: false
+    cie: false
+    pagopa: false
+    spid: false
+  riuso:
+    codiceIPA: izs_loer
+legal:
+  license: GPL-3.0-or-later
+  mainCopyrightOwner: izsler
+  repoOwner: IZSLER
+localisation:
+  availableLanguages:
+    - it
+  localisationReady: false
+maintenance:
+  contacts:
+    - email: info@invisiblefarm.it
+      name: Invisiblefarm S.R.L
+      phone: '+390307776307'
+  type: internal
+name: Gestionale della Formazione
+platforms:
+  - web
+releaseDate: '2024-07-31'
+softwareType: standalone/desktop
+softwareVersion: '1'
+url: 'https://github.com/IZSLER-SI/gestform'
+usedBy:
+  - IZSLER

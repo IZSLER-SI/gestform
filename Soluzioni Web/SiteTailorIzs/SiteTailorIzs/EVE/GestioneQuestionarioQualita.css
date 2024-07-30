@@ -1,0 +1,95 @@
+﻿.qst
+{
+    border-bottom: solid 1px #c0c0c0;
+    font-size:11px;
+    font-family:Verdana;
+    padding:1px 0px 1px 0px;
+}
+.num
+{
+    display: block;
+    float: left;
+    width: 24px;
+    text-align:right;
+    padding-right:5px;
+    font-weight: bold;
+    padding-top:3px;
+}
+.question
+{
+    display: block;
+    float: left;
+    width: 270px;
+    padding-top:3px;
+}
+.question_ind
+{
+    display: block;
+    float: left;
+    width: 269px;
+    padding-top:3px;
+    font-weight:bold;
+    padding-left:30px;
+}
+.questionw
+{
+    display: block;
+    float: left;
+    width: 230px;
+    padding-top:3px;
+    padding-bottom:2px;
+}
+.suggestion
+{
+    display:block;
+    float:left;
+    width:250px;
+    color:#666666;
+    padding-top:3px;
+}
+.answern
+{
+    display: block;
+    float: left;
+    width: 53px;
+}
+.answerw
+{
+    display: block;
+    float: left;
+    width: 130px;
+}
+.tnarrow
+{
+    font-family: Verdana, Arial, Sans-Serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    width: 40px;
+    border: none;
+    background-color: #e0e0e0;
+    margin:0px;
+    padding:1px;
+}
+.tmultiline
+{
+    font-family: Verdana, Arial, Sans-Serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: left;
+    width: 490px;
+    height: 35px;
+    padding:3px;
+    border: none;
+    background-color: #e0e0e0;
+}
+.tddn
+{
+    font-family: Verdana, Arial, Sans-Serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: left;
+    width: 496px;
+    border: none;
+    background-color: #e0e0e0;
+}

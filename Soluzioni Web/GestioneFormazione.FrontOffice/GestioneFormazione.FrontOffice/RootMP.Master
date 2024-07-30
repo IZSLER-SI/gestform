@@ -1,0 +1,44 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="RootMP.master.vb" Inherits="GestioneFormazione.FrontOffice.RootMP" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <link rel="icon" href="/favicon.ico" />
+    <link id="favicon" runat="server" rel="shortcut icon" href="/favicon.ico" />
+    <link href="//fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" />
+    <link id="globalcss" href="/Styles/Global.css" rel="stylesheet" type="text/css" media="all" />
+		<asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+            <Scripts>
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Path="~/Scripts/jquery.maskedinput.min.js" />
+                <asp:ScriptReference Path="~/Scripts/Global.js" />
+            </Scripts>
+        </asp:ScriptManager>
+        <div id="maincontainer">
+            <div id="header">
+                <asp:PlaceHolder ID="phdHeader" runat="server" EnableViewState="false" />
+            </div>
+            <div id="middle">
+                <asp:ContentPlaceHolder ID="cphMiddle" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="footer">
+                <asp:PlaceHolder ID="phdFooter" runat="server" EnableViewState="false" />
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="cphOther" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+    <div id="coveringDiv" style="display: none;">&nbsp;</div>
+    <div id="waitingDiv" style="display: none;"><img src="/Img/waiting.gif" style="border:0px;width:60px;height:60px;" alt="" /></div>
+</body>
+</html>

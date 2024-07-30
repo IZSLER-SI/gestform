@@ -1,0 +1,1 @@
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Thumbnail.aspx.vb" Inherits="Softailor.SiteTailorIzs.Thumbnail" Theme="" %>

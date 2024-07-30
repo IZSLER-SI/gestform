@@ -1,0 +1,87 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="ErrorReportMailFrom" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ErrorReportMailTo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PageTitle" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PageTitle</Value>
+    </Setting>
+    <Setting Name="CompanyKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">IZSLER</Value>
+    </Setting>
+    <Setting Name="CompanyName_Short" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">IZSLER</Value>
+    </Setting>
+    <Setting Name="PasswordResetKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PasswordResetKey</Value>
+    </Setting>
+    <Setting Name="FrontOfficeUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:64802/</Value>
+    </Setting>
+    <Setting Name="GenericMail_RagioneSociale" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GenericMail_RagioneSociale</Value>
+    </Setting>
+    <Setting Name="GenericMail_IndirizzoCompleto" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GenericMail_IndirizzoCompleto</Value>
+    </Setting>
+    <Setting Name="GenericMail_Tel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GenericMail_Tel</Value>
+    </Setting>
+    <Setting Name="GenericMail_Fax" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GenericMail_Fax</Value>
+    </Setting>
+    <Setting Name="GenericMail_MailFrom" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GenericMail_MailFrom</Value>
+    </Setting>
+    <Setting Name="ValutazioneWeb_Key" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ValutazioneWeb_Key</Value>
+    </Setting>
+    <Setting Name="ErrorReportMailSubject" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ErrorReportMailSubject</Value>
+    </Setting>
+    <Setting Name="ValutazioneWeb_Url" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ValutazioneWeb_Url</Value>
+    </Setting>
+    <Setting Name="SofficeExePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Program Files\LibreOffice\program\soffice.exe</Value>
+    </Setting>
+    <Setting Name="AppDataTempPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">"C:/inetpub/temp/libreoffice"</Value>
+    </Setting>
+    <Setting Name="DEBUG_FLG" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="DEBUG_EMAIL_FROM" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DEBUG_EMAIL_TO" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="formazione_ext_path_56B_002" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Documents/GestioneFormazione/Modelli/Richieste_PartecipazioneExt/56B.002_rev02.docx</Value>
+    </Setting>
+    <Setting Name="formazione_ext_path_56C_002" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Documents/GestioneFormazione/Modelli/Richieste_PartecipazioneExt/56C.002_rev02.docx</Value>
+    </Setting>
+    <Setting Name="formazione_ext_path_56D_002" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Documents/GestioneFormazione/Modelli/Richieste_PartecipazioneExt/56D.002_rev02.docx</Value>
+    </Setting>
+    <Setting Name="BinariesBasePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">path assoluto a\BinaryData\AZI_1\</Value>
+    </Setting>
+    <Setting Name="BinariesBasePath_WoAzi" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">path assoluto a\BinaryData</Value>
+    </Setting>
+    <Setting Name="ReportsBasePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">path assoluto a\BackOffice\Reports</Value>
+    </Setting>
+    <Setting Name="BinariesTmpBasePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">path assoluto a cartella temporanea</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

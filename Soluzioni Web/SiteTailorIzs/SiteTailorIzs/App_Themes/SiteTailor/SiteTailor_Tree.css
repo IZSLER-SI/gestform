@@ -1,0 +1,80 @@
+﻿.stl_tree_td
+{
+    padding: 0px 5px 6px 6px; 
+    font-size: 11px;
+}
+.stl_tree
+{
+    font-family: Verdana, Arial, Sans-Serif;
+    font-size: 11px;
+    border: solid 1px #888888;
+    overflow: auto;
+    border-collapse:collapse;
+    line-height:20px;
+}
+.stl_tree td
+{
+    vertical-align:top;
+}
+.stl_tree td img
+{
+    display:block;
+}
+.stl_tree td div
+{
+    overflow:visible;
+}
+.stl_tree_node
+{
+    padding: 0px 3px 0px 3px;
+    color: #000000;
+    line-height:20px;
+    display:block;
+}
+.stl_tree_snode
+{
+    padding: 0px 3px 0px 3px;
+    color: #ffffff;
+    background-color: #15428b;
+    line-height:20px;
+    display:block;
+}
+.stl_tree_hover
+{
+    padding: 0px 3px 0px 3px;
+    color: #000000;
+    background-color: #b6cdf3;
+    line-height:20px;
+    display:block;
+}
+
+
+.stl_chktree
+{
+    font-family: Verdana, Arial, Sans-Serif;
+    font-size: 11px;
+    border-collapse:collapse;
+    line-height:20px;
+}
+.stl_chktree input
+{
+    padding:0px;
+    margin:3px 5px 0px 5px;
+    vertical-align:top;
+}
+.stl_chktree td
+{
+    vertical-align:top;
+}
+.stl_chktree td img
+{
+    display:block;
+}
+.stl_chktree td div
+{
+    overflow:visible;
+}
+.stl_chktree a
+{
+    color:#000000;
+}
